@@ -22,7 +22,7 @@
   data-topics="{{ $topicsAttr }}"
   data-abstract="{{ $abstractAttr }}">
   <a class="research-card__image" href="{{ .RelPermalink }}">
-    <img src="{{ with .Params.cover }}{{ . }}{{ else }}/images/r-placeholder.jpg{{ end }}" alt="{{ .Title }} cover">
+    <img src="{{ with .Params.cover }}{{ . }}{{ else }}/images/r-placeholder.webp{{ end }}" alt="{{ .Title }} cover">
   </a>
   <div class="research-card__body">
     <h3 class="research-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>

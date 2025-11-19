@@ -5,7 +5,7 @@ summary: "A decision memo on how Pakistan can balance great-power competition wh
 year: 2024
 topics: ["Geopolitics", "Regional Security"]
 categories: ["Geopolitics & Regional Security"]
-cover: "/images/r1.jpg"
+cover: "/images/r1.webp"
 weight: 10
 ---
 This brief maps conflict, competition, and cooperation pathways across Pakistan’s neighborhood, weighing risks and opportunities in great-power competition. It outlines scenarios for deterrence stability, corridor security, and diplomatic balancing to protect national interests.

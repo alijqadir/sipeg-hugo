@@ -10,6 +10,7 @@ registration_url: "https://example.com/climate-adaptation-roundtable"
 registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
 gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
 gcal_event_id: "climate-adaptation-roundtable-2025"
+image: "/images/r2.webp"
 draft: false
 --- 
 

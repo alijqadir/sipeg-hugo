@@ -5,7 +5,7 @@ summary: "Aligning curriculum reform and skills pipelines with Pakistan’s stra
 year: 2024
 topics: ["Education", "Curriculum", "Capacity"]
 categories: ["Education, Curriculum & National Capacity"]
-cover: "/images/r3.jpg"
+cover: "/images/r3.webp"
 weight: 30
 ---
 

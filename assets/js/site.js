@@ -104,4 +104,41 @@
       }
     });
   }
+
+  const newsletterForm = document.querySelector('[data-newsletter-form]');
+  if (newsletterForm) {
+    const statusEl = newsletterForm.querySelector('[data-newsletter-status]');
+    newsletterForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const honeypot = newsletterForm.querySelector('input[name="hp_field"]');
+      if (honeypot && honeypot.value.trim() !== '') return;
+
+      if (statusEl) {
+        statusEl.textContent = 'Subscribing…';
+      }
+
+      const endpoint = newsletterForm.dataset.endpoint;
+      const formData = new FormData(newsletterForm);
+
+      try {
+        if (!endpoint) throw new Error('Missing endpoint');
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          body: formData,
+        });
+        const text = await response.text();
+        if (!response.ok || !text.toLowerCase().includes('ok')) {
+          throw new Error(text || 'Network response was not ok');
+        }
+        newsletterForm.reset();
+        if (statusEl) {
+          statusEl.textContent = 'Thanks for subscribing! Check your inbox for confirmation.';
+        }
+      } catch (error) {
+        if (statusEl) {
+          statusEl.textContent = 'We could not subscribe you right now. Please try again or email info@sipeg.org.';
+        }
+      }
+    });
+  }
 })();

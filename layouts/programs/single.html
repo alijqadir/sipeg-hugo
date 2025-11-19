@@ -1,10 +1,18 @@
 {{ define "main" }}
 <section class="section section--light">
   <div class="container">
-    <article>
-      <header class="section__intro">
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+    <article class="program-single">
+      <header class="program-single__header">
+        {{ with .Params.icon }}
+          <span class="icon-circle program-single__icon" aria-hidden="true">
+            <i class="ph ph-{{ . }}"></i>
+          </span>
+        {{ end }}
+        <div>
+          <p class="eyebrow">Program</p>
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+        </div>
       </header>
       <div class="content">
         {{ .Content }}

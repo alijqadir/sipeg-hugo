@@ -2,7 +2,7 @@
 title: "Ali Jaffer Zaidi"
 role: "Advisor — Strategy & Ideas"
 affiliation: "Author and Independent Scholar, UK"
-image: "/images/p1.jpg"
+image: "/images/p1.webp"
 summary: "Offers strategic perspectives, historical framing, and narrative thinking for SIPEG’s research and outreach."
 email: "info@sipeg.org"
 sort: 60

@@ -6,7 +6,7 @@ year: 2023
 topics: ["Diplomacy", "Technology"]
 tags: ["insight"]
 pdf: "/papers/digital-diplomacy-strategies.pdf"
-cover: "/images/r3.jpg"
+cover: "/images/r3.webp"
 abstract: >
   Evaluates how digital diplomacy campaigns can augment Pakistan’s regional influence and counter disinformation.
 doi: ""

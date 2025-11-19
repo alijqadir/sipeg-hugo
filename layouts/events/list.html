@@ -1,73 +1,132 @@
 {{ define "main" }}
 <main class="events-main">
-  <div class="container">
-    <section class="events-hero">
-      <h1>Events &amp; Briefings</h1>
-      <p>Upcoming webinars, briefings, and public events hosted by SIPEG.</p>
-    </section>
+  <header class="events-hero container">
+    <div>
+      <p class="eyebrow">Events &amp; Briefings</p>
+      <h1>Engage with SIPEG</h1>
+      <p>Join briefings, webinars, and strategy sessions decoding Pakistan’s strategic choices.</p>
+    </div>
+  </header>
 
-    <section class="events-calendar-section">
-      <div id="events-calendar"></div>
-    </section>
+  {{ $now := now }}
+  {{ $all := sort (where .Site.RegularPages "Section" "events") ".Params.event_start" }}
+  {{ $upcoming := where $all "Params.event_start" "ge" $now }}
 
-    <section class="events-upcoming">
-      <h2>Upcoming events</h2>
-      <div class="events-list">
-        {{ $now := now }}
-    {{ $future := where .Site.RegularPages "Section" "events" }}
-    {{ $future = sort $future ".Params.event_start" }}
-    {{ $count := 0 }}
-    {{ range $future }}
-      {{ if and (.Params.event_start) (gt (.Params.event_start | time) $now) }}
-        {{ $count = add $count 1 }}
-        <article class="event-card">
-          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  {{ $featured := first 1 $upcoming }}
+  {{ if eq (len $featured) 0 }}
+    {{ $featured = first 1 (sort $all ".Params.event_start" "asc") }}
+  {{ end }}
+  {{ with index $featured 0 }}
+    {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+    <section class="events-highlight">
+      <div class="container events-highlight__card">
+        <div class="events-highlight__body">
+          <p class="eyebrow">Next Up</p>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.summary }}</p>
           <p class="event-card-meta">
             {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
             {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
           </p>
-          {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
           <div class="event-card-actions">
             {{ with .Params.registration_url }}
               <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
             {{ end }}
-            <a class="btn btn-outline" href="{{ .Permalink }}">Details</a>
+            <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
           </div>
-        </article>
-      {{ end }}
-    {{ end }}
-    {{ if eq $count 0 }}
-      <p class="event-empty">No upcoming events. Check back soon.</p>
-    {{ end }}
-  </div>
-</section>
+        </div>
+        <figure class="events-highlight__media">
+          <img src="{{ $image }}" alt="{{ printf "Visual for %s" .Title }}">
+        </figure>
+      </div>
+    </section>
+  {{ end }}
 
-    <section class="events-all">
-      <h2>All events</h2>
-      <div class="events-list events-list--grid">
-        {{ range sort (where .Site.RegularPages "Section" "events") ".Params.event_start" "desc" }}
+  {{ if gt (len $upcoming) 1 }}
+  <section class="events-upcoming">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Upcoming Sessions</h2>
+        <p>Reserve your seat for forthcoming SIPEG convenings.</p>
+      </div>
+      <div class="events-list">
+        {{ range after 1 $upcoming | first 4 }}
+          {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
           <article class="event-card">
-            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-            <p class="event-card-meta">
-              {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
-              {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
-            </p>
-            {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+            <div class="event-card__body">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="event-card-meta">
+                {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+                {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+              </p>
+              {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+              <div class="event-card-actions">
+                {{ with .Params.registration_url }}
+                  <a class="btn btn-link" href="{{ . }}" target="_blank" rel="noopener">Register</a>
+                {{ end }}
+                <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
+              </div>
+            </div>
+            <figure class="event-card__thumb">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}">
+            </figure>
           </article>
         {{ end }}
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="events-calendar-wrap">
+    <div class="container">
+      <div class="events-calendar-card">
+        <div class="events-calendar-card__header">
+          <h2>Monthly Calendar</h2>
+          <p>Browse SIPEG events and add them directly to your calendar.</p>
+        </div>
+        <div id="events-calendar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-all">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Archive &amp; Past Sessions</h2>
+        <p>Catch up on previous dialogues and briefings.</p>
+      </div>
+      <div class="events-list events-list--grid">
+        {{ range sort (where .Site.RegularPages "Section" "events") ".Params.event_start" "desc" }}
+          {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+          <article class="event-card event-card--stacked">
+            <figure class="event-card__thumb">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}">
+            </figure>
+            <div class="event-card__body">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="event-card-meta">
+                {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+                {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+              </p>
+              {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+              <a class="btn btn-outline" href="{{ .Permalink }}">Details</a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
 </main>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css">
 <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
 <script>
+  const eventsFeed = '{{ "/events/events.json" | relURL }}';
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('events-calendar');
     if (!calendarEl) return;
 
-    fetch('/events/events.json')
+    fetch(eventsFeed)
       .then(res => res.json())
       .then(events => {
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -79,11 +138,11 @@
             center: 'title',
             right: 'dayGridMonth,timeGridWeek'
           },
-          eventColor: '#C5A15E',
-          eventTextColor: '#410A48',
+          eventColor: '#2F4858',
+          eventTextColor: '#fff',
           eventDisplay: 'block',
-          eventBorderColor: '#C5A15E',
-          eventBackgroundColor: 'rgba(197,161,94,.18)',
+          eventBorderColor: '#2F4858',
+          eventBackgroundColor: 'rgba(47,72,88,.18)',
           events: events.map(function(e) {
             return {
               title: e.title,

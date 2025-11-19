@@ -5,7 +5,7 @@ summary: "Advisory formats, trainings, and collaborations that move insight into
 year: 2024
 topics: ["Advisory", "Training", "Collaboration"]
 categories: ["Advisory, Training & Collaboration"]
-cover: "/images/r-placeholder.jpg"
+cover: "/images/r-placeholder.webp"
 weight: 60
 ---
 This brief outlines advisory, trainings, and collaborative research formats that translate evidence into decisions for boards, executives, and public agencies.

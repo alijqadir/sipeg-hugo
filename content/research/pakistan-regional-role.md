@@ -6,7 +6,7 @@ year: 2024
 topics: ["Security", "China"]
 tags: ["brief"]
 pdf: "/papers/pakistan-regional-role.pdf"
-cover: "/images/r1.jpg"
+cover: "/images/r1.webp"
 abstract: >
   A succinct abstract goes here describing scope, method, and key insights.
 doi: ""

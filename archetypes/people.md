@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 role: "Senior Fellow"
-image: "/images/p1.jpg"
+image: "/images/p1.webp"
 email: "info@sipeg.org"
 ---
 

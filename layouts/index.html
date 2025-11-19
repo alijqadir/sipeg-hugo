@@ -52,8 +52,9 @@
     {{ range . }}
     <section class="section section--light" aria-labelledby="upcoming-webinar">
       <div class="container">
+        {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
         <div class="webinar">
-          <div>
+          <div class="webinar__content">
             <h2 id="upcoming-webinar">Upcoming Webinar</h2>
             <h3>{{ .Title }}</h3>
             <p class="webinar__details">{{ .Params.summary }}</p>
@@ -61,13 +62,18 @@
               {{ with .Params.event_start }}<span><strong>Date:</strong> {{ (time .).Format "02 January 2006" }}</span>{{ end }}
               {{ with .Params.event_start }}<span><strong>Time:</strong> {{ (time .).Format "15:04" }}</span>{{ end }}
             </div>
+            <div class="webinar__actions">
+              {{ with .Params.registration_url }}
+                <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
+              {{ end }}
+              <a class="btn btn-outline" href="{{ .RelPermalink }}">View details</a>
+            </div>
           </div>
-          <div class="webinar__actions">
-            {{ with .Params.registration_url }}
-              <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
-            {{ end }}
-            <a class="btn btn-outline" href="{{ .RelPermalink }}">View details</a>
-          </div>
+          {{ with $image }}
+          <figure class="webinar__media">
+            <img src="{{ . }}" alt="Visual for {{ $.Title }}">
+          </figure>
+          {{ end }}
         </div>
       </div>
     </section>
@@ -75,7 +81,7 @@
   {{ end }}
 
   {{ $programs := first 6 (sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc") }}
-  {{ $iconMap := dict "globe" "globe-2" "chart" "line-chart" "book" "book-open-text" "users" "users" "chip" "cpu" "compass" "compass" }}
+  {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
   <section class="section section--offwhite" aria-labelledby="focus-areas">
     <div class="container">
       <div class="section__intro">
@@ -86,8 +92,8 @@
         {{ range $programs }}
           <a class="focus-item" href="{{ .RelPermalink }}">
             {{ $icon := or (index $iconMap .Params.icon) .Params.icon }}
-            <span class="focus-item__icon">
-              <i data-lucide="{{ $icon }}" aria-hidden="true"></i>
+            <span class="icon-circle focus-item__icon">
+              <i class="ph ph-{{ $icon }}" aria-hidden="true"></i>
             </span>
             <span class="focus-item__title">{{ .Title }}</span>
           </a>
@@ -100,17 +106,26 @@
     <div class="container">
       <div class="section__intro">
         <h2 id="newsletter">Stay Informed</h2>
-        <p>Subscribe to insights, briefings, and event announcements via our Substack digest.</p>
+        <p>Subscribe for new research, event invitations, and editorial dispatches from SIPEG.</p>
       </div>
-  {{ partial "substackFeed.html" . }}
-      
-      <div class="substack-embed">
-        <iframe src="{{ .Site.Params.substack_url }}" height="320" style="border: 1px solid var(--color-softgray);" frameborder="0" scrolling="no" title="Subscribe to SIPEG Substack"></iframe>
+      <div class="newsletter-layout">
+        <div class="newsletter-layout__left">
+          {{ partial "substackFeed.html" . }}
+          <div class="newsletter-embed">
+            <iframe src="{{ .Site.Params.substack_url }}" title="Subscribe to SIPEG Substack" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="newsletter-layout__form">
+          {{ partial "newsletter-form.html" . }}
+        </div>
       </div>
     </div>
   </section>
 
-  {{ $people := first 3 (sort (where .Site.RegularPages "Section" "people") "Params.weight" "asc") }}
+  {{ $people := slice }}
+  {{ with site.GetPage "people/saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/mariam-saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/raza-shahid" }}{{ $people = $people | append . }}{{ end }}
   {{ if $people }}
   <section class="section section--offwhite" aria-labelledby="people-spotlight">
     <div class="container">

@@ -6,7 +6,7 @@ year: {{ now.Year }}
 topics: ["Economy", "Security"]
 tags: ["policy brief"]
 pdf: "/papers/example-paper.pdf"
-cover: "/images/r1.jpg"
+cover: "/images/r1.webp"
 abstract: >
   2–4 sentence abstract summarizing the paper’s thesis and findings.
 doi: ""

@@ -6,7 +6,7 @@ year: 2024
 topics: ["Society", "Governance"]
 tags: ["analysis"]
 pdf: "/papers/identity-governance.pdf"
-cover: "/images/r2.jpg"
+cover: "/images/r2.webp"
 abstract: >
   This study tracks how narratives of nationhood shape governance reforms and citizen trust, drawing on archival and ethnographic evidence.
 doi: ""

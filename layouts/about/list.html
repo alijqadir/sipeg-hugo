@@ -1,0 +1,107 @@
+{{ define "main" }}
+<main class="about-main">
+  <section class="section section--light about-hero">
+    <div class="container about-hero__grid">
+      <div class="about-hero__content">
+        <p class="eyebrow">About SIPEG</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+        {{ with .Params.intro }}<p>{{ . }}</p>{{ end }}
+      </div>
+      {{ with .Params.hero_image }}
+        <figure class="about-hero__media">
+          <img src="{{ . }}" alt="SIPEG leadership and mission imagery">
+        </figure>
+      {{ end }}
+    </div>
+  </section>
+
+  {{ $iconMap := dict "users" "users-three" "layers" "stack-simple" "route" "map-trifold" "badge-check" "certificate" "shield" "shield-check" "sparkles" "sparkle" "user-round-plus" "user-plus" "handshake" "handshake" "globe" "globe-hemisphere-east" }}
+  {{ with .Params.highlights }}
+  <section class="section section--offwhite about-highlights">
+    <div class="container grid grid-3">
+      {{ range . }}
+        <article class="about-highlight-card">
+          {{ $iconName := or (index $iconMap .icon) .icon }}
+          {{ with $iconName }}
+          <span class="icon-circle icon-circle--sm about-highlight-card__icon" aria-hidden="true">
+            <i class="ph ph-{{ . }}"></i>
+          </span>
+          {{ end }}
+          <h3>{{ .title }}</h3>
+          <p>{{ .summary }}</p>
+        </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.gallery }}
+  <section class="section section--light about-gallery">
+    <div class="container about-gallery__grid">
+      {{ range . }}
+        <figure class="about-gallery__item">
+          <img src="{{ .image }}" alt="{{ .title }}">
+          <figcaption>
+            <strong>{{ .title }}</strong>
+            <span>{{ .caption }}</span>
+          </figcaption>
+        </figure>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  {{ with .Params.list_sections }}
+  <section class="section section--offwhite about-lists">
+    <div class="container about-lists__grid">
+      {{ range . }}
+        <article class="about-list-card">
+          <div class="about-list-card__header">
+            {{ $iconName := or (index $iconMap .icon) .icon }}
+            {{ with $iconName }}
+            <span class="icon-circle icon-circle--sm about-list-card__icon" aria-hidden="true">
+              <i class="ph ph-{{ . }}"></i>
+            </span>
+            {{ end }}
+            <h3>{{ .title }}</h3>
+          </div>
+          {{ with .items }}
+          <ul>
+            {{ range . }}
+              <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </article>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="section section--light">
+    <div class="container about-body content">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{ with .Params.cta_panel }}
+  <section class="section section--offwhite about-cta">
+    <div class="container about-cta__inner">
+      <div>
+        <h2>{{ .title }}</h2>
+        <p>{{ .summary }}</p>
+      </div>
+      <div class="about-cta__actions">
+        {{ with .primary }}
+          <a class="btn btn-primary" href="{{ .url }}">{{ .text }}</a>
+        {{ end }}
+        {{ with .secondary }}
+          <a class="btn btn-outline" href="{{ .url }}">{{ .text }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</main>
+{{ end }}

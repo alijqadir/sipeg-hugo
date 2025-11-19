@@ -1,4 +1,10 @@
-<article class="card">
+{{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
+{{ $icon := .Params.icon | default "sparkle" }}
+{{ $icon := or (index $iconMap $icon) $icon }}
+<article class="card card--program">
+  <div class="icon-circle card__icon">
+    <i class="ph ph-{{ $icon }}" aria-hidden="true"></i>
+  </div>
   <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
   {{ with .Params.summary }}
     <p class="card__summary">{{ . }}</p>

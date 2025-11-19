@@ -1,0 +1,18 @@
+<section class="newsletter-card">
+  <h3>Subscribe to SIPEG Dispatch</h3>
+  <p>Monthly insights on Pakistan’s strategic trajectory, upcoming events, and new research—straight to your inbox.</p>
+  <form class="newsletter-form" method="post" data-newsletter-form data-endpoint="{{ .Site.Params.newsletter_endpoint }}">
+    <label>
+      Name
+      <input type="text" name="name" autocomplete="name" placeholder="Your name">
+    </label>
+    <label>
+      Email address
+      <input type="email" name="email" autocomplete="email" required placeholder="you@example.com">
+    </label>
+    <input type="text" name="hp_field" class="honeypot" tabindex="-1" autocomplete="off">
+    <button type="submit" class="btn btn-primary">Subscribe</button>
+    <p class="newsletter-status" data-newsletter-status aria-live="polite"></p>
+  </form>
+  <p class="newsletter-note">We’ll confirm instantly on this page and follow up via email. Subscriptions are managed via Substack/Apps Script.</p>
+</section>

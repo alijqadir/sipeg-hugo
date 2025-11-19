@@ -5,7 +5,7 @@ summary: "AI, cyber, and tech-supply chains assessed through scenarios to inform
 year: 2024
 topics: ["Technology", "AI", "Foresight"]
 categories: ["Technology & Strategic Foresight"]
-cover: "/images/r-placeholder.jpg"
+cover: "/images/r-placeholder.webp"
 weight: 50
 ---
 This scan assesses AI, cyber, and tech-supply-chain risks and opportunities, pairing them with scenarios to guide strategy and resilience planning.

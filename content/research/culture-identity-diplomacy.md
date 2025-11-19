@@ -5,7 +5,7 @@ summary: "Using culture and identity as strategic assets to strengthen diplomacy
 year: 2024
 topics: ["Culture", "Identity", "Diplomacy"]
 categories: ["Culture, Identity & Diplomacy"]
-cover: "/images/r-placeholder.jpg"
+cover: "/images/r-placeholder.webp"
 weight: 40
 ---
 This note explores cultural diplomacy, creative industries, and civic initiatives that extend Pakistan’s influence and social cohesion.

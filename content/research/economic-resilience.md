@@ -6,7 +6,7 @@ year: 2024
 topics: ["Economy", "Resilience"]
 tags: ["policy brief"]
 pdf: "/papers/economic-resilience.pdf"
-cover: "/images/r3.jpg"
+cover: "/images/r3.webp"
 abstract: >
   Policy sequencing to stabilize Pakistan’s economy while accelerating inclusive growth and climate resilience.
 doi: ""

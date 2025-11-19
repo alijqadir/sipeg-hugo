@@ -6,7 +6,7 @@ year: 2023
 topics: ["Climate", "Finance"]
 tags: ["working paper"]
 pdf: "/papers/climate-adaptation-finance.pdf"
-cover: "/images/r2.jpg"
+cover: "/images/r2.webp"
 abstract: >
   Assesses investment models that channel adaptation finance to vulnerable districts through blended public-private structures.
 doi: ""

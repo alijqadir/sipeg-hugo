@@ -15,6 +15,11 @@
       </p>
       {{ with .Params.summary }}<p class="event-summary">{{ . }}</p>{{ end }}
     </header>
+    {{ with .Params.image }}
+    <figure class="event-hero__media">
+      <img src="{{ . }}" alt="{{ $.Title }} visual">
+    </figure>
+    {{ end }}
 
     <section class="event-body content">
       {{ .Content }}
