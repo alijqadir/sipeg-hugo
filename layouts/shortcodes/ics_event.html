@@ -1,0 +1,14 @@
+{{ $file := .Get "file" }}
+{{ $title := .Get "title" | default .Page.Title }}
+{{ $start := .Get "start" }}
+{{ $end := .Get "end" }}
+{{ $tz := .Get "tz" | default "Asia/Karachi" }}
+{{ $location := .Get "location" | default "Online" }}
+{{ $description := .Get "description" | default .Page.Params.summary }}
+{{ if $file }}
+  <a class="btn btn-outline" href="{{ $file | relURL }}">Add to calendar (.ics)</a>
+{{ else if and $start $end }}
+  {{ $ics := printf "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//SIPEG//EN\r\nBEGIN:VEVENT\r\nUID:%s@sipeg.org\r\nDTSTAMP:%s\r\nDTSTART;TZID=%s:%s\r\nDTEND;TZID=%s:%s\r\nSUMMARY:%s\r\nDESCRIPTION:%s\r\nLOCATION:%s\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n" (sha1 $title) (now.Format "20060102T150405Z") $tz $start $tz $end $title $description $location }}
+  {{ $href := printf "data:text/calendar;charset=utf-8,%s" ($ics | urlquery) }}
+  <a class="btn btn-outline" href="{{ $href }}" download="sipeg-event.ics">Add to calendar (.ics)</a>
+{{ end }}

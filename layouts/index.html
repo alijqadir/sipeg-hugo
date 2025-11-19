@@ -1,0 +1,142 @@
+{{ define "main" }}
+  {{ partial "hero.html" . }}
+
+  <section class="section section--light">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Mission</h2>
+        <p>{{ .Site.Params.mission }}</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card__title">Strategic Engagement</h3>
+          <p class="card__summary">We convene scholars, practitioners, and policymakers to interpret Pakistan’s evolving strategic choices across security, economic, and cultural dimensions.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Applied Insight</h3>
+          <p class="card__summary">Our research translates geopolitical analysis into actionable guidance for institutions shaping the region’s future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ $featuredResearch := first 3 (where (where .Site.RegularPages "Section" "research") "Params.featured" true) }}
+  {{ if lt (len $featuredResearch) 3 }}
+    {{ $fallback := first (sub 3 (len $featuredResearch)) (sort (where .Site.RegularPages "Section" "research") "Date" "desc") }}
+    {{ $featuredResearch = append $featuredResearch $fallback }}
+  {{ end }}
+  {{ if $featuredResearch }}
+  <section class="section section--offwhite" aria-labelledby="featured-research">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="featured-research">Featured Research</h2>
+        <p>Analytical spotlights drawn from SIPEG’s latest scholarship.</p>
+      </div>
+      <div class="grid grid-3">
+        {{ range $featuredResearch }}
+          {{ partial "cards/research-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ $eventsAll := sort (where .Site.RegularPages "Section" "events") ".Params.event_start" "asc" }}
+  {{ $future := slice }}
+  {{ range $eventsAll }}
+    {{ if and .Params.event_start (gt (time .Params.event_start) now) }}
+      {{ $future = $future | append . }}
+    {{ end }}
+  {{ end }}
+  {{ with (first 1 $future) }}
+    {{ range . }}
+    <section class="section section--light" aria-labelledby="upcoming-webinar">
+      <div class="container">
+        <div class="webinar">
+          <div>
+            <h2 id="upcoming-webinar">Upcoming Webinar</h2>
+            <h3>{{ .Title }}</h3>
+            <p class="webinar__details">{{ .Params.summary }}</p>
+            <div class="meta-block">
+              {{ with .Params.event_start }}<span><strong>Date:</strong> {{ (time .).Format "02 January 2006" }}</span>{{ end }}
+              {{ with .Params.event_start }}<span><strong>Time:</strong> {{ (time .).Format "15:04" }}</span>{{ end }}
+            </div>
+          </div>
+          <div class="webinar__actions">
+            {{ with .Params.registration_url }}
+              <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
+            {{ end }}
+            <a class="btn btn-outline" href="{{ .RelPermalink }}">View details</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    {{ end }}
+  {{ end }}
+
+  {{ $programs := first 6 (sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc") }}
+  {{ $iconMap := dict "globe" "globe-2" "chart" "line-chart" "book" "book-open-text" "users" "users" "chip" "cpu" "compass" "compass" }}
+  <section class="section section--offwhite" aria-labelledby="focus-areas">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="focus-areas">Focus Areas</h2>
+        <p>Core program areas mapping Pakistan’s strategic, economic, and societal trajectories.</p>
+      </div>
+      <div class="focus-grid">
+        {{ range $programs }}
+          <a class="focus-item" href="{{ .RelPermalink }}">
+            {{ $icon := or (index $iconMap .Params.icon) .Params.icon }}
+            <span class="focus-item__icon">
+              <i data-lucide="{{ $icon }}" aria-hidden="true"></i>
+            </span>
+            <span class="focus-item__title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" aria-labelledby="newsletter">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="newsletter">Stay Informed</h2>
+        <p>Subscribe to insights, briefings, and event announcements via our Substack digest.</p>
+      </div>
+  {{ partial "substackFeed.html" . }}
+      
+      <div class="substack-embed">
+        <iframe src="{{ .Site.Params.substack_url }}" height="320" style="border: 1px solid var(--color-softgray);" frameborder="0" scrolling="no" title="Subscribe to SIPEG Substack"></iframe>
+      </div>
+    </div>
+  </section>
+
+  {{ $people := first 3 (sort (where .Site.RegularPages "Section" "people") "Params.weight" "asc") }}
+  {{ if $people }}
+  <section class="section section--offwhite" aria-labelledby="people-spotlight">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="people-spotlight">People Spotlight</h2>
+        <p>Meet the scholars leading SIPEG’s research and engagement platforms.</p>
+      </div>
+      <div class="people-spotlight">
+        {{ range $people }}
+          {{ partial "cards/person-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="section section--light" aria-labelledby="join-us">
+    <div class="container">
+      <div class="card">
+        <h2 id="join-us">Partner with SIPEG</h2>
+        <p class="card__summary">Collaborate with SIPEG to advance research, convene strategic dialogues, and deepen understanding of Pakistan’s evolving role in global affairs.</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="{{ "/contact/" | relURL }}">Contact Our Team</a>
+          <a class="btn btn-outline" href="{{ "/events/" | relURL }}">View Upcoming Events</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

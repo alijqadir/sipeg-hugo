@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article class="wrap research-single">
+  <header class="research-single__header">
+    <h1 class="h1">{{ .Title }}</h1>
+    <p class="research-single__meta">
+      {{ with .Params.authors }}{{ delimit . ", " }}{{ end }} · {{ .Params.year }}{{ with .Params.topics }} · {{ delimit . ", " }}{{ end }}
+    </p>
+  </header>
+
+  {{ with .Params.cover }}
+    <figure class="research-single__hero">
+      <img src="{{ . }}" alt="">
+    </figure>
+  {{ end }}
+
+  {{ with .Params.abstract }}
+    <section class="research-single__abstract">
+      <h2>Abstract</h2>
+      <p>{{ . }}</p>
+    </section>
+  {{ end }}
+
+  <div class="research-single__body content">
+    {{ .Content }}
+  </div>
+
+  <div class="research-single__actions">
+    {{ with .Params.pdf }}
+      <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Download PDF</a>
+    {{ end }}
+    {{ with .Params.doi }}
+      {{ if ne . "" }}
+        <a class="btn btn-outline" href="{{ . }}" target="_blank" rel="noopener">View DOI</a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ with .Params.pdf }}
+    <details class="research-single__preview">
+      <summary>Preview PDF</summary>
+      <object data="{{ . }}" type="application/pdf" width="100%" height="720">
+        <p>Your browser can’t display PDFs. <a href="{{ . }}" target="_blank" rel="noopener">Download the PDF</a>.</p>
+      </object>
+    </details>
+  {{ end }}
+  {{ partial "comments.html" . }}
+</article>
+{{ end }}

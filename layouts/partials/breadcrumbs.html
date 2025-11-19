@@ -1,0 +1,15 @@
+{{ $current := . }}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="{{ "/" | relURL }}">Home</a></li>
+    {{ if .IsHome }}{{ end }}
+    {{ $sections := slice }}
+    {{ if .IsSection }}{{ $sections = .Sections }}{{ end }}
+    {{ if .Section }}
+      <li><a href="{{ (printf "/%s/" .Section) | relURL }}">{{ .Section | title }}</a></li>
+    {{ end }}
+    {{ if and (not .IsSection) (not .IsHome) }}
+      <li aria-current="page">{{ .Title }}</li>
+    {{ end }}
+  </ol>
+</nav>

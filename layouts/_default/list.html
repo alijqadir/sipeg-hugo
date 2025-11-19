@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="section section--offwhite">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="lead">{{ . }}</div>
+      {{ end }}
+    </header>
+    <div class="grid grid-3">
+      {{ range .Paginator.Pages }}
+        {{ $section := .Section }}
+        {{ if eq $section "programs" }}
+          {{ partial "cards/program-card.html" . }}
+        {{ else if eq $section "people" }}
+          {{ partial "cards/person-card.html" . }}
+        {{ else }}
+          {{ partial "cards/research-card.html" . }}
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ partial "pagination.html" . }}
+  </div>
+</section>
+{{ end }}

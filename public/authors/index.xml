@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>//localhost:1313/authors/</link>
+    <description>Recent content in Authors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dr Saeed Shafqat</title>
+      <link>//localhost:1313/authors/dr-saeed-shafqat/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/dr-saeed-shafqat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Fellow A</title>
+      <link>//localhost:1313/authors/research-fellow-a/</link>
+      <pubDate>Mon, 18 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/research-fellow-a/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fellow Sara Qureshi</title>
+      <link>//localhost:1313/authors/fellow-sara-qureshi/</link>
+      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/fellow-sara-qureshi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Omar Siddiqui</title>
+      <link>//localhost:1313/authors/omar-siddiqui/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/omar-siddiqui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Research Fellow B</title>
+      <link>//localhost:1313/authors/research-fellow-b/</link>
+      <pubDate>Tue, 05 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/research-fellow-b/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sara Qureshi</title>
+      <link>//localhost:1313/authors/sara-qureshi/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/authors/sara-qureshi/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

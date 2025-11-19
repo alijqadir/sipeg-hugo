@@ -1,0 +1,47 @@
+{{ $authors := .Params.authors | default (slice) }}
+{{ $authorsLower := apply $authors "lower" "." }}
+{{ $authorsAttr := delimit $authorsLower "|" }}
+{{ $primaryAuthor := "" }}
+{{ with $authors }}
+  {{ $primaryAuthor = index . 0 }}
+{{ end }}
+{{ $topics := .Params.topics | default (slice) }}
+{{ $topicsLower := apply $topics "lower" "." }}
+{{ $topicsAttr := delimit $topicsLower "|" }}
+{{ $primaryTopic := "" }}
+{{ with $topics }}
+  {{ $primaryTopic = index . 0 }}
+{{ end }}
+{{ $abstractAttr := (.Params.abstract | default "" | plainify | lower) }}
+<article class="card research-card"
+  data-year="{{ .Params.year }}"
+  data-title="{{ .Title | lower }}"
+  data-author="{{ $primaryAuthor | lower }}"
+  data-topic="{{ $primaryTopic | lower }}"
+  data-authors="{{ $authorsAttr }}"
+  data-topics="{{ $topicsAttr }}"
+  data-abstract="{{ $abstractAttr }}">
+  <a class="research-card__image" href="{{ .RelPermalink }}">
+    <img src="{{ with .Params.cover }}{{ . }}{{ else }}/images/r-placeholder.jpg{{ end }}" alt="{{ .Title }} cover">
+  </a>
+  <div class="research-card__body">
+    <h3 class="research-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p class="research-card__meta">
+      {{ with .Params.authors }}{{ delimit . ", " }}{{ end }} · {{ .Params.year }}{{ with .Params.topics }} · {{ delimit . ", " }}{{ end }}
+    </p>
+    {{ with .Params.abstract }}<p class="research-card__abstract">{{ . | plainify | truncate 180 }}</p>{{ end }}
+    <div class="research-card__actions">
+      {{ with .Params.pdf }}
+        <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">PDF</a>
+      {{ end }}
+      <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
+    </div>
+  </div>
+  <span class="pf" data-pagefind-filter="year:{{ .Params.year }}"></span>
+  {{ range .Params.topics }}
+    <span class="pf" data-pagefind-filter="topic:{{ . }}"></span>
+  {{ end }}
+  {{ range .Params.authors }}
+    <span class="pf" data-pagefind-filter="author:{{ . }}"></span>
+  {{ end }}
+</article>

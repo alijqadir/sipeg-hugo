@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+    {{ $styles := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint }}
+    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}">
+    {{ block "head_extra" . }}{{ end }}
+  </head>
+  <body>
+    {{ partial "icons-sprite.html" . }}
+    {{ partial "header.html" . }}
+    <main id="main-content">
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{ partial "footer.html" . }}
+    {{ $script := resources.Get "js/site.js" | resources.Minify | resources.Fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        if (window.lucide && lucide.createIcons) {
+          lucide.createIcons({
+            attrs: {
+              stroke: 'currentColor',
+              'stroke-width': 1.6,
+              width: 22,
+              height: 22
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

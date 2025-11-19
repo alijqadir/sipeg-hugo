@@ -1,0 +1,252 @@
+<div class="aj-substack-feed">
+  <div class="substack-header-row">
+    <h2 class="feed-heading">From the SIPEG Substack</h2>
+    <a
+      class="substack-view-all"
+      href="https://alijanqadir.substack.com"
+      target="_blank"
+      rel="noopener"
+    >
+      View all on Substack →
+    </a>
+  </div>
+  <div id="aj-substack-feed-grid" class="feed-grid"></div>
+  <div id="aj-substack-feed-error" class="feed-error" style="display: none">
+    Unable to load the Substack feed right now. Please try again later.
+  </div>
+</div>
+
+<style>
+  .aj-substack-feed {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.4rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .substack-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .feed-heading {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  .substack-view-all {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-secondary);
+    text-decoration: none;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .substack-view-all:hover {
+    text-decoration: underline;
+  }
+
+  .feed-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.05rem;
+  }
+
+  .aj-substack-card {
+    background: var(--color-white);
+    border-radius: 10px;
+    border: 1px solid var(--color-softgray);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aj-substack-card-image {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+
+  .aj-substack-card-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .aj-substack-card-inner {
+    padding: 0.7rem 0.85rem 0.85rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.25rem;
+  }
+
+  .aj-substack-meta {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: rgba(47, 72, 88, 0.75);
+  }
+
+  .aj-substack-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+  }
+
+  .aj-substack-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .aj-substack-title a:hover {
+    text-decoration: underline;
+  }
+
+  .aj-substack-excerpt {
+    font-size: 0.82rem;
+    color: var(--color-charcoal);
+    line-height: 1.4;
+    margin: 0.05rem 0 0.35rem;
+    flex: 1;
+  }
+
+  .aj-substack-readmore {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    border: none;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+  .aj-substack-readmore:hover {
+    filter: brightness(0.93);
+  }
+
+  .feed-error {
+    margin-top: 1rem;
+    color: #fca5a5;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 640px) {
+    .aj-substack-feed {
+      padding-inline: 1rem;
+    }
+    .substack-header-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    const ENDPOINT = "https://sipeg.org/substack-feed.php"; // already working
+
+    const container = document.getElementById("aj-substack-feed-grid");
+    const errorBox = document.getElementById("aj-substack-feed-error");
+
+    if (!container) return;
+
+    fetch(ENDPOINT)
+      .then((res) => res.json())
+      .then((data) => {
+        if (!data || !Array.isArray(data.items) || data.items.length === 0) {
+          errorBox.style.display = "block";
+          return;
+        }
+
+        data.items.forEach((item) => {
+          const title = item.title || "Untitled";
+          const link = item.link || "#";
+          const excerpt = item.excerpt || "";
+          const dateRaw = item.date || "";
+          const image = item.image || "";
+
+          let dateStr = "";
+          if (dateRaw) {
+            const d = new Date(dateRaw);
+            if (!isNaN(d.valueOf())) {
+              dateStr = d.toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "short",
+                day: "numeric",
+              });
+            }
+          }
+
+          const card = document.createElement("article");
+          card.className = "aj-substack-card";
+
+          // Image section (only if we have an image URL)
+          if (image) {
+            const imgWrap = document.createElement("div");
+            imgWrap.className = "aj-substack-card-image";
+            imgWrap.innerHTML = `
+              <a href="${link}" target="_blank" rel="noopener" aria-label="${title}">
+                <img src="${image}" alt="">
+              </a>
+            `;
+            card.appendChild(imgWrap);
+          }
+
+          const inner = document.createElement("div");
+          inner.className = "aj-substack-card-inner";
+
+          const meta = document.createElement("div");
+          meta.className = "aj-substack-meta";
+          meta.textContent = dateStr || "";
+          inner.appendChild(meta);
+
+          const h3 = document.createElement("h3");
+          h3.className = "aj-substack-title";
+          h3.innerHTML = `<a href="${link}" target="_blank" rel="noopener">${title}</a>`;
+          inner.appendChild(h3);
+
+          if (excerpt) {
+            const p = document.createElement("p");
+            p.className = "aj-substack-excerpt";
+            p.textContent = excerpt;
+            inner.appendChild(p);
+          }
+
+          const readmore = document.createElement("a");
+          readmore.className = "aj-substack-readmore";
+          readmore.href = link;
+          readmore.target = "_blank";
+          readmore.rel = "noopener";
+          readmore.textContent = "Read on Substack →";
+          inner.appendChild(readmore);
+
+          card.appendChild(inner);
+          container.appendChild(card);
+        });
+      })
+      .catch((err) => {
+        console.error("Substack feed error:", err);
+        errorBox.style.display = "block";
+      });
+  })();
+</script>

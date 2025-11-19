@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Geopolitics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>//localhost:1313/topics/geopolitics/</link>
+    <description>Recent content in Geopolitics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/topics/geopolitics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Geopolitics &amp; Regional Security</title>
+      <link>//localhost:1313/programs/geopolitics-regional-security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programs/geopolitics-regional-security/</guid>
+      <description>Mapping power shifts, conflict/cooperation patterns, and Pakistan’s security calculus across its neighborhood and great-power competition.</description>
+    </item>
+    <item>
+      <title>Pakistan’s Options in Emerging Geopolitics</title>
+      <link>//localhost:1313/research/pakistans-options-in-emerging-geopolitics/</link>
+      <pubDate>Thu, 10 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/research/pakistans-options-in-emerging-geopolitics/</guid>
+      <description>A decision memo on how Pakistan can balance great-power competition while securing regional stability.</description>
+    </item>
+    <item>
+      <title>Emerging Geopolitics: Meaning, Why It Matters, and Key Implications</title>
+      <link>//localhost:1313/blog/emerging-geopolitics/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/emerging-geopolitics/</guid>
+      <description>A concise guide to the forces reshaping state behavior, markets, and societies—from technology rivalry and climate to demographics and security.</description>
+    </item>
+  </channel>
+</rss>

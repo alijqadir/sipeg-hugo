@@ -1,0 +1,7 @@
+<article class="card">
+  <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+  {{ with .Params.summary }}
+    <p class="card__summary">{{ . }}</p>
+  {{ end }}
+  <a class="card__link" href="{{ .RelPermalink }}">Learn more</a>
+</article>

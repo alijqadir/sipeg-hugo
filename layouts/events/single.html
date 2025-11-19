@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{ $start := .Params.event_start | time | dateFormat "20060102T150405Z" }}
+{{ $end := .Params.event_end | default .Params.event_start | time | dateFormat "20060102T150405Z" }}
+{{ $text := .Title | urlquery }}
+{{ $details := (.Params.summary | default .Summary) | urlquery }}
+{{ $location := .Params.location | urlquery }}
+{{ $gcal := printf "https://www.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&details=%s&location=%s&sf=true&output=xml" $text $start $end $details $location }}
+<main class="event-single">
+  <div class="event-single__wrapper">
+    <header class="event-header">
+      <h1>{{ .Title }}</h1>
+      <p class="event-meta">
+        {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+        {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+      </p>
+      {{ with .Params.summary }}<p class="event-summary">{{ . }}</p>{{ end }}
+    </header>
+
+    <section class="event-body content">
+      {{ .Content }}
+    </section>
+
+    <section class="event-actions">
+      <a class="btn btn-primary" href="{{ $gcal }}" target="_blank" rel="noopener">Add to Google Calendar</a>
+      <a class="btn btn-outline" href="{{ .RelPermalink }}event.ics">Download .ics</a>
+      {{ with .Params.registration_url }}
+        <a class="btn btn-navy" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
+      {{ end }}
+    </section>
+
+    {{ with .Params.registration_endpoint }}
+    <section class="event-register">
+      <h3>Request an invite</h3>
+      <p class="event-register__note">Enter your details to receive an official calendar invite.</p>
+      <form class="event-register__form" data-event-form action="{{ . }}" method="post">
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <input type="text" name="hp_field" class="event-register__hp" autocomplete="off">
+        <input type="hidden" name="event_title" value="{{ $.Title }}">
+        <input type="hidden" name="event_url" value="{{ $.Permalink }}">
+        <input type="hidden" name="event_start" value="{{ $.Params.event_start }}">
+        <input type="hidden" name="event_end" value="{{ $.Params.event_end }}">
+        <input type="hidden" name="event_location" value="{{ $.Params.location }}">
+        <input type="hidden" name="gcal_calendar_id" value="{{ $.Params.gcal_calendar_id }}">
+        <input type="hidden" name="gcal_event_id" value="{{ $.Params.gcal_event_id }}">
+        <button class="btn btn-primary" type="submit">Send me an invite</button>
+        <div class="event-register__status" data-event-status></div>
+      </form>
+    </section>
+    {{ end }}
+  </div>
+</main>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('[data-event-form]');
+    if (!form) return;
+    const status = document.querySelector('[data-event-status]');
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const hp = form.querySelector('.event-register__hp');
+      if (hp && hp.value) return;
+      status.textContent = 'Sending...';
+      const data = new FormData(form);
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: data,
+        });
+        const text = await res.text();
+        if (!res.ok || text.toLowerCase().includes('error')) {
+          throw new Error(text || 'Failed to send');
+        }
+        status.textContent = 'Invite sent! Check your email.';
+        form.reset();
+      } catch (err) {
+        status.textContent = 'Unable to send invite right now.';
+        console.error(err);
+      }
+    });
+  });
+</script>
+{{ end }}

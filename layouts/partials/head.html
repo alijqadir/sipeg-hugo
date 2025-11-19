@@ -1,0 +1,21 @@
+{{- $site := .Site }}
+{{- $title := cond .IsHome $site.Title (printf "%s | %s" (.Title | default $site.Title) $site.Title) }}
+{{- $description := .Params.summary | default .Params.description | default $site.Params.mission }}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $description }}">
+<link rel="icon" type="image/png" href="{{ "/images/Asset-2.webp" | relURL }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- with .Params.featured_image -}}
+<meta property="og:image" content="{{ . | absURL }}">
+{{- else -}}
+<meta property="og:image" content="{{ "/images/hero.jpg" | absURL }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

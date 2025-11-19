@@ -1,0 +1,14 @@
+[
+{{- $events := where .Site.RegularPages "Section" "events" -}}
+{{- range $index, $e := $events -}}
+  {{- if $index }},{{ end }}
+  {
+    "title": {{ $e.Title | jsonify }},
+    "start": {{ $e.Params.event_start | default $e.Date | time | dateFormat "2006-01-02T15:04:05-07:00" | jsonify }},
+    "end":   {{ $e.Params.event_end | default $e.Params.event_start | time | dateFormat "2006-01-02T15:04:05-07:00" | jsonify }},
+    "url":   {{ $e.Permalink | jsonify }},
+    "location": {{ $e.Params.location | default "" | jsonify }},
+    "summary": {{ $e.Params.summary | default "" | jsonify }}
+  }
+{{- end -}}
+]

@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SIPEG//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:{{ .Permalink }}
+DTSTAMP:{{ now.UTC | dateFormat "20060102T150405Z" }}
+DTSTART:{{ .Params.event_start | time | dateFormat "20060102T150405Z" }}
+DTEND:{{ .Params.event_end | default .Params.event_start | time | dateFormat "20060102T150405Z" }}
+SUMMARY:{{ .Title | plainify }}
+DESCRIPTION:{{ .Params.summary | default .Summary | plainify }}
+LOCATION:{{ .Params.location | plainify }}
+URL:{{ .Permalink }}
+END:VEVENT
+END:VCALENDAR

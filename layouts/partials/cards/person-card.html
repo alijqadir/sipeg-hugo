@@ -1,0 +1,19 @@
+<article class="person-card">
+  {{ with .Params.image }}
+    <div class="person-card__image">
+      <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}">
+    </div>
+  {{ end }}
+  <div class="person-card__body">
+    <span class="person-card__role">{{ .Params.role }}</span>
+    <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.summary }}
+      <p class="person-card__bio">{{ . }}</p>
+    {{ else }}
+      <p class="person-card__bio">{{ .Summary }}</p>
+    {{ end }}
+    {{ with .Params.email }}
+      <a class="card__link" href="mailto:{{ . }}">Email {{ $.Title }}</a>
+    {{ end }}
+  </div>
+</article>

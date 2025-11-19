@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technology on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>//localhost:1313/topics/technology/</link>
+    <description>Recent content in Technology on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/topics/technology/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technology &amp; Strategic Foresight</title>
+      <link>//localhost:1313/programs/technology-strategic-foresight/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programs/technology-strategic-foresight/</guid>
+      <description>Technology rivalry, AI, and strategic foresight shaping Pakistan’s economic and security choices.</description>
+    </item>
+    <item>
+      <title>Technology &amp; Strategic Foresight Scan</title>
+      <link>//localhost:1313/research/technology-strategic-foresight-scan/</link>
+      <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/research/technology-strategic-foresight-scan/</guid>
+      <description>AI, cyber, and tech-supply chains assessed through scenarios to inform national strategy.</description>
+    </item>
+    <item>
+      <title>Emerging Geopolitics: Meaning, Why It Matters, and Key Implications</title>
+      <link>//localhost:1313/blog/emerging-geopolitics/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/blog/emerging-geopolitics/</guid>
+      <description>A concise guide to the forces reshaping state behavior, markets, and societies—from technology rivalry and climate to demographics and security.</description>
+    </item>
+    <item>
+      <title>Digital Diplomacy Strategies for Regional Influence</title>
+      <link>//localhost:1313/research/digital-diplomacy-strategies-for-regional-influence/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/research/digital-diplomacy-strategies-for-regional-influence/</guid>
+      <description>&lt;p&gt;The paper maps emerging diplomatic playbooks leveraging social platforms, cultural content, and data-driven targeting to reach global audiences. It highlights institutional reforms required to sustain agile communication strategies.&lt;/p&gt;&#xA;&lt;p&gt;Recommendations include strengthening cross-ministry coordination, investing in media literacy, and partnering with diaspora creators to scale trusted narratives.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

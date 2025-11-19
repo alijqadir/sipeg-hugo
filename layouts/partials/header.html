@@ -1,0 +1,29 @@
+<header class="navbar" role="banner">
+  <div class="container navbar__inner">
+    <a class="navbar__logo" href="{{ "/" | relURL }}">
+      <img src="{{ "/images/Asset-2.webp" | relURL }}" alt="SIPEG logo" width="64" height="64" loading="lazy">
+    </a>
+    <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+      <span class="navbar__bars" aria-hidden="true" data-hamburger>
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+      <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav aria-label="Primary" role="navigation">
+      {{ $page := . }}
+      {{ $section := or (and $page $page.Section) "" }}
+      {{ $rel := or (and $page $page.RelPermalink) "" }}
+      <ul class="navbar__menu" id="primary-navigation" data-nav-menu aria-hidden="false">
+        {{ range .Site.Menus.main }}
+          {{ $menuURL := .URL | relLangURL }}
+          {{ $isCurrent := or (and $rel (eq $menuURL $rel)) (and $section (eq .Identifier $section)) }}
+          <li>
+            <a href="{{ $menuURL }}"{{ if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

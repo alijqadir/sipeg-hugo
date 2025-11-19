@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <article>
+      <header class="section__intro">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+      </header>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </article>
+
+    {{ $topics := .Params.topics | default (slice) }}
+    {{ $cats := .Params.categories | default (slice) }}
+    {{ $related := where .Site.RegularPages "Section" "research" }}
+    {{ if gt (len $cats) 0 }}
+      {{ $related = where $related "Params.categories" "intersect" $cats }}
+    {{ else if gt (len $topics) 0 }}
+      {{ $related = where $related "Params.topics" "intersect" $topics }}
+    {{ end }}
+    {{ $related = first 6 (sort $related "Date" "desc") }}
+    {{ if gt (len $related) 0 }}
+      <aside aria-label="Related research" style="margin-top:3rem;">
+        <h2>Explore Related Research</h2>
+        <div class="grid grid-3">
+          {{ range $related }}
+            {{ partial "cards/research-card.html" . }}
+          {{ end }}
+        </div>
+      </aside>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

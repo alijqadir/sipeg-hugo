@@ -1,0 +1,103 @@
+{{ define "main" }}
+<main class="events-main">
+  <div class="container">
+    <section class="events-hero">
+      <h1>Events &amp; Briefings</h1>
+      <p>Upcoming webinars, briefings, and public events hosted by SIPEG.</p>
+    </section>
+
+    <section class="events-calendar-section">
+      <div id="events-calendar"></div>
+    </section>
+
+    <section class="events-upcoming">
+      <h2>Upcoming events</h2>
+      <div class="events-list">
+        {{ $now := now }}
+    {{ $future := where .Site.RegularPages "Section" "events" }}
+    {{ $future = sort $future ".Params.event_start" }}
+    {{ $count := 0 }}
+    {{ range $future }}
+      {{ if and (.Params.event_start) (gt (.Params.event_start | time) $now) }}
+        {{ $count = add $count 1 }}
+        <article class="event-card">
+          <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="event-card-meta">
+            {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+            {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+          </p>
+          {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+          <div class="event-card-actions">
+            {{ with .Params.registration_url }}
+              <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
+            {{ end }}
+            <a class="btn btn-outline" href="{{ .Permalink }}">Details</a>
+          </div>
+        </article>
+      {{ end }}
+    {{ end }}
+    {{ if eq $count 0 }}
+      <p class="event-empty">No upcoming events. Check back soon.</p>
+    {{ end }}
+  </div>
+</section>
+
+    <section class="events-all">
+      <h2>All events</h2>
+      <div class="events-list events-list--grid">
+        {{ range sort (where .Site.RegularPages "Section" "events") ".Params.event_start" "desc" }}
+          <article class="event-card">
+            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            <p class="event-card-meta">
+              {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+              {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+            </p>
+            {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+          </article>
+        {{ end }}
+      </div>
+    </section>
+  </div>
+</main>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('events-calendar');
+    if (!calendarEl) return;
+
+    fetch('/events/events.json')
+      .then(res => res.json())
+      .then(events => {
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          height: 520,
+          firstDay: 1,
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek'
+          },
+          eventColor: '#C5A15E',
+          eventTextColor: '#410A48',
+          eventDisplay: 'block',
+          eventBorderColor: '#C5A15E',
+          eventBackgroundColor: 'rgba(197,161,94,.18)',
+          events: events.map(function(e) {
+            return {
+              title: e.title,
+              start: e.start,
+              end: e.end,
+              url: e.url
+            };
+          })
+        });
+        calendar.render();
+      })
+      .catch(err => {
+        console.error('Events calendar error:', err);
+      });
+  });
+</script>
+{{ end }}

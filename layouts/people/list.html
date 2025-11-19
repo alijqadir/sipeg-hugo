@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">SIPEG’s fellows, visiting scholars, and advisors advancing strategic insight.</p>
+      {{ with .Content }}{{ . }}{{ end }}
+    </header>
+    <div class="people-spotlight">
+      {{ range .Pages.ByWeight }}
+        {{ partial "cards/person-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

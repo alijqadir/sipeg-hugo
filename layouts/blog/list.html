@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="section section--offwhite">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="lead">{{ . }}</div>
+      {{ end }}
+    </header>
+    {{ $p := .Paginate .Pages }}
+    <div class="grid grid-3">
+      {{ range $p.Pages }}
+        {{ partial "cards/research-card.html" . }}
+      {{ end }}
+    </div>
+    {{ partial "pagination.html" $p }}
+  </div>
+</section>
+{{ end }}

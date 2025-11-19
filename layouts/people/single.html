@@ -1,0 +1,18 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <article>
+      <header class="section__intro">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.role }}<p class="lead">{{ . }}</p>{{ end }}
+        {{ if .Params.email }}
+          <p><a class="btn btn-outline" href="mailto:{{ .Params.email }}">Email {{ .Title }}</a></p>
+        {{ end }}
+      </header>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </article>
+  </div>
+</section>
+{{ end }}
