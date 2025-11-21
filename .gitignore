@@ -1,0 +1,5 @@
+node_modules/
+.tools/
+admin/
+tina/__generated__/
+.tina/__generated__/

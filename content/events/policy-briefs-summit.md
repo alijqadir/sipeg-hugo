@@ -7,9 +7,10 @@ location: "Islamabad (Hybrid)"
 summary: "A summit to workshop policy briefs on trade, investment, and economic resilience for 2025."
 tags: ["summit", "economic-policy", "trade"]
 registration_url: "https://example.com/policy-briefs-summit"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "policy-briefs-summit-2025"
+zoom_meeting_id: "87097759767"
 image: "/images/r3.webp"
 draft: false
 ---

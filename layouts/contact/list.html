@@ -34,8 +34,13 @@
       <button type="submit" class="btn btn-primary">Submit message</button>
       <p class="contact-form__status" data-contact-status aria-live="polite"></p>
     </form>
+    <div class="contact-form__success" data-contact-success hidden tabindex="-1">
+      <h3>Thanks for reaching out</h3>
+      <p>We received your message and logged it to our secure queue. Expect a response from SIPEG within two business days.</p>
+      <a class="btn btn-outline" href="{{ "/" | relURL }}">Back to homepage</a>
+    </div>
     <p class="contact-form__note">
-      We’ll confirm instantly on this page, then your details will be logged to our Google Sheet (via your Apps Script endpoint in <code>config.toml</code>). If you don’t see a confirmation, please email <a href="mailto:info@sipeg.org">info@sipeg.org</a>.
+      After you see the confirmation, we archive your message in a secure on-server CSV and sync it to our Google Sheet workflow. If you don’t see a confirmation, please email <a href="mailto:info@sipeg.org">info@sipeg.org</a>.
     </p>
     {{ with .Content }}
     <div class="content" style="margin-top:2.5rem;">

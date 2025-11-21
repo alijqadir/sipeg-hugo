@@ -14,5 +14,10 @@
     <button type="submit" class="btn btn-primary">Subscribe</button>
     <p class="newsletter-status" data-newsletter-status aria-live="polite"></p>
   </form>
+  <div class="newsletter-success" data-newsletter-success hidden tabindex="-1">
+    <h4>Welcome to SIPEG Dispatch</h4>
+    <p>You’re now queued for the next issue. We just logged your subscription, and our Google Sheet + Substack/Mailchimp sync runs right afterward.</p>
+    <a class="btn btn-outline" href="{{ "/blog/" | relURL }}">Browse recent analysis</a>
+  </div>
   <p class="newsletter-note">We’ll confirm instantly on this page and follow up via email. Subscriptions are managed via Substack/Apps Script.</p>
 </section>

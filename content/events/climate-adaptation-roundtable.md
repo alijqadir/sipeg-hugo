@@ -7,11 +7,12 @@ location: "Online (Teams)"
 summary: "A roundtable on financing frameworks for climate adaptation and urban resilience in Pakistan."
 tags: ["roundtable", "climate", "finance"]
 registration_url: "https://example.com/climate-adaptation-roundtable"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "climate-adaptation-roundtable-2025"
+zoom_meeting_id: "87097759767"
 image: "/images/r2.webp"
 draft: false
---- 
+---
 
 This session convenes finance, urban planning, and climate experts to surface adaptation funding models and policy enablers.

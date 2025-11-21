@@ -7,9 +7,10 @@ location: "Lahore & Online (Hybrid)"
 summary: "Scenario-based briefing on Pakistan’s political and regulatory risk landscape for 2025."
 tags: ["briefing", "political-risk", "policy"]
 registration_url: "https://example.com/political-risk-2025"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "political-risk-outlook-2025"
+zoom_meeting_id: "87097759767"
 image: "/images/r1.webp"
 draft: false
 ---

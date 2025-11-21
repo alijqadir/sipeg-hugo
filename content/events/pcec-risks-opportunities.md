@@ -7,9 +7,10 @@ location: "Online (Zoom)"
 summary: "A SIPEG webinar unpacking the Pakistan-China Energy Corridor and its regional ramifications."
 tags: ["webinar", "energy", "cpec"]
 registration_url: "https://zoom.us/your-registration-link"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "pcec-risks-2025"
+zoom_meeting_id: "87097759767"
 image: "/images/p3.webp"
 ---
 

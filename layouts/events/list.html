@@ -8,15 +8,9 @@
     </div>
   </header>
 
-  {{ $now := now }}
-  {{ $all := sort (where .Site.RegularPages "Section" "events") ".Params.event_start" }}
-  {{ $upcoming := where $all "Params.event_start" "ge" $now }}
-
-  {{ $featured := first 1 $upcoming }}
-  {{ if eq (len $featured) 0 }}
-    {{ $featured = first 1 (sort $all ".Params.event_start" "asc") }}
-  {{ end }}
-  {{ with index $featured 0 }}
+  {{ $eventsData := partial "events/next-data.html" . }}
+  {{ with $eventsData.next }}
+    {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
     {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
     <section class="events-highlight">
       <div class="container events-highlight__card">
@@ -29,8 +23,10 @@
             {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
           </p>
           <div class="event-card-actions">
-            {{ with .Params.registration_url }}
-              <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">Join / Register</a>
+            {{ if $hasForm }}
+              <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Join / Register</a>
+            {{ else if .Params.registration_url }}
+              <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
             {{ end }}
             <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
           </div>
@@ -42,7 +38,8 @@
     </section>
   {{ end }}
 
-  {{ if gt (len $upcoming) 1 }}
+  {{ $future := $eventsData.future }}
+  {{ if gt (len $future) 1 }}
   <section class="events-upcoming">
     <div class="container">
       <div class="section__intro">
@@ -50,7 +47,8 @@
         <p>Reserve your seat for forthcoming SIPEG convenings.</p>
       </div>
       <div class="events-list">
-        {{ range after 1 $upcoming | first 4 }}
+        {{ range (after 1 $future) | first 4 }}
+          {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
           {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
           <article class="event-card">
             <div class="event-card__body">
@@ -61,8 +59,10 @@
               </p>
               {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
               <div class="event-card-actions">
-                {{ with .Params.registration_url }}
-                  <a class="btn btn-link" href="{{ . }}" target="_blank" rel="noopener">Register</a>
+                {{ if $hasForm }}
+                  <a class="btn btn-link" href="{{ .RelPermalink }}#event-register">Register</a>
+                {{ else if .Params.registration_url }}
+                  <a class="btn btn-link" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Register</a>
                 {{ end }}
                 <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
               </div>

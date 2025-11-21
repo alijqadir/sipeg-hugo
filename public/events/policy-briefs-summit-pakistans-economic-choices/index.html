@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     
-    <link rel="stylesheet" href="/css/main.min.8f3c58b6b17179b0c66a002ca48a3b871c832ac2129d7d6264ad8111c59fedc0.css" integrity="sha256-jzxYtrFxebDGagAspIo7hxyDKsISnX1iZK2BEcWf7cA=">
+    <link rel="stylesheet" href="/css/main.min.a7774cdf6084202a1c1bc5f1be39ec9d3c6539f1998958f402f41a31dc7de041.css" integrity="sha256-p3dM32CEICocG8XxvjnsnTxlOfGZiVj0AvQaMdx94EE=">
     <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
     
   </head>
@@ -125,6 +125,7 @@
 
 
 <main class="event-single">
+  
   <div class="event-single__wrapper">
     <header class="event-header">
       <h1>Policy Briefs Summit: Pakistan’s Economic Choices</h1>
@@ -149,15 +150,15 @@
       <a class="btn btn-primary" href="https://www.google.com/calendar/render?action=TEMPLATE&amp;text=Policy&#43;Briefs&#43;Summit%3A&#43;Pakistan%E2%80%99s&#43;Economic&#43;Choices&amp;dates=20250910T100000Z/20250910T130000Z&amp;details=A&#43;summit&#43;to&#43;workshop&#43;policy&#43;briefs&#43;on&#43;trade%2C&#43;investment%2C&#43;and&#43;economic&#43;resilience&#43;for&#43;2025.&amp;location=Islamabad&#43;%28Hybrid%29&amp;sf=true&amp;output=xml" target="_blank" rel="noopener">Add to Google Calendar</a>
       <a class="btn btn-outline" href="/events/policy-briefs-summit-pakistans-economic-choices/event.ics">Download .ics</a>
       
-        <a class="btn btn-navy" href="https://example.com/policy-briefs-summit" target="_blank" rel="noopener">Join / Register</a>
+        <a class="btn btn-navy" href="#event-register">Request Invite</a>
       
     </section>
 
     
-    <section class="event-register">
+    <section class="event-register" id="event-register" data-register-section tabindex="-1">
       <h3>Request an invite</h3>
-      <p class="event-register__note">Enter your details to receive an official calendar invite.</p>
-      <form class="event-register__form" data-event-form action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="post">
+      <p class="event-register__note" data-event-note>Enter your details to get the official Google Calendar invite and conferencing link. We first archive your RSVP on our server, then sync it to Google/Zoom.</p>
+      <form class="event-register__form" data-event-form action="/forms/event-handler.php" method="post">
         <label>
           Name
           <input type="text" name="name" required>
@@ -172,11 +173,17 @@
         <input type="hidden" name="event_start" value="2025-09-10T10:00:00&#43;05:00">
         <input type="hidden" name="event_end" value="2025-09-10T13:00:00&#43;05:00">
         <input type="hidden" name="event_location" value="Islamabad (Hybrid)">
-        <input type="hidden" name="gcal_calendar_id" value="your-calendar-id@group.calendar.google.com">
+        <input type="hidden" name="gcal_calendar_id" value="">
         <input type="hidden" name="gcal_event_id" value="policy-briefs-summit-2025">
+        <input type="hidden" name="event_join_link" value="https://example.com/policy-briefs-summit">
+        <input type="hidden" name="zoom_meeting_id" value="87097759767">
         <button class="btn btn-primary" type="submit">Send me an invite</button>
         <div class="event-register__status" data-event-status></div>
       </form>
+      <div class="event-register__success" data-event-success hidden tabindex="-1">
+        <h4>Invite requested</h4>
+        <p>Your RSVP was captured. We’re sending you a calendar invitation and conferencing details from SIPEG shortly.</p>
+      </div>
     </section>
     
   </div>
@@ -185,7 +192,10 @@
   document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('[data-event-form]');
     if (!form) return;
-    const status = document.querySelector('[data-event-status]');
+    const status = form.querySelector('[data-event-status]');
+    const wrapper = form.closest('.event-register') || document;
+    const success = wrapper.querySelector('[data-event-success]');
+    const note = wrapper.querySelector('[data-event-note]');
 
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -202,8 +212,17 @@
         if (!res.ok || text.toLowerCase().includes('error')) {
           throw new Error(text || 'Failed to send');
         }
-        status.textContent = 'Invite sent! Check your email.';
         form.reset();
+        form.classList.add('is-success');
+        if (status) status.textContent = '';
+        if (success) {
+          success.hidden = false;
+          success.classList.add('is-visible');
+          success.focus();
+        }
+        if (note) {
+          note.classList.add('is-hidden');
+        }
       } catch (err) {
         status.textContent = 'Unable to send invite right now.';
         console.error(err);
@@ -293,6 +312,6 @@
 </footer>
 
     
-    <script src="/js/site.min.3fb242ac3d359a731ccff2693d931b0ea2d7694d7c9f796f66b66332a5477871.js" integrity="sha256-P7JCrD01mnMcz/JpPZMbDqLXaU18n3lvZrZjMqVHeHE=" defer></script>
+    <script src="/js/site.min.77046901169d611741927222f6bb28c1266fcd84737ada62a02b2759cb6cfdeb.js" integrity="sha256-dwRpARadYRdBknIi9rsowSZvzYRzetpioCsnWcts/es=" defer></script>
   </body>
 </html>

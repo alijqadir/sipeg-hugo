@@ -7,9 +7,10 @@ location: "Forman Christian College, Lahore"
 summary: "Hands-on workshop aligning curriculum reform and leadership pipelines with national capacity goals."
 tags: ["workshop", "education", "capacity"]
 registration_url: "https://example.com/education-workshop"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "education-capacity-workshop-2024"
+zoom_meeting_id: "87097759767"
 image: "/images/p2.webp"
 draft: false
 ---

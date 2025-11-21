@@ -7,9 +7,10 @@ location: "Online (Zoom)"
 summary: "A focused webinar examining Pakistan’s role in the emerging multipolar order."
 tags: ["webinar", "geopolitics", "Pakistan"]
 registration_url: "https://example.com/register"
-registration_endpoint: "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
-gcal_calendar_id: "your-calendar-id@group.calendar.google.com"
+registration_endpoint: "/forms/event-handler.php"
+gcal_calendar_id: ""
 gcal_event_id: "multipolar-world-2025"
+zoom_meeting_id: "87097759767"
 image: "/images/hero.jpg"
 draft: false
 ---

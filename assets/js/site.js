@@ -69,6 +69,8 @@
   const contactForm = document.querySelector('[data-contact-form]');
   if (contactForm) {
     const statusEl = contactForm.querySelector('[data-contact-status]');
+    const successEl = document.querySelector('[data-contact-success]');
+    const noteEl = document.querySelector('.contact-form__note');
     contactForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const honeypot = contactForm.querySelector('input[name="hp_field"]');
@@ -94,8 +96,17 @@
         }
 
         contactForm.reset();
+        contactForm.classList.add('is-success');
         if (statusEl) {
-          statusEl.textContent = 'Thank you for reaching out. We will respond shortly.';
+          statusEl.textContent = '';
+        }
+        if (successEl) {
+          successEl.hidden = false;
+          successEl.classList.add('is-visible');
+          successEl.focus();
+        }
+        if (noteEl) {
+          noteEl.classList.add('is-hidden');
         }
       } catch (error) {
         if (statusEl) {
@@ -108,6 +119,8 @@
   const newsletterForm = document.querySelector('[data-newsletter-form]');
   if (newsletterForm) {
     const statusEl = newsletterForm.querySelector('[data-newsletter-status]');
+    const successEl = document.querySelector('[data-newsletter-success]');
+    const noteEl = document.querySelector('.newsletter-note');
     newsletterForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const honeypot = newsletterForm.querySelector('input[name="hp_field"]');
@@ -131,8 +144,17 @@
           throw new Error(text || 'Network response was not ok');
         }
         newsletterForm.reset();
+        newsletterForm.classList.add('is-success');
         if (statusEl) {
-          statusEl.textContent = 'Thanks for subscribing! Check your inbox for confirmation.';
+          statusEl.textContent = '';
+        }
+        if (successEl) {
+          successEl.hidden = false;
+          successEl.classList.add('is-visible');
+          successEl.focus();
+        }
+        if (noteEl) {
+          noteEl.classList.add('is-hidden');
         }
       } catch (error) {
         if (statusEl) {
@@ -141,4 +163,24 @@
       }
     });
   }
+
+  document.addEventListener('click', (event) => {
+    const target = event.target.closest('[href^="#"]');
+    if (!target) return;
+    const hash = target.getAttribute('href');
+    if (!hash || hash.charAt(0) !== '#') return;
+    const section = document.querySelector(hash);
+    if (!section) return;
+    const registerSection = section.matches('[data-register-section]')
+      ? section
+      : section.querySelector('[data-register-section]');
+    if (!registerSection) return;
+
+    event.preventDefault();
+    const offset = 180;
+    const top =
+      registerSection.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top, behavior: 'smooth' });
+    registerSection.focus({ preventScroll: true });
+  });
 })();

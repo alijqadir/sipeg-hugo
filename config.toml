@@ -45,10 +45,11 @@ buildFuture = true
   offwhite = "#d6c4f0ff"
   softgray = "#E8ECF2"
   substack_url = "https://alijanqadir.substack.com/embed"
-  contact_endpoint = "https://script.google.com/macros/s/REPLACE_WITH_YOUR_APPS_SCRIPT/exec"
-  newsletter_endpoint = "https://script.google.com/macros/s/REPLACE_WITH_YOUR_NEWSLETTER_SCRIPT/exec"
-  mission = "Positioning Pakistan through knowledge, people-centric policies, and global insight. Empowering individuals, communities, and institutions to make informed, evidence-driven, and future-focused decisions and policy choices."
-  tagline = "Positioning Pakistan through knowledge, people-centric policies, and global insight."
+  contact_endpoint = "/forms/contact-handler.php"
+  newsletter_endpoint = "/forms/newsletter-handler.php"
+  event_registration_endpoint = "/forms/event-handler.php"
+  mission = "We pair independent research, policy labs, and civic partnerships so leaders can act on people-centered, evidence-based insights."
+  tagline = "Pakistan-centered foresight for a multipolar world."
 
   [params.research]
     defaultSort = "year_desc"
