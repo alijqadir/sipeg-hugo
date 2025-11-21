@@ -1,0 +1,96 @@
+backend:
+  name: github
+  repo: alijqadir/sipeg-hugo
+  branch: master
+  commit_messages:
+    create: "cms: create {{collection}} “{{slug}}”"
+    update: "cms: update {{collection}} “{{slug}}”"
+    delete: "cms: delete {{collection}} “{{slug}}”"
+    uploadMedia: "cms: upload “{{path}}”"
+    deleteMedia: "cms: delete “{{path}}”"
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+slug:
+  clean_accents: true
+  encoding: "unicode"
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    format: "frontmatter"
+    extension: "md"
+    filter:
+      field: "title"
+      value: ""
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - { label: "Description", name: "description", widget: "string", required: false }
+      - { label: "Authors", name: "author", widget: "list", required: false }
+      - { label: "Topics", name: "topics", widget: "list", required: false }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "research"
+    label: "Research"
+    folder: "content/research"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Authors", name: "author", widget: "list", required: false }
+      - { label: "Topics/Tags", name: "topics", widget: "list", required: false }
+      - { label: "Featured Image", name: "featured_image", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime", required: false }
+      - { label: "Event Start", name: "event_start", widget: "datetime" }
+      - { label: "Event End", name: "event_end", widget: "datetime", required: false }
+      - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Registration URL", name: "registration_url", widget: "string", required: false }
+      - { label: "Registration Endpoint", name: "registration_endpoint", widget: "string", required: false }
+      - { label: "Google Calendar ID", name: "gcal_calendar_id", widget: "string", required: false }
+      - { label: "Google Event ID", name: "gcal_event_id", widget: "string", required: false }
+      - { label: "Zoom Meeting ID", name: "zoom_meeting_id", widget: "string", required: false }
+      - { label: "Hero Image", name: "image", widget: "image", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false, required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "people"
+    label: "People"
+    folder: "content/people"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string", required: false }
+      - { label: "Affiliation", name: "affiliation", widget: "string", required: false }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

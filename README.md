@@ -70,20 +70,14 @@ Use front matter fields (`summary`, `featured_image`, `tags`) to populate cards 
 - Semantic HTML, accessible navigation, high-contrast palette, and WCAG-compliant components.
 - Designed to achieve ≥95 scores on Lighthouse Performance and Accessibility (desktop).
 
-## TinaCMS (Git-backed editor)
+## Decap CMS (self-hosted editor)
 
-- Tina’s schema lives in `tina/config.ts`. It exposes collections for Blog, Events, People, and Research so editors can update all Markdown content (front matter + body) via the Tina UI.
-- Install Node (v18+) locally, run `npm install`, then start Tina alongside Hugo with:
-  ```bash
-  npm run tina:dev
-  ```
-  This launches `hugo server -D` and the Tina Studio UI. Log in with your Tina Cloud credentials (free tier: 3 collaborators / 5k API requests per month) and edits are committed straight to Git.
-- Set the required env vars before running Tina commands or deploying the admin bundle:
-  - `TINA_CLIENT_ID` and `TINA_TOKEN` – generated from https://app.tina.io when you create a project.
-  - `TINA_BRANCH` – defaults to `main` but can be overridden (useful on preview builds).
-- To publish the Tina admin UI as part of the site (e.g., served from `/admin/`), run:
-  ```bash
-  npm run tina:build
-  ```
-  This writes the static assets to `/admin`; upload that folder along with the rest of the site. Protect the URL using Basic Auth or Tina’s cloud auth so only editors can log in.
-- Media uploads go to `static/` by default (see the `media` config). Adjust `mediaRoot` / `publicFolder` in `tina/config.ts` if you want a dedicated directory such as `static/uploads`. Image fields (blog hero, research feature, event hero, people portrait) use Tina’s `image` component so editors can upload/select assets directly.
+- The CMS lives at `/admin/` (see `static/admin/`). It’s completely static, so once you deploy the site you can visit `https://your-domain/admin/` to log in.
+- Configuration is in `static/admin/config.yml`. Collections are already set up for Blog, Research, Events, and People and save directly into the existing Hugo folders with the correct front matter fields.
+- Media uploads go into `static/uploads/` (see the placeholder `.gitkeep`). Decap automatically references them via `/uploads/...`.
+- Authentication: For a self-hosted GitHub workflow you need a GitHub OAuth App plus a small proxy (for example, the [official Decap OAuth provider](https://github.com/DecapOrg/oauth-provider)). Steps:
+  1. Create a GitHub OAuth App (GitHub → Settings → Developer settings → OAuth Apps). Set **Homepage URL** to your site and **Authorization callback URL** to your OAuth proxy (e.g., `https://cms.yoursite.com/callback`).
+  2. Deploy the OAuth provider (can be on Netlify/Vercel/Render). Supply the GitHub client ID/secret and the repo (`alijqadir/sipeg-hugo`) via environment variables.
+  3. Update `static/admin/config.yml` with your repo/branch and the OAuth endpoint (`backend.base_url` / `auth_endpoint`) if needed. The current file points to GitHub backend on `master`.
+  4. After deploying, editors visit `/admin/`, authenticate via GitHub, and commit changes through Decap’s UI.
+- If you prefer Netlify Identity instead of GitHub OAuth, switch the backend block in `config.yml` to `name: git-gateway` and enable Identity + Git Gateway on Netlify; no code changes are needed.
