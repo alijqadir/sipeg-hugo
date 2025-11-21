@@ -72,7 +72,7 @@ Use front matter fields (`summary`, `featured_image`, `tags`) to populate cards 
 
 ## TinaCMS (Git-backed editor)
 
-- Tina’s schema lives in `.tina/config.ts`. It exposes collections for Blog, Events, People, and Research so editors can update all Markdown content (front matter + body) via the Tina UI.
+- Tina’s schema lives in `tina/config.ts`. It exposes collections for Blog, Events, People, and Research so editors can update all Markdown content (front matter + body) via the Tina UI.
 - Install Node (v18+) locally, run `npm install`, then start Tina alongside Hugo with:
   ```bash
   npm run tina:dev
@@ -86,4 +86,4 @@ Use front matter fields (`summary`, `featured_image`, `tags`) to populate cards 
   npm run tina:build
   ```
   This writes the static assets to `/admin`; upload that folder along with the rest of the site. Protect the URL using Basic Auth or Tina’s cloud auth so only editors can log in.
-- Media uploads go to `static/` by default (see the `media` config). Adjust `mediaRoot` / `publicFolder` in `.tina/config.ts` if you want a dedicated directory such as `static/uploads`. Image fields (blog hero, research feature, event hero, people portrait) use Tina’s `image` component so editors can upload/select assets directly.
+- Media uploads go to `static/` by default (see the `media` config). Adjust `mediaRoot` / `publicFolder` in `tina/config.ts` if you want a dedicated directory such as `static/uploads`. Image fields (blog hero, research feature, event hero, people portrait) use Tina’s `image` component so editors can upload/select assets directly.
