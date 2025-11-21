@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Diplomacy on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/topics/diplomacy/</link>
+    <link>/topics/diplomacy/</link>
     <description>Recent content in Diplomacy on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/topics/diplomacy/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/topics/diplomacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Culture, Identity &amp; Diplomacy</title>
-      <link>//localhost:1313/programs/culture-identity-diplomacy/</link>
+      <link>/programs/culture-identity-diplomacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/culture-identity-diplomacy/</guid>
+      <guid>/programs/culture-identity-diplomacy/</guid>
       <description>Identity, media, and cultural production as strategic assets in Pakistan’s diplomacy and social cohesion.</description>
     </item>
     <item>
       <title>Culture, Identity &amp; Diplomacy Note</title>
-      <link>//localhost:1313/research/culture-identity-diplomacy-note/</link>
+      <link>/research/culture-identity-diplomacy-note/</link>
       <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/research/culture-identity-diplomacy-note/</guid>
+      <guid>/research/culture-identity-diplomacy-note/</guid>
       <description>Using culture and identity as strategic assets to strengthen diplomacy and social cohesion.</description>
     </item>
     <item>
       <title>Digital Diplomacy Strategies for Regional Influence</title>
-      <link>//localhost:1313/research/digital-diplomacy-strategies-for-regional-influence/</link>
+      <link>/research/digital-diplomacy-strategies-for-regional-influence/</link>
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/research/digital-diplomacy-strategies-for-regional-influence/</guid>
+      <guid>/research/digital-diplomacy-strategies-for-regional-influence/</guid>
       <description>&lt;p&gt;The paper maps emerging diplomatic playbooks leveraging social platforms, cultural content, and data-driven targeting to reach global audiences. It highlights institutional reforms required to sustain agile communication strategies.&lt;/p&gt;&#xA;&lt;p&gt;Recommendations include strengthening cross-ministry coordination, investing in media literacy, and partnering with diaspora creators to scale trusted narratives.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Foresight on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/topics/foresight/</link>
+    <link>/topics/foresight/</link>
     <description>Recent content in Foresight on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/topics/foresight/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/topics/foresight/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Technology &amp; Strategic Foresight</title>
-      <link>//localhost:1313/programs/technology-strategic-foresight/</link>
+      <link>/programs/technology-strategic-foresight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/technology-strategic-foresight/</guid>
+      <guid>/programs/technology-strategic-foresight/</guid>
       <description>Technology rivalry, AI, and strategic foresight shaping Pakistan’s economic and security choices.</description>
     </item>
     <item>
       <title>Technology &amp; Strategic Foresight Scan</title>
-      <link>//localhost:1313/research/technology-strategic-foresight-scan/</link>
+      <link>/research/technology-strategic-foresight-scan/</link>
       <pubDate>Sat, 15 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/research/technology-strategic-foresight-scan/</guid>
+      <guid>/research/technology-strategic-foresight-scan/</guid>
       <description>AI, cyber, and tech-supply chains assessed through scenarios to inform national strategy.</description>
     </item>
   </channel>

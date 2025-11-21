@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programs on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/programs/</link>
+    <link>/programs/</link>
     <description>Recent content in Programs on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="//localhost:1313/programs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/programs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Geopolitics &amp; Regional Security</title>
-      <link>//localhost:1313/programs/geopolitics-regional-security/</link>
+      <link>/programs/geopolitics-regional-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/geopolitics-regional-security/</guid>
+      <guid>/programs/geopolitics-regional-security/</guid>
       <description>Mapping power shifts, conflict/cooperation patterns, and Pakistan’s security calculus across its neighborhood and great-power competition.</description>
     </item>
     <item>
       <title>Trade, Investment &amp; Economic Policy</title>
-      <link>//localhost:1313/programs/trade-investment-economic-policy/</link>
+      <link>/programs/trade-investment-economic-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/trade-investment-economic-policy/</guid>
+      <guid>/programs/trade-investment-economic-policy/</guid>
       <description>Fiscal stability, trade architecture, and investment that drive inclusive, innovation-led growth.</description>
     </item>
     <item>
       <title>Education, Curriculum &amp; National Capacity</title>
-      <link>//localhost:1313/programs/education-curriculum-national-capacity/</link>
+      <link>/programs/education-curriculum-national-capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/education-curriculum-national-capacity/</guid>
+      <guid>/programs/education-curriculum-national-capacity/</guid>
       <description>Building human capital through curriculum reform, skills, and leadership development.</description>
     </item>
     <item>
       <title>Culture, Identity &amp; Diplomacy</title>
-      <link>//localhost:1313/programs/culture-identity-diplomacy/</link>
+      <link>/programs/culture-identity-diplomacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/culture-identity-diplomacy/</guid>
+      <guid>/programs/culture-identity-diplomacy/</guid>
       <description>Identity, media, and cultural production as strategic assets in Pakistan’s diplomacy and social cohesion.</description>
     </item>
     <item>
       <title>Technology &amp; Strategic Foresight</title>
-      <link>//localhost:1313/programs/technology-strategic-foresight/</link>
+      <link>/programs/technology-strategic-foresight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/technology-strategic-foresight/</guid>
+      <guid>/programs/technology-strategic-foresight/</guid>
       <description>Technology rivalry, AI, and strategic foresight shaping Pakistan’s economic and security choices.</description>
     </item>
     <item>
       <title>Advisory, Training &amp; Collaboration</title>
-      <link>//localhost:1313/programs/advisory-training-collaboration/</link>
+      <link>/programs/advisory-training-collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/advisory-training-collaboration/</guid>
+      <guid>/programs/advisory-training-collaboration/</guid>
       <description>Advising, consultancy, trainings, collaborations, and research that link insight to action.</description>
     </item>
   </channel>
