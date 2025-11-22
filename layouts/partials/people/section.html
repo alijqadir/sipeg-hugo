@@ -1,0 +1,59 @@
+{{ $pages := sort .Pages "Params.weight" "asc" }}
+{{ $director := where $pages "Params.team" "director" }}
+{{ $advisory := where $pages "Params.team" "advisory" }}
+{{ $research := where $pages "Params.team" "research" }}
+{{ $others := where $pages "Params.team" "in" (slice nil "") }}
+{{ if gt (len $others) 0 }}
+  {{ $research = union $research $others }}
+{{ end }}
+<section class="section section--offwhite">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+      {{ if .Content }}
+        <div class="lead">{{ . }}</div>
+      {{ end }}
+    </header>
+
+    {{ with index $director 0 }}
+      <div class="people-director">
+        <div class="people-director__card">
+          <div class="people-director__media">
+            {{ with .Params.image }}
+              <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}">
+            {{ end }}
+          </div>
+          <div class="people-director__body">
+            <p class="eyebrow">Director</p>
+            <h2>{{ .Title }}</h2>
+            <p class="people-director__role">{{ .Params.role }}</p>
+            <p class="people-director__summary">{{ .Params.summary }}</p>
+          </div>
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if gt (len $advisory) 0 }}
+      <div class="people-group">
+        <h2>Advisory Board</h2>
+        <div class="grid grid-3">
+          {{ range $advisory }}
+            {{ partial "cards/person-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+
+    {{ if gt (len $research) 0 }}
+      <div class="people-group">
+        <h2>Research &amp; Outreach Team</h2>
+        <div class="grid grid-3">
+          {{ range $research }}
+            {{ partial "cards/person-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</section>

@@ -7,5 +7,6 @@ summary: "Provides anthropological insight on culture, identity, and societal ch
 email: "info@sipeg.org"
 sort: 30
 weight: 12
+team: "advisory"
 ---
 Supports SIPEG’s work on culture, identity, and societal change through anthropological insight into Pakistan and the region.

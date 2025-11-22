@@ -7,5 +7,6 @@ summary: "Offers strategic perspectives, historical framing, and narrative think
 email: "info@sipeg.org"
 sort: 60
 weight: 14
+team: "advisory"
 ---
 Contributes strategic perspectives, historical framing, and narrative thinking to SIPEG’s research and outreach.

@@ -1,35 +1,39 @@
 {{ define "main" }}
-<section class="section section--offwhite">
-  <div class="container">
-    {{ $pages := .Pages }}
-    {{ $hasPages := gt (len $pages) 0 }}
-    <header class="section__intro">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
-      {{ if and $hasPages .Content }}
-        <div class="lead">{{ . }}</div>
-      {{ end }}
-    </header>
-    {{ if $hasPages }}
-      {{ $p := .Paginate $pages }}
-      <div class="grid grid-3">
-        {{ range $p.Pages }}
-          {{ $section := .Section }}
-          {{ if eq $section "programs" }}
-            {{ partial "cards/program-card.html" . }}
-          {{ else if eq $section "people" }}
-            {{ partial "cards/person-card.html" . }}
-          {{ else }}
-            {{ partial "cards/research-card.html" . }}
-          {{ end }}
+  {{ if and (eq .Kind "section") (eq .RelPermalink "/people/") }}
+    {{ partial "people/section.html" . }}
+  {{ else }}
+  <section class="section section--offwhite">
+    <div class="container">
+      {{ $pages := .Pages }}
+      {{ $hasPages := gt (len $pages) 0 }}
+      <header class="section__intro">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+        {{ if and $hasPages .Content }}
+          <div class="lead">{{ . }}</div>
         {{ end }}
-      </div>
-      {{ partial "pagination.html" . }}
-    {{ else }}
-      <div class="content">
-        {{ .Content }}
-      </div>
-    {{ end }}
-  </div>
-</section>
+      </header>
+      {{ if $hasPages }}
+        {{ $p := .Paginate $pages }}
+        <div class="grid grid-3">
+          {{ range $p.Pages }}
+            {{ $section := .Section }}
+            {{ if eq $section "programs" }}
+              {{ partial "cards/program-card.html" . }}
+            {{ else if eq $section "people" }}
+              {{ partial "cards/person-card.html" . }}
+            {{ else }}
+              {{ partial "cards/research-card.html" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+        {{ partial "pagination.html" . }}
+      {{ else }}
+        <div class="content">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
 {{ end }}

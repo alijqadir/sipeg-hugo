@@ -1,4 +1,4 @@
-<article class="person-card">
+<article class="person-card {{ if eq .Params.team "director" }}person-card--director{{ end }}">
   {{ with .Params.image }}
     <div class="person-card__image">
       <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}">

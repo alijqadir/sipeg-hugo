@@ -7,5 +7,6 @@ summary: "Supports outreach and storytelling to broaden the impact of SIPEG’s 
 email: "info@sipeg.org"
 sort: 120
 weight: 120
+team: "research"
 ---
 Supports outreach and storytelling to broaden the impact of SIPEG’s research and events.

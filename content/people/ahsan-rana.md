@@ -9,6 +9,7 @@ summary: >-
   Advises on public policy design, institutional reform, and state capacity,
   linking research evidence to governance practice.
 weight: 11
+team: "advisory"
 ---
 
 Advises on public policy design, institutional reform, and state capacity, linking research evidence to governance practice.

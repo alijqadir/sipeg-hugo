@@ -7,5 +7,6 @@ summary: "Advises on South Asia–Europe relations, regional connectivity, and c
 email: "info@sipeg.org"
 sort: 70
 weight: 15
+team: "advisory"
 ---
 Advises on South Asia–Europe strategic relations, regional connectivity, and comparative geopolitical perspectives.

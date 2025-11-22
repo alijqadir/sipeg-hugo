@@ -7,5 +7,6 @@ summary: "Advises on education, curriculum, and national capacity building align
 email: "info@sipeg.org"
 sort: 50
 weight: 2
+team: "advisory"
 ---
 Advises on education, curriculum, and national capacity building to link learning outcomes with Pakistan’s strategic needs.

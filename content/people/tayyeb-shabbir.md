@@ -7,5 +7,6 @@ summary: "Advises on finance, risk, and governance, connecting macro trends to b
 email: "info@sipeg.org"
 sort: 10
 weight: 10
+team: "advisory"
 ---
 Advises SIPEG on finance, risk, and governance with a focus on connecting macro trends to institutional decision-making.

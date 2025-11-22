@@ -7,5 +7,6 @@ summary: "Conducts applied research across political economy and regional policy
 email: "info@sipeg.org"
 sort: 90
 weight: 17
+team: "research"
 ---
 Conducts applied research across political economy and regional policy questions.

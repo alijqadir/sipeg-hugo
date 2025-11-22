@@ -739,6 +739,54 @@ button,
   color: var(--color-charcoal);
 }
 
+.people-director {
+  margin-bottom: 3rem;
+}
+
+.people-director__card {
+  background: var(--color-white);
+  color: var(--color-primary);
+  border-radius: 24px;
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 25px 55px rgba(47, 72, 88, 0.1);
+  border: 1px solid var(--border-soft);
+}
+
+.people-director__media img {
+  width: 100%;
+  border-radius: 20px;
+  border: 3px solid rgba(65, 10, 72, 0.1);
+}
+
+.people-director__body h2 {
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.people-director__role {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: rgba(65, 10, 72, 0.7);
+}
+
+.people-director__summary {
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  color: rgba(47, 72, 88, 0.85);
+}
+
+.people-group {
+  margin-top: 3rem;
+}
+
+.people-group h2 {
+  margin-bottom: 1.5rem;
+}
+
 .substack-embed iframe {
   width: 100%;
   border-radius: 14px;
@@ -1409,6 +1457,12 @@ button,
 
 .contact-form textarea {
   min-height: 160px;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  align-self: flex-end;
+  justify-self: flex-end;
 }
 
 .contact-form__status {

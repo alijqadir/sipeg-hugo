@@ -7,5 +7,6 @@ summary: "Supports data collection, analysis, and publication workflows across S
 email: "info@sipeg.org"
 sort: 100
 weight: 18
+team: "research"
 ---
 Supports data collection, analysis, and publication workflows across SIPEG projects.

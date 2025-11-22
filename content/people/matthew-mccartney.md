@@ -7,5 +7,6 @@ summary: "Guides SIPEG on economic development, industrial policy, and the regio
 email: "info@sipeg.org"
 sort: 40
 weight: 13
+team: "advisory"
 ---
 Guides SIPEG on economic development, industrial policy, and the regional consequences of global economic shifts.

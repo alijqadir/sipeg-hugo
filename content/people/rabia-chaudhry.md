@@ -7,5 +7,6 @@ summary: "Leads research on governance, policy design, and the societal impacts 
 email: "info@sipeg.org"
 sort: 80
 weight: 16
+team: "research"
 ---
 Leads research on governance, policy design, and the societal impacts of geopolitical change.
