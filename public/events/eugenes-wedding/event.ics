@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SIPEG//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:/events/eugenes-wedding/
+DTSTAMP:20251122T234601Z
+DTSTART:20251127T232925Z
+DTEND:20251128T232925Z
+SUMMARY:Eugenes Wedding
+DESCRIPTION:dsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+LOCATION:
+URL:/events/eugenes-wedding/
+END:VEVENT
+END:VCALENDAR

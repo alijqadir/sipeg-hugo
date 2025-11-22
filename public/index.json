@@ -8,6 +8,38 @@
     "summary": "A focused webinar examining Pakistan’s role in the emerging multipolar order."
   },
   {
+    "title": "Euegenes Wedding",
+    "start": "2025-11-30T23:05:10+00:00",
+    "end":   "2025-11-22T23:05:10+00:00",
+    "url":   "/events/euegenes-wedding/",
+    "location": "",
+    "summary": ""
+  },
+  {
+    "title": "Eugenes Weeddding",
+    "start": "2025-11-22T23:31:49+00:00",
+    "end":   "2025-11-22T23:31:50+00:00",
+    "url":   "/events/eugenes-weeddding/",
+    "location": "",
+    "summary": ""
+  },
+  {
+    "title": "Eugenes Wedding",
+    "start": "2025-11-27T23:29:25+00:00",
+    "end":   "2025-11-28T23:29:25+00:00",
+    "url":   "/events/eugenes-wedding/",
+    "location": "",
+    "summary": ""
+  },
+  {
+    "title": "Eugene's Wedding",
+    "start": "2025-11-11T23:23:33+00:00",
+    "end":   "2025-11-22T23:23:33+00:00",
+    "url":   "/events/eugenes-wedding/",
+    "location": "",
+    "summary": "Hostinger on pushes.\nCMS config and admin files are committed; new people/events layout partial is in the tree; public assets regenerated.\nNext steps:\n\nAdd GitHub repo secrets: FTP_HOST, FTP_USERNAME, FTP_PASSWORD, FTP_PATH (and FTP_PORT if not 21).\nPush the commit to GitHub: git push.\nOn the next push, the workflow will build and deploy automatically to your FTP target."
+  },
+  {
     "title": "PCEC: Risks and Opportunities in a Fragmenting Energy Market",
     "start": "2025-10-08T14:00:00+05:00",
     "end":   "2025-10-08T15:30:00+05:00",

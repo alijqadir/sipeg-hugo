@@ -191,6 +191,34 @@
       <description>A focused webinar examining Pakistan’s role in the emerging multipolar order.</description>
     </item>
     <item>
+      <title>Euegenes Wedding</title>
+      <link>/events/euegenes-wedding/</link>
+      <pubDate>Sat, 29 Nov 2025 23:05:10 +0000</pubDate>
+      <guid>/events/euegenes-wedding/</guid>
+      <description>&lt;p&gt;Repository access: select alijqadir/sipeg-hugo.&lt;/p&gt;&#xA;&lt;p&gt;Permissions (repo): Contents: Read and write (also set Metadata: Read).&lt;/p&gt;&#xA;&lt;p&gt;Save and copy the token.&lt;/p&gt;&#xA;&lt;p&gt;In DecapBridge dashboard, edit your “Site” and replace the PAT with the new one.&lt;/p&gt;&#xA;&lt;p&gt;If your default branch is main, also set branch: main in static/admin/config.yml.&lt;/p&gt;&#xA;&lt;p&gt;Hard-reload /admin and try publishing again.&lt;/p&gt;&#xA;&lt;p&gt;If the repo is in an org with SSO, make sure the PAT is authorized for that org.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eugenes Weeddding</title>
+      <link>/events/eugenes-weeddding/</link>
+      <pubDate>Sat, 22 Nov 2025 23:31:44 +0000</pubDate>
+      <guid>/events/eugenes-weeddding/</guid>
+      <description>&lt;p&gt;saaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eugenes Wedding</title>
+      <link>/events/eugenes-wedding/</link>
+      <pubDate>Sat, 22 Nov 2025 23:29:45 +0000</pubDate>
+      <guid>/events/eugenes-wedding/</guid>
+      <description>&lt;p&gt;dsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eugene&#39;s Wedding</title>
+      <link>/events/eugenes-wedding/</link>
+      <pubDate>Thu, 13 Nov 2025 11:23:33 +0000</pubDate>
+      <guid>/events/eugenes-wedding/</guid>
+      <description>&lt;p&gt;Hostinger on pushes.&#xA;CMS config and admin files are committed; new people/events layout partial is in the tree; public assets regenerated.&#xA;Next steps:&lt;/p&gt;&#xA;&lt;p&gt;Add GitHub repo secrets: FTP_HOST, FTP_USERNAME, FTP_PASSWORD, FTP_PATH (and FTP_PORT if not 21).&#xA;Push the commit to GitHub: git push.&#xA;On the next push, the workflow will build and deploy automatically to your FTP target.&lt;/p&gt;&#xA;</description>
+    </item>
+    <item>
       <title>PCEC: Risks and Opportunities in a Fragmenting Energy Market</title>
       <link>/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/</link>
       <pubDate>Sat, 01 Feb 2025 09:00:00 +0500</pubDate>

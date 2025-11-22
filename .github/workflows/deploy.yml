@@ -40,5 +40,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: ${{ secrets.FTP_PORT || 21 }}
           server-dir: ${{ secrets.FTP_PATH }}
-          local-dir: public
+          local-dir: public/
           dangerous-clean-slate: true
