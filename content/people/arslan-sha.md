@@ -4,5 +4,6 @@ role: Arslan Sha
 affiliation: Arslan Sha
 email: Arslan Sha@gmail.com
 image: /uploads/image_fx-33-.jpg
+team: research
 ---
 Arslan Sha
