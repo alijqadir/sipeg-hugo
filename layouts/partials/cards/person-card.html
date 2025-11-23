@@ -1,7 +1,7 @@
 <article class="person-card {{ if eq .Params.team "director" }}person-card--director{{ end }}">
   {{ with .Params.image }}
     <div class="person-card__image">
-      <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}">
+      <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}" loading="lazy" decoding="async">
     </div>
   {{ end }}
   <div class="person-card__body">

@@ -9,7 +9,7 @@
 
   {{ with .Params.cover }}
     <figure class="research-single__hero">
-      <img src="{{ . }}" alt="">
+      <img src="{{ . }}" alt="" loading="lazy" decoding="async">
     </figure>
   {{ end }}
 

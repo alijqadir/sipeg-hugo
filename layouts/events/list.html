@@ -32,7 +32,7 @@
           </div>
         </div>
         <figure class="events-highlight__media">
-          <img src="{{ $image }}" alt="{{ printf "Visual for %s" .Title }}">
+          <img src="{{ $image }}" alt="{{ printf "Visual for %s" .Title }}" loading="lazy" decoding="async">
         </figure>
       </div>
     </section>
@@ -68,7 +68,7 @@
               </div>
             </div>
             <figure class="event-card__thumb">
-              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}" loading="lazy" decoding="async">
             </figure>
           </article>
         {{ end }}
@@ -100,7 +100,7 @@
           {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
           <article class="event-card event-card--stacked">
             <figure class="event-card__thumb">
-              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}" loading="lazy" decoding="async">
             </figure>
             <div class="event-card__body">
               <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>

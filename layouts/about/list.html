@@ -10,7 +10,7 @@
       </div>
       {{ with .Params.hero_image }}
         <figure class="about-hero__media">
-          <img src="{{ . }}" alt="SIPEG leadership and mission imagery">
+          <img src="{{ . }}" alt="SIPEG leadership and mission imagery" loading="lazy" decoding="async">
         </figure>
       {{ end }}
     </div>
@@ -41,7 +41,7 @@
     <div class="container about-gallery__grid">
       {{ range . }}
         <figure class="about-gallery__item">
-          <img src="{{ .image }}" alt="{{ .title }}">
+          <img src="{{ .image }}" alt="{{ .title }}" loading="lazy" decoding="async">
           <figcaption>
             <strong>{{ .title }}</strong>
             <span>{{ .caption }}</span>

@@ -18,7 +18,7 @@
     </header>
     {{ with .Params.image }}
     <figure class="event-hero__media">
-      <img src="{{ . }}" alt="{{ $.Title }} visual">
+      <img src="{{ . }}" alt="{{ $.Title }} visual" loading="lazy" decoding="async">
     </figure>
     {{ end }}
 

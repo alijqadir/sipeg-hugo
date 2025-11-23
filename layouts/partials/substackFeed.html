@@ -212,7 +212,7 @@
             imgWrap.className = "aj-substack-card-image";
             imgWrap.innerHTML = `
               <a href="${link}" target="_blank" rel="noopener" aria-label="${title}">
-                <img src="${image}" alt="">
+                <img src="${image}" alt="" loading="lazy" decoding="async">
               </a>
             `;
             card.appendChild(imgWrap);

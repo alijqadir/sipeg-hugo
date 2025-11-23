@@ -21,7 +21,7 @@
         <div class="people-director__card">
           <div class="people-director__media">
             {{ with .Params.image }}
-              <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}">
+              <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}" loading="lazy" decoding="async">
             {{ end }}
           </div>
           <div class="people-director__body">

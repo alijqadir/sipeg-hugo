@@ -67,7 +67,7 @@
           </div>
           {{ with $image }}
           <figure class="webinar__media">
-            <img src="{{ . }}" alt="Visual for {{ $.Title }}">
+            <img src="{{ . }}" alt="Visual for {{ $.Title }}" loading="lazy" decoding="async">
           </figure>
           {{ end }}
         </div>
