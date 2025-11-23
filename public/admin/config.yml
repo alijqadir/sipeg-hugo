@@ -99,9 +99,15 @@ collections:
           required: false,
         }
       - {
-          label: "Featured Image",
-          name: "featured_image",
+          label: "Cover Image",
+          name: "cover",
           widget: "image",
+          required: false,
+        }
+      - {
+          label: "PDF",
+          name: "pdf",
+          widget: "file",
           required: false,
         }
       - {

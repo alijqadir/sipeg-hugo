@@ -70,6 +70,18 @@
     <loc>/events/euegenes-wedding/</loc>
     <lastmod>2025-11-29T23:05:10+00:00</lastmod>
   </url><url>
+    <loc>/blog/</loc>
+    <lastmod>2025-11-23T00:35:29+00:00</lastmod>
+  </url><url>
+    <loc>/blog/test/</loc>
+    <lastmod>2025-11-23T00:35:29+00:00</lastmod>
+  </url><url>
+    <loc>/topics/tet/</loc>
+    <lastmod>2025-11-23T00:35:29+00:00</lastmod>
+  </url><url>
+    <loc>/topics/</loc>
+    <lastmod>2025-11-23T00:35:29+00:00</lastmod>
+  </url><url>
     <loc>/events/eugenes-weeddding/</loc>
     <lastmod>2025-11-22T23:31:44+00:00</lastmod>
   </url><url>
@@ -94,9 +106,6 @@
     <loc>/events/workshop-education-curriculum-national-capacity/</loc>
     <lastmod>2025-01-02T08:00:00+05:00</lastmod>
   </url><url>
-    <loc>/blog/</loc>
-    <lastmod>2024-11-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>/topics/climate/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -110,9 +119,6 @@
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/topics/technology/</loc>
-    <lastmod>2024-11-23T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>/topics/</loc>
     <lastmod>2024-11-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/authors/</loc>
@@ -225,6 +231,8 @@
     <loc>/privacy-policy/</loc>
   </url><url>
     <loc>/about/</loc>
+  </url><url>
+    <loc>/people/arsalan/</loc>
   </url><url>
     <loc>/board-of-advisors/</loc>
   </url><url>

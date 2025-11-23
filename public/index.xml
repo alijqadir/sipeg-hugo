@@ -198,6 +198,13 @@
       <description>&lt;p&gt;Repository access: select alijqadir/sipeg-hugo.&lt;/p&gt;&#xA;&lt;p&gt;Permissions (repo): Contents: Read and write (also set Metadata: Read).&lt;/p&gt;&#xA;&lt;p&gt;Save and copy the token.&lt;/p&gt;&#xA;&lt;p&gt;In DecapBridge dashboard, edit your “Site” and replace the PAT with the new one.&lt;/p&gt;&#xA;&lt;p&gt;If your default branch is main, also set branch: main in static/admin/config.yml.&lt;/p&gt;&#xA;&lt;p&gt;Hard-reload /admin and try publishing again.&lt;/p&gt;&#xA;&lt;p&gt;If the repo is in an org with SSO, make sure the PAT is authorized for that org.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>TEst</title>
+      <link>/blog/test/</link>
+      <pubDate>Sun, 23 Nov 2025 00:35:29 +0000</pubDate>
+      <guid>/blog/test/</guid>
+      <description>teste</description>
+    </item>
+    <item>
       <title>Eugenes Weeddding</title>
       <link>/events/eugenes-weeddding/</link>
       <pubDate>Sat, 22 Nov 2025 23:31:44 +0000</pubDate>
@@ -294,6 +301,13 @@
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
       <guid>/research/digital-diplomacy-strategies-for-regional-influence/</guid>
       <description>&lt;p&gt;The paper maps emerging diplomatic playbooks leveraging social platforms, cultural content, and data-driven targeting to reach global audiences. It highlights institutional reforms required to sustain agile communication strategies.&lt;/p&gt;&#xA;&lt;p&gt;Recommendations include strengthening cross-ministry coordination, investing in media literacy, and partnering with diaspora creators to scale trusted narratives.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Arsalan</title>
+      <link>/people/arsalan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/people/arsalan/</guid>
+      <description>&lt;p&gt;Arsalan is&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
