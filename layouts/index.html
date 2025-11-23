@@ -19,6 +19,31 @@
       </div>
     </div>
   </section>
+  
+  
+  
+   {{ $programs := first 6 (sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc") }}
+  {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
+  <section class="section section--offwhite" aria-labelledby="focus-areas">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="focus-areas">Focus Areas</h2>
+        <p>Core program areas mapping Pakistan’s strategic, economic, and societal trajectories.</p>
+      </div>
+      <div class="focus-grid">
+        {{ range $programs }}
+          <a class="focus-item" href="{{ .RelPermalink }}">
+            {{ $icon := or (index $iconMap .Params.icon) .Params.icon }}
+            <span class="icon-circle focus-item__icon">
+              <i class="ph ph-{{ $icon }}" aria-hidden="true"></i>
+            </span>
+            <span class="focus-item__title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
 
   {{ $featuredResearch := first 3 (where (where .Site.RegularPages "Section" "research") "Params.featured" true) }}
   {{ if lt (len $featuredResearch) 3 }}
@@ -35,6 +60,27 @@
       <div class="grid grid-3">
         {{ range $featuredResearch }}
           {{ partial "cards/research-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  
+  
+   {{ $people := slice }}
+  {{ with site.GetPage "people/saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/mariam-saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/raza-shahid" }}{{ $people = $people | append . }}{{ end }}
+  {{ if $people }}
+  <section class="section section--offwhite" aria-labelledby="people-spotlight">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="people-spotlight">Advisory Board</h2>
+        <p>Meet the scholars leading SIPEG’s research and engagement platforms.</p>
+      </div>
+      <div class="people-spotlight">
+        {{ range $people }}
+          {{ partial "cards/person-card.html" . }}
         {{ end }}
       </div>
     </div>
@@ -75,28 +121,7 @@
     </section>
   {{ end }}
 
-  {{ $programs := first 6 (sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc") }}
-  {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
-  <section class="section section--offwhite" aria-labelledby="focus-areas">
-    <div class="container">
-      <div class="section__intro">
-        <h2 id="focus-areas">Focus Areas</h2>
-        <p>Core program areas mapping Pakistan’s strategic, economic, and societal trajectories.</p>
-      </div>
-      <div class="focus-grid">
-        {{ range $programs }}
-          <a class="focus-item" href="{{ .RelPermalink }}">
-            {{ $icon := or (index $iconMap .Params.icon) .Params.icon }}
-            <span class="icon-circle focus-item__icon">
-              <i class="ph ph-{{ $icon }}" aria-hidden="true"></i>
-            </span>
-            <span class="focus-item__title">{{ .Title }}</span>
-          </a>
-        {{ end }}
-      </div>
-    </div>
-  </section>
-
+ 
   <section class="section section--light" aria-labelledby="newsletter">
     <div class="container">
       <div class="section__intro">
@@ -117,34 +142,17 @@
     </div>
   </section>
 
-  {{ $people := slice }}
-  {{ with site.GetPage "people/saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
-  {{ with site.GetPage "people/mariam-saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
-  {{ with site.GetPage "people/raza-shahid" }}{{ $people = $people | append . }}{{ end }}
-  {{ if $people }}
-  <section class="section section--offwhite" aria-labelledby="people-spotlight">
-    <div class="container">
-      <div class="section__intro">
-        <h2 id="people-spotlight">People Spotlight</h2>
-        <p>Meet the scholars leading SIPEG’s research and engagement platforms.</p>
-      </div>
-      <div class="people-spotlight">
-        {{ range $people }}
-          {{ partial "cards/person-card.html" . }}
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  {{ end }}
+ 
 
   <section class="section section--light" aria-labelledby="join-us">
     <div class="container">
       <div class="card">
         <h2 id="join-us">Partner with SIPEG</h2>
-        <p class="card__summary">Collaborate with SIPEG to advance research, convene strategic dialogues, and deepen understanding of Pakistan’s evolving role in global affairs.</p>
+        <p class="card__summary">Collaborate with SIPEG to advance research, convene strategic dialogues, deepen understanding of Pakistan’s evolving role in global affairs — or volunteer your skills to support our projects and events.</p>
         <div class="hero__actions">
           <a class="btn btn-primary" href="{{ "/contact/" | relURL }}">Contact Our Team</a>
           <a class="btn btn-outline" href="{{ "/events/" | relURL }}">View Upcoming Events</a>
+          <a class="btn btn-navy" href="{{ "/contact/?topic=volunteer" | relURL }}">Volunteer with SIPEG</a>
         </div>
       </div>
     </div>
