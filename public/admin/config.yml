@@ -208,5 +208,18 @@ collections:
       - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Image", name: "image", widget: "image", required: false }
       - { label: "Summary", name: "summary", widget: "text", required: false }
+      - {
+          label: "Team",
+          name: "team",
+          widget: "select",
+          options:
+            [
+              { label: "Director", value: "director" },
+              { label: "Advisory Board", value: "advisory" },
+              { label: "Research & Outreach", value: "research" },
+            ],
+          required: false,
+          hint: "Used to place cards into Director, Advisory Board, or Research & Outreach sections.",
+        }
       - { label: "Weight", name: "weight", widget: "number", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
