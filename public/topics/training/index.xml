@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Training on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title><link>/topics/training/</link><description>Recent content in Training on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="/topics/training/index.xml" rel="self" type="application/rss+xml"/><item><title>Advisory, Training &amp; Collaboration</title><link>/programs/advisory-training-collaboration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/programs/advisory-training-collaboration/</guid><description>Advising, consultancy, trainings, collaborations, and research that link insight to action.</description></item><item><title>Advisory, Training &amp; Collaboration Brief</title><link>/research/advisory-training-collaboration-brief/</link><pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate><guid>/research/advisory-training-collaboration-brief/</guid><description>Advisory formats, trainings, and collaborations that move insight into institutional action.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Training on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>/topics/training/</link>
+    <description>Recent content in Training on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/topics/training/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advisory, Training &amp; Collaboration</title>
+      <link>/programs/advisory-training-collaboration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/programs/advisory-training-collaboration/</guid>
+      <description>Advising, consultancy, trainings, collaborations, and research that link insight to action.</description>
+    </item>
+    <item>
+      <title>Advisory, Training &amp; Collaboration Brief</title>
+      <link>/research/advisory-training-collaboration-brief/</link>
+      <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
+      <guid>/research/advisory-training-collaboration-brief/</guid>
+      <description>Advisory formats, trainings, and collaborations that move insight into institutional action.</description>
+    </item>
+  </channel>
+</rss>

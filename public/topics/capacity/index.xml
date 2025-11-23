@@ -1,1 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Capacity on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title><link>/topics/capacity/</link><description>Recent content in Capacity on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="/topics/capacity/index.xml" rel="self" type="application/rss+xml"/><item><title>Education, Curriculum &amp; National Capacity</title><link>/programs/education-curriculum-national-capacity/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/programs/education-curriculum-national-capacity/</guid><description>Building human capital through curriculum reform, skills, and leadership development.</description></item><item><title>Education, Curriculum &amp; National Capacity Brief</title><link>/research/education-curriculum-national-capacity-brief/</link><pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate><guid>/research/education-curriculum-national-capacity-brief/</guid><description>Aligning curriculum reform and skills pipelines with Pakistan’s strategic and economic needs.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Capacity on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>/topics/capacity/</link>
+    <description>Recent content in Capacity on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/topics/capacity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Education, Curriculum &amp; National Capacity</title>
+      <link>/programs/education-curriculum-national-capacity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/programs/education-curriculum-national-capacity/</guid>
+      <description>Building human capital through curriculum reform, skills, and leadership development.</description>
+    </item>
+    <item>
+      <title>Education, Curriculum &amp; National Capacity Brief</title>
+      <link>/research/education-curriculum-national-capacity-brief/</link>
+      <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>/research/education-curriculum-national-capacity-brief/</guid>
+      <description>Aligning curriculum reform and skills pipelines with Pakistan’s strategic and economic needs.</description>
+    </item>
+  </channel>
+</rss>

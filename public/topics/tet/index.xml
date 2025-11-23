@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tet on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title><link>/topics/tet/</link><description>Recent content in Tet on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sun, 23 Nov 2025 00:35:29 +0000</lastBuildDate><atom:link href="/topics/tet/index.xml" rel="self" type="application/rss+xml"/><item><title>TEst</title><link>/blog/test/</link><pubDate>Sun, 23 Nov 2025 00:35:29 +0000</pubDate><guid>/blog/test/</guid><description>teste</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tet on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>/topics/tet/</link>
+    <description>Recent content in Tet on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Nov 2025 00:35:29 +0000</lastBuildDate>
+    <atom:link href="/topics/tet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TEst</title>
+      <link>/blog/test/</link>
+      <pubDate>Sun, 23 Nov 2025 00:35:29 +0000</pubDate>
+      <guid>/blog/test/</guid>
+      <description>teste</description>
+    </item>
+  </channel>
+</rss>
