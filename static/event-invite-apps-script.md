@@ -41,6 +41,7 @@ function doPost(e) {
       (eventStart ? new Date(eventStart.getTime() + 60 * 60 * 1000) : null);
     const location = p.event_location || "";
     const pageUrl = p.event_url || "";
+    const eventKey = p.event_key || pageUrl || eventTitle; // stable key to reuse a single event
     let joinLink = p.event_join_link || "";
 
     const eventId =
@@ -56,6 +57,7 @@ function doPost(e) {
             joinLink,
             name,
             email,
+            eventKey,
           })
         : "";
 
@@ -99,39 +101,50 @@ function upsertCalendarInvite(payload) {
   const calendar = CalendarApp.getCalendarById(payload.calendarId);
   if (!calendar) throw new Error("Calendar not found: " + payload.calendarId);
 
-  const description = buildDescription(payload.pageUrl, payload.joinLink);
-  const options = {
-    location: payload.location,
-    description,
-    guests: payload.email,
-    sendInvites: true,
-  };
+  const props = PropertiesService.getScriptProperties();
+  const key = payload.eventKey ? `event_${payload.eventKey}` : "";
+  const normalizeId = (id) => (id || "").replace(/@google\\.com$/i, "");
+  let savedId = payload.eventId || (key ? props.getProperty(key) : "");
+  let savedIdStripped = normalizeId(savedId);
 
-  let event;
-  if (payload.eventId) {
-    event = calendar.getEventById(payload.eventId);
-    if (event) {
-      event.setDescription(description);
-      if (payload.location) event.setLocation(payload.location);
-      event.addGuest(payload.email);
-    } else {
-      event = calendar.createEvent(
-        payload.eventTitle,
-        payload.eventStart,
-        payload.eventEnd || payload.eventStart,
-        options
-      );
-    }
-  } else {
+  // Try to reuse an existing event by ID (either provided or cached)
+  let event = null;
+  if (savedId) {
+    event = calendar.getEventById(savedId) || calendar.getEventById(savedIdStripped);
+  }
+
+  // If no event found, create once and cache the ID for subsequent RSVPs
+  if (!event) {
+    const options = {
+      location: payload.location,
+      description: buildDescription(payload.pageUrl, payload.joinLink),
+      sendInvites: false, // we'll add guests after creation
+    };
     event = calendar.createEvent(
       payload.eventTitle,
       payload.eventStart,
       payload.eventEnd || payload.eventStart,
       options
     );
+    savedId = event.getId();
+    savedIdStripped = normalizeId(savedId);
+    if (key) {
+      props.setProperty(key, savedId);
+      props.setProperty(`${key}_stripped`, savedIdStripped);
+    }
+  } else {
+    // Keep description/location up to date
+    event.setDescription(buildDescription(payload.pageUrl, payload.joinLink));
+    if (payload.location) event.setLocation(payload.location);
   }
 
-  return event.getId();
+  // Add guest (safely)
+  try {
+    event.addGuest(payload.email);
+  } catch (err) {
+    Logger.log("addGuest error for " + payload.email + ": " + err);
+  }
+  return savedId || event.getId();
 }
 
 function logRsvp({ name, email, eventTitle, eventId, joinLink, calendarId }) {

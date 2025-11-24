@@ -5,9 +5,9 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:/events/webinar-pakistans-strategic-position-in-a-multipolar-world/
-DTSTAMP:20251124T185831Z
-DTSTART:20251215T180000Z
-DTEND:20251215T193000Z
+DTSTAMP:20251124T191945Z
+DTSTART:20251227T130000Z
+DTEND:20251227T143000Z
 SUMMARY:Webinar: Pakistan’s Strategic Position in a Multipolar World
 DESCRIPTION:A focused webinar examining Pakistan’s role in the emerging multipolar order.
 LOCATION:Online (Zoom)

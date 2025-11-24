@@ -52,6 +52,7 @@
         <input type="text" name="hp_field" class="event-register__hp" autocomplete="off">
         <input type="hidden" name="event_title" value="{{ $.Title }}">
         <input type="hidden" name="event_url" value="{{ $.Permalink }}">
+        <input type="hidden" name="event_key" value="{{ $.File.BaseFileName }}">
         <input type="hidden" name="event_start" value="{{ $.Params.event_start }}">
         <input type="hidden" name="event_end" value="{{ $.Params.event_end }}">
         <input type="hidden" name="event_location" value="{{ $.Params.location }}">
