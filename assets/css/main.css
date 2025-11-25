@@ -1414,6 +1414,14 @@ button,
   flex-wrap: wrap;
   gap: 0.75rem;
 }
+.event-body.content {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.event-body.content img {
+  max-width: 100%;
+  height: auto;
+}
 
 .contact-form {
   background: var(--color-white);
