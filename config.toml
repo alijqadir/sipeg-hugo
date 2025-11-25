@@ -48,7 +48,7 @@ buildFuture = true
   contact_endpoint = "/forms/contact-handler.php"
   newsletter_endpoint = "/forms/newsletter-handler.php"
   event_registration_endpoint = "/forms/event-handler.php"
-  mission = "We pair independent research, policy labs, and civic partnerships so leaders can act on people-centered, evidence-based insights."
+  mission = "Positioning Pakistan through Knowledge, People Centric Policies and Global Insight. Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices."
   tagline = "Pakistan-centered foresight for a multipolar world."
 
   [params.research]

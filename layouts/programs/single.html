@@ -2,12 +2,13 @@
 <section class="section section--light">
   <div class="container">
     <article class="program-single">
+      {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
+      {{ $icon := .Params.icon | default "sparkle" }}
+      {{ $icon := or (index $iconMap $icon) $icon }}
       <header class="program-single__header">
-        {{ with .Params.icon }}
-          <span class="icon-circle program-single__icon" aria-hidden="true">
-            <i class="ph ph-{{ . }}"></i>
-          </span>
-        {{ end }}
+        <span class="icon-circle program-single__icon" aria-hidden="true">
+          <i class="ph ph-{{ $icon }}"></i>
+        </span>
         <div>
           <p class="eyebrow">Program</p>
           <h1>{{ .Title }}</h1>
