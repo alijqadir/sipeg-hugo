@@ -2,24 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/blog/</link>
+    <link>//localhost:1313/blog/</link>
     <description>Recent content in Blog on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Nov 2025 00:35:29 +0000</lastBuildDate>
-    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Nov 2025 09:44:07 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>random blog post</title>
+      <link>//localhost:1313/blog/random-blog-post/</link>
+      <pubDate>Tue, 25 Nov 2025 09:44:07 +0000</pubDate>
+      <guid>//localhost:1313/blog/random-blog-post/</guid>
+      <description>&lt;p&gt;/**&lt;/p&gt;&#xA;&lt;p&gt;* Google Apps Script Web App for SIPEG event RSVP automation.&lt;/p&gt;&#xA;&lt;p&gt;* Deploy as a Web App and drop the URL into each event&amp;rsquo;s front matter (`registration_endpoint`).&lt;/p&gt;&#xA;&lt;p&gt;*&lt;/p&gt;&#xA;&lt;p&gt;* Expected POST fields from the Hugo form:&lt;/p&gt;&#xA;&lt;p&gt;* - name, email (required)&lt;/p&gt;&#xA;&lt;p&gt;* - hp_field (honeypot)&lt;/p&gt;&#xA;&lt;p&gt;* - event_title, event_url, event_start, event_end, event_location&lt;/p&gt;&#xA;&lt;p&gt;* - gcal_calendar_id (optional override)&lt;/p&gt;&#xA;&lt;p&gt;* - gcal_event_id (optional existing event UID)&lt;/p&gt;&#xA;&lt;p&gt;* - event_join_link (Zoom/Meet URL fallback)&lt;/p&gt;</description>
+    </item>
     <item>
       <title>TEst</title>
-      <link>/blog/test/</link>
+      <link>//localhost:1313/blog/test/</link>
       <pubDate>Sun, 23 Nov 2025 00:35:29 +0000</pubDate>
-      <guid>/blog/test/</guid>
+      <guid>//localhost:1313/blog/test/</guid>
       <description>teste</description>
     </item>
     <item>
       <title>Emerging Geopolitics: Meaning, Why It Matters, and Key Implications</title>
-      <link>/blog/emerging-geopolitics/</link>
+      <link>//localhost:1313/blog/emerging-geopolitics/</link>
       <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/emerging-geopolitics/</guid>
+      <guid>//localhost:1313/blog/emerging-geopolitics/</guid>
       <description>A concise guide to the forces reshaping state behavior, markets, and societies—from technology rivalry and climate to demographics and security.</description>
     </item>
   </channel>

@@ -4,14 +4,14 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:/events/teset45/
-DTSTAMP:20251125T121630Z
+UID://localhost:1313/events/teset45/
+DTSTAMP:20251125T121930Z
 DTSTART:20251125T022219Z
 DTEND:20251125T022219Z
 SUMMARY:teset45
 DESCRIPTION:ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 LOCATION:
-URL:/events/teset45/
+URL://localhost:1313/events/teset45/
 END:VEVENT
 END:VCALENDAR

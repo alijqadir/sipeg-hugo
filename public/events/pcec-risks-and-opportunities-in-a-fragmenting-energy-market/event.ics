@@ -4,13 +4,13 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/
-DTSTAMP:20251125T121630Z
+UID://localhost:1313/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/
+DTSTAMP:20251125T121930Z
 DTSTART:20251008T140000Z
 DTEND:20251008T153000Z
 SUMMARY:PCEC: Risks and Opportunities in a Fragmenting Energy Market
 DESCRIPTION:A SIPEG webinar unpacking the Pakistan-China Energy Corridor and its regional ramifications.
 LOCATION:Online (Zoom)
-URL:/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/
+URL://localhost:1313/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/
 END:VEVENT
 END:VCALENDAR

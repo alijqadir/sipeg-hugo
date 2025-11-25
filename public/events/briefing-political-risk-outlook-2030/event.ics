@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SIPEG//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID://localhost:1313/events/briefing-political-risk-outlook-2030/
+DTSTAMP:20251125T121930Z
+DTSTART:20251201T032117Z
+DTEND:20251201T032117Z
+SUMMARY:Briefing: Political Risk Outlook 2030
+DESCRIPTION:Scenario-based briefing on Pakistan’s political and regulatory risk landscape for 2025.
+LOCATION:Lahore & Online (Hybrid)
+URL://localhost:1313/events/briefing-political-risk-outlook-2030/
+END:VEVENT
+END:VCALENDAR
