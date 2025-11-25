@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Board of Advisors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/board-of-advisors/</link>
+    <link>//localhost:1313/board-of-advisors/</link>
     <description>Recent content in Board of Advisors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/board-of-advisors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/board-of-advisors/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -4,13 +4,13 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:/events/policy-briefs-summit-pakistans-economic-choices/
-DTSTAMP:20251125T021845Z
+UID://localhost:1313/events/policy-briefs-summit-pakistans-economic-choices/
+DTSTAMP:20251125T023225Z
 DTSTART:20250910T100000Z
 DTEND:20250910T130000Z
 SUMMARY:Policy Briefs Summit: Pakistan’s Economic Choices
 DESCRIPTION:A summit to workshop policy briefs on trade, investment, and economic resilience for 2025.
 LOCATION:Islamabad (Hybrid)
-URL:/events/policy-briefs-summit-pakistans-economic-choices/
+URL://localhost:1313/events/policy-briefs-summit-pakistans-economic-choices/
 END:VEVENT
 END:VCALENDAR

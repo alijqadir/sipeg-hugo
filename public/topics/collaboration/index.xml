@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Collaboration on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/collaboration/</link>
+    <link>//localhost:1313/topics/collaboration/</link>
     <description>Recent content in Collaboration on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/topics/collaboration/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/topics/collaboration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advisory, Training &amp; Collaboration</title>
-      <link>/programs/advisory-training-collaboration/</link>
+      <link>//localhost:1313/programs/advisory-training-collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/programs/advisory-training-collaboration/</guid>
+      <guid>//localhost:1313/programs/advisory-training-collaboration/</guid>
       <description>Advising, consultancy, trainings, collaborations, and research that link insight to action.</description>
     </item>
     <item>
       <title>Advisory, Training &amp; Collaboration Brief</title>
-      <link>/research/advisory-training-collaboration-brief/</link>
+      <link>//localhost:1313/research/advisory-training-collaboration-brief/</link>
       <pubDate>Tue, 28 May 2024 00:00:00 +0000</pubDate>
-      <guid>/research/advisory-training-collaboration-brief/</guid>
+      <guid>//localhost:1313/research/advisory-training-collaboration-brief/</guid>
       <description>Advisory formats, trainings, and collaborations that move insight into institutional action.</description>
     </item>
   </channel>

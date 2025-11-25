@@ -3,7 +3,7 @@
     "title": "Webinar: Pakistan’s Strategic Position in a Multipolar World",
     "start": "2025-12-27T13:00:00+00:00",
     "end":   "2025-12-27T14:30:00+00:00",
-    "url":   "/events/webinar-pakistans-strategic-position-in-a-multipolar-world/",
+    "url":   "//localhost:1313/events/webinar-pakistans-strategic-position-in-a-multipolar-world/",
     "location": "Online (Zoom)",
     "summary": "A focused webinar examining Pakistan’s role in the emerging multipolar order."
   },
@@ -11,7 +11,7 @@
     "title": "Eugenes Wedding 2",
     "start": "2025-12-31T01:50:36+00:00",
     "end":   "2025-12-31T01:50:36+00:00",
-    "url":   "/events/eugenes-wedding-2/",
+    "url":   "//localhost:1313/events/eugenes-wedding-2/",
     "location": "Lahore",
     "summary": ""
   },
@@ -19,7 +19,7 @@
     "title": "Euegenes Wedding",
     "start": "2025-12-31T01:33:59+00:00",
     "end":   "2025-12-31T01:33:59+00:00",
-    "url":   "/events/euegenes-wedding/",
+    "url":   "//localhost:1313/events/euegenes-wedding/",
     "location": "Lahore",
     "summary": "\nZWCAD Year-End Promotion 2025\nEnjoy up to 15% off new purchases or Yearly Maintenance\nCampaign period: 25 November – 25 December 2025"
   },
@@ -27,7 +27,7 @@
     "title": "PCEC: Risks and Opportunities in a Fragmenting Energy Market",
     "start": "2025-10-08T14:00:00+05:00",
     "end":   "2025-10-08T15:30:00+05:00",
-    "url":   "/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/",
+    "url":   "//localhost:1313/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/",
     "location": "Online (Zoom)",
     "summary": "A SIPEG webinar unpacking the Pakistan-China Energy Corridor and its regional ramifications."
   },
@@ -35,7 +35,7 @@
     "title": "Policy Briefs Summit: Pakistan’s Economic Choices",
     "start": "2025-09-10T10:00:00+05:00",
     "end":   "2025-09-10T13:00:00+05:00",
-    "url":   "/events/policy-briefs-summit-pakistans-economic-choices/",
+    "url":   "//localhost:1313/events/policy-briefs-summit-pakistans-economic-choices/",
     "location": "Islamabad (Hybrid)",
     "summary": "A summit to workshop policy briefs on trade, investment, and economic resilience for 2025."
   },
@@ -43,7 +43,7 @@
     "title": "Roundtable: Climate Adaptation Financing",
     "start": "2025-08-20T14:00:00+05:00",
     "end":   "2025-08-20T15:30:00+05:00",
-    "url":   "/events/roundtable-climate-adaptation-financing/",
+    "url":   "//localhost:1313/events/roundtable-climate-adaptation-financing/",
     "location": "Online (Teams)",
     "summary": "A roundtable on financing frameworks for climate adaptation and urban resilience in Pakistan."
   },
@@ -51,7 +51,7 @@
     "title": "Briefing: Political Risk Outlook 2025",
     "start": "2025-07-12T15:00:00+05:00",
     "end":   "2025-07-12T16:30:00+05:00",
-    "url":   "/events/briefing-political-risk-outlook-2025/",
+    "url":   "//localhost:1313/events/briefing-political-risk-outlook-2025/",
     "location": "Lahore \u0026 Online (Hybrid)",
     "summary": "Scenario-based briefing on Pakistan’s political and regulatory risk landscape for 2025."
   },
@@ -59,7 +59,7 @@
     "title": "Workshop: Education, Curriculum \u0026 National Capacity",
     "start": "2025-05-05T11:00:00+05:00",
     "end":   "2025-05-05T13:00:00+05:00",
-    "url":   "/events/workshop-education-curriculum-national-capacity/",
+    "url":   "//localhost:1313/events/workshop-education-curriculum-national-capacity/",
     "location": "Forman Christian College, Lahore",
     "summary": "Hands-on workshop aligning curriculum reform and leadership pipelines with national capacity goals."
   }]
