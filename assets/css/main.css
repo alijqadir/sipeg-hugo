@@ -610,12 +610,16 @@ button,
 .program-single__header {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
+  gap: 1.25rem;
+  align-items: flex-start;
   margin-bottom: 1.5rem;
 }
 
 .program-single__icon {
+  flex: 0 0 auto;
+  width: 64px;
+  height: 64px;
+  font-size: 1.8rem;
   border-color: rgba(65, 10, 72, 0.25);
   color: var(--color-secondary);
 }
