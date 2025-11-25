@@ -39,9 +39,6 @@
       <p>We received your message and logged it to our secure queue. Expect a response from SIPEG within two business days.</p>
       <a class="btn btn-outline" href="{{ "/" | relURL }}">Back to homepage</a>
     </div>
-    <p class="contact-form__note">
-      After you see the confirmation, we archive your message in a secure on-server CSV and sync it to our Google Sheet workflow. If you don’t see a confirmation, please email <a href="mailto:info@sipeg.org">info@sipeg.org</a>.
-    </p>
     {{ with .Content }}
     <div class="content" style="margin-top:2.5rem;">
       {{ . }}
