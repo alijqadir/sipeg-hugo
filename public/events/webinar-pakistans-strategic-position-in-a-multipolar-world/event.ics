@@ -4,13 +4,13 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID://localhost:1313/events/webinar-pakistans-strategic-position-in-a-multipolar-world/
-DTSTAMP:20251125T023225Z
+UID:/events/webinar-pakistans-strategic-position-in-a-multipolar-world/
+DTSTAMP:20251125T023705Z
 DTSTART:20251227T130000Z
 DTEND:20251227T143000Z
 SUMMARY:Webinar: Pakistan’s Strategic Position in a Multipolar World
 DESCRIPTION:A focused webinar examining Pakistan’s role in the emerging multipolar order.
 LOCATION:Online (Zoom)
-URL://localhost:1313/events/webinar-pakistans-strategic-position-in-a-multipolar-world/
+URL:/events/webinar-pakistans-strategic-position-in-a-multipolar-world/
 END:VEVENT
 END:VCALENDAR

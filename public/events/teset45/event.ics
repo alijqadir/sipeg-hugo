@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SIPEG//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:/events/teset45/
+DTSTAMP:20251125T023705Z
+DTSTART:20251125T022219Z
+DTEND:20251125T022219Z
+SUMMARY:teset45
+DESCRIPTION:ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+LOCATION:
+URL:/events/teset45/
+END:VEVENT
+END:VCALENDAR
