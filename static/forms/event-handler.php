@@ -5,7 +5,7 @@
 // - Deploy the Apps Script from static/event-invite-apps-script.md and paste the /exec URL below.
 
 const CSV_PATH = __DIR__ . '/data/event-rsvps.csv';
-const GOOGLE_WEBHOOK = 'https://script.google.com/macros/s/AKfycbzNT8VS7TL1CK9GI1NXCcHz-Mu_6Cl0YAotlIK0gxKdEehgqBh4aEI9kaYdnEGBKEt3/exec';
+const GOOGLE_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyu1pg3ccoJVlglejshecCOFx-tsR3AAHSPzc8yySqR_2BmEueZwgSTvUrDrL_vQ-Kb/exec';
 
 header('Content-Type: text/plain; charset=utf-8');
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {

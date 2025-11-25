@@ -5,19 +5,15 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:/events/euegenes-wedding/
-DTSTAMP:20251123T051512Z
-DTSTART:20251130T230510Z
-DTEND:20251122T230510Z
+DTSTAMP:20251125T020132Z
+DTSTART:20251231T013359Z
+DTEND:20251231T013359Z
 SUMMARY:Euegenes Wedding
-DESCRIPTION:Repository access: select alijqadir/sipeg-hugo.
-Permissions (repo): Contents: Read and write (also set Metadata: Read).
-Save and copy the token.
-In DecapBridge dashboard, edit your “Site” and replace the PAT with the new one.
-If your default branch is main, also set branch: main in static/admin/config.yml.
-Hard-reload /admin and try publishing again.
-If the repo is in an org with SSO, make sure the PAT is authorized for that org.
-
-LOCATION:
+DESCRIPTION:
+ZWCAD Year-End Promotion 2025
+Enjoy up to 15% off new purchases or Yearly Maintenance
+Campaign period: 25 November – 25 December 2025
+LOCATION:Lahore
 URL:/events/euegenes-wedding/
 END:VEVENT
 END:VCALENDAR
