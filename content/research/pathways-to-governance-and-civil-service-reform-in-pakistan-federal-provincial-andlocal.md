@@ -1,0 +1,76 @@
+---
+title: "Pathways to Governance and Civil Service Reform in Pakistan: Federal,
+  Provincial andLocal"
+date: 2025-11-26T13:29:25.122Z
+summary: >-
+  The purpose of this research is to provide a framework for dialogue on the
+  concept of
+
+  governance and issues of civil service reform in Pakistan in general, and the Provinces in
+
+  particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may
+
+  be pursued to induce behavioral and structural change. So the paper, therefore
+
+  argues that, following the implementation of the 18th Amendment, provincial and
+
+  local governments should be the pivot for improving governance and pushing the
+
+  long overdue civil service reform.
+author:
+  - Saeed Shafqat
+cover: /uploads/hero.webp
+pdf: /uploads/pathways-to-civil-service-reform2020.pdf
+draft: false
+---
+The purpose of this research is to provide a framework for dialogue on the concept of governance and issues of civil service reform in Pakistan in general, and the Provinces in particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may be pursued to induce behavioral and structural change. So the paper, therefore argues that, following the implementation of the 18th Amendment, provincial and local governments should be the pivot for improving governance and pushing the long overdue civil service reform.
+
+
+
+**Defining Governance**
+
+
+
+Governance is a multifaceted concept generally requiring an understanding of interrelationships among social, economic, political and cultural variables and all that falls within the institutional setting of the state. The meaning that these variables bring to the governance enterprise is profound. Governance can most effectively occur when there is good understanding and knowledge of local conditions. The principal components of governance are politico-cultural, institutional, and to some degree technical (which increasingly involves imparting IT and other skills to bureaucracies) and revolve around distribution, exchange and regulation of authority and power sharing mechanisms between the state and citizens. The World Bank, however, provides a definition, which emphasizes the institutional and regulatory dimensions:
+
+
+
+“Governance consists of the traditions and institutions by which authority in a country is exercised. This includes the process by which governments are selected, monitored and replaced; the capacity of the government to effectively formulate and implement sound policies; and the respect of citizens and the state for the institutions that govern economic and social interactions among them.”
+
+
+
+## **Contextualizing Governance Dynamics in Pakistan**
+
+
+
+Given this definitional context, we may proceed to examine the dynamics of governance in Pakistan. Governance in Pakistan, like most developing countries, is a complex issue. It is like a set of concentric circles, each circle is tangled with the other – touching one means, opening the other. It is not simply an issue restricted to three Es’ – Economy, Efficiency and Effectiveness. Governance has cultural, political and institutional manifestations – that have social costs, reflected in the patronage, lack of consensus among political leaders and various types of elites, ethnic/religious cleavages, polarized political parties, absence of continuity in policies and increasingly personalization of institutions. In short, the paradox is how to steer through centralized state institutions and fragmented societal structures? It is pertinent to remember that in the past four decades state-society relations have undergone enormous transformations, the Pakistani State has moved away from being Paternal to ‘Predatory’. Citizens do not trust the state, and there is skepticism about its institutions and capacity to provide security, justice, development and human rights. 
+
+Centre for Public Policy and Governance, 2020
+
+
+
+More recently, the rivalry between Benazir Bhutto and Nawaz Sharif (1989 – 1999) squandered an opportunity for party development, representative government, good governance and constitutional liberalism – respect for rule of law, protection of minorities and freedom of expression and association. Pervez Musharraf (1999 – 2008) complicated things further. We reached a point where Pakistani leaders could communicate with each other only through an ‘international broker’. The successful completion (2008 – 2013) of term by one civilian government and handing over power to another party-led government (2013-2018) aroused a lot of expectations about electoral outcomes and democratic processes. However, the political outcome of 2018 elections and installation of the Pakistan Tehreek-Insaaf (PTI) government under Imran Khan has aggravated politics of confrontation and polarized the party system. The political parties and their leadership have not yet demonstrated the kind of vision and commitment that can sustain representative government and build the public’s faith in the party system. Citizens have even begun to question the very purpose of the state. The state-society disconnect has reached a point that demands a re-imagining of the state itself. That said, restoring respect for rule of law and promoting compliance of law among the people is a daunting task. This is evidenced by the fact that the country has consistently been scoring low on the ‘Rule of Law’ dimension of governance, according to the data provided by the World Banks’ World Governance Indicators (WGI). Over the past decade, Pakistan has remained in the negative range, with an average annual estimate score of -0.8 on a standard normal distribution range (-2.5 to 2.5), indicating a weak rule of law. So the question is, is state-society rejuvenation and restoration of citizens’ trust in the state achievable? The response is as follows:
+
+
+
+## Rejuvenating State and Society
+
+
+
+First, an important function of the state is to mediate between competing interests that constantly put demands on it. Leaders at the national level appear incapable of performing this role of mediation and developing a shared vision on managing competing interests. This could only happen by restoring the respect of constitutional offices such as – the president, prime minister, leader of the opposition, chief election commissioner and chairman Federal Public Service Commission (FPSC), to name a few. This implies office holders of such positions should be persons of repute, personal integrity and public credibility, therefore must be elected and selected through stringent public scrutiny. If the constitutional offices are not seen as independent and impartial, institutional integrity will continue to suffer. Constitutional office bearers must be seen as neutral arbiters of conflict, dispute resolution. This requires upholding the provisions of the Constitution in letter and spirit. Of course this is easier said than done, but must be said nonetheless.
+
+
+
+Secondly, what are the sovereign functions of the state? Does it have legitimate ‘monopoly of coercion’? Any and all governance reform efforts should take account of the extent to which the government can effectively enforce change. For example, our defense capability required further ability for fighting the insurgency and counterinsurgency and the asymmetric war the Tehreek–e–Taliban Pakistan (TTP), and other militant groups were waging against the state. It is equally disturbing to note that on occasions the state has also been suspected for nurturing militant groups. The hastily built twenty point National Action Plan i.e.; December 2014 (NAP) agenda was overshadowed by the urgency to establish military courts. This further eroded the credibility of the political leadership and cast aspersions on its capacity to establish supremacy of the parliament, which has reinforced the perception that the inadequacies of political leadership and political parties continue to perpetuate military hegemony. Delineating the police and security functions of the state could thwart this process, but the pretext of ‘extra-ordinary conditions’ continues to be used to give benefit to the military. The adoption and approval of the 21st Constitutional Amendment clearly extends the military’s role in state functions, promoting the ‘militarization’ of society instead of nourishing democratic norms, values and procedures.
+
+
+
+Thirdly, how can policing be improved and who should manage it? Citizen security and law and order have become issues of primary concern. In this context, police reform has frequently been debated. However, it needs to be underscored that law and order is a provincial subject and redesigning the role and relationship between provincial and district governments will be of equal importance. Under the current dispensation, the provinces seem in agreement to alter the provisions of Local Government Ordinance (LGO) 2001. However, the Local Government Act (LGA) 2013 and the more recently, the 2019 version passed by the Punjab Assembly does not arouse much confidence in empowering the community and local governments. In fact they reflect the mindset of controlling fiscal and administrative authority of the local governments. If the LGO 2001 constricted the functioning of local governments through central government, the 2013 LGAs retain that role with the provincial governments. The lower tiers of government never got functional autonomy and a chance to perform.
+
+
+
+Fourthly, how is training of civil servants imparted? Training, in the first instance, is not valued in the civil services. More importantly it is designed in a manner that it focuses only on the higher bureaucracy (that is the Central Superior Services – CSS). For example, the National Management College (NMC) and National Defence University (NDU) spend millions of rupees to facilitate senior civil servants and military officials’ training and exposure through foreign travels, while, for the middle and lower tiers, such trainings are inadequate or absent. It is also not clear if such an expensive form of training promotes proficiency in policy formulation, improvement in delivery of services or effective and judicious policies – except that it brightens the prospect of promotion to the highest position in the civil-military bureaucracy. On the other hand, in the higher bureaucracy, a sort of class war prevails; where Police, Audit & Accounts, DMG (now PAS), Foreign Service and Office Management Group – to name a few services appear to be contesting rather than working harmoniously to pursue policy formulation. That implies careful scrutiny of role and relationships between different services, differentiation in their functions and responsibilities and assuring career progression for the budding provincial cadre. Training and skills development, therefore must not be limited to the higher cadre officers, but must begin at the lowest levels of government, including ‘street level bureaucrats’ who not only act as the first point of contact between the public and the state, but also act as important agents of feedback to decision-making bodies. With their latter role, lower level government officials provide essential information on loopholes in policy implementation. For example, this can tell us why it may be challenging to implement a certain government decision in a certain area, how the local context can be incorporated into the design of a particular policy, and what the unique characteristics are at the local level that influences the outcome of each policy decision. Therefore, bottoms-up approach is necessary to induce behavioral and structural change, and improve the standing of government officials as efficient and effective service providers. This is imperative if one were to truly improve the overall ‘government effectiveness’ which falls in a low 19th percentile as of 2018, in comparison to other countries globally, according to the (WGI) provided by the World Bank.
+
+
+
+Finally, it must be put up front that no governance reform is possible without serious effort towards political system reform. The political parties are the linchpins for any representative and democratic order. Pakistan suffers not only from a credibility crisis of political leadership, but more importantly, suffers also from their inability to be democratic in their decision-making and selection of leadership. Given this trend, political system reform should be given top priority. Deepening credibility crisis of political leadership, decay of political parties, and low credence of military rule is encouraging extremist forces to capture power and provide an alternate model of Proto-State—driven by extremist religious ideology. Unless the political leadership becomes cognizant that they need to build a party system which upholds rule of law; supports respect for opposition, shows determination and seriousness of purpose to fight terrorism, combat corruption, and has the capacity to initiate institutional rejuvenation and reform, governance will not improve.
