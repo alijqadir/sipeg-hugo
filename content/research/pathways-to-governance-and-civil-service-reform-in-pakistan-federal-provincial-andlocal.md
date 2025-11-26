@@ -2,7 +2,8 @@
 title: "Pathways to Governance and Civil Service Reform in Pakistan: Federal,
   Provincial andLocal"
 date: 2025-11-26T13:29:25.122Z
-summary: >-
+summary: ""
+abstract: >-
   The purpose of this research is to provide a framework for dialogue on the
   concept of
 
@@ -17,11 +18,16 @@ summary: >-
   local governments should be the pivot for improving governance and pushing the
 
   long overdue civil service reform.
-author:
-  - Saeed Shafqat
+authors:
+  - Saeed
+  - Shafqat
+topics:
+  - governance
 cover: /uploads/hero.webp
 pdf: /uploads/pathways-to-civil-service-reform2020.pdf
 draft: false
+author:
+  - Saeed Shafqat
 ---
 The purpose of this research is to provide a framework for dialogue on the concept of governance and issues of civil service reform in Pakistan in general, and the Provinces in particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may be pursued to induce behavioral and structural change. So the paper, therefore argues that, following the implementation of the 18th Amendment, provincial and local governments should be the pivot for improving governance and pushing the long overdue civil service reform.
 
