@@ -4,8 +4,8 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:/events/euegenes-wedding/
-DTSTAMP:20251126T124852Z
+UID://localhost:1313/events/euegenes-wedding/
+DTSTAMP:20251126T125105Z
 DTSTART:20251231T013359Z
 DTEND:20251231T013359Z
 SUMMARY:Euegenes Wedding
@@ -14,6 +14,6 @@ ZWCAD Year-End Promotion 2025
 Enjoy up to 15% off new purchases or Yearly Maintenance
 Campaign period: 25 November – 25 December 2025
 LOCATION:Lahore
-URL:/events/euegenes-wedding/
+URL://localhost:1313/events/euegenes-wedding/
 END:VEVENT
 END:VCALENDAR

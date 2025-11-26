@@ -4,13 +4,13 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:/events/roundtable-climate-adaptation-financing/
-DTSTAMP:20251126T124852Z
+UID://localhost:1313/events/roundtable-climate-adaptation-financing/
+DTSTAMP:20251126T125105Z
 DTSTART:20250820T140000Z
 DTEND:20250820T153000Z
 SUMMARY:Roundtable: Climate Adaptation Financing
 DESCRIPTION:A roundtable on financing frameworks for climate adaptation and urban resilience in Pakistan.
 LOCATION:Online (Teams)
-URL:/events/roundtable-climate-adaptation-financing/
+URL://localhost:1313/events/roundtable-climate-adaptation-financing/
 END:VEVENT
 END:VCALENDAR
