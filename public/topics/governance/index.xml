@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Governance on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/governance/</link>
+    <link>//localhost:1313/topics/governance/</link>
     <description>Recent content in Governance on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 02 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/topics/governance/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/topics/governance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Identity, Governance, and Social Cohesion</title>
-      <link>/research/identity-governance-and-social-cohesion/</link>
+      <link>//localhost:1313/research/identity-governance-and-social-cohesion/</link>
       <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/research/identity-governance-and-social-cohesion/</guid>
+      <guid>//localhost:1313/research/identity-governance-and-social-cohesion/</guid>
       <description>&lt;h3 id=&#34;evolving-narratives&#34;&gt;Evolving Narratives&lt;/h3&gt;&#xA;&lt;p&gt;Through archival analysis and contemporary discourse mapping, SIPEG researchers trace how identity frames influence public expectations of the state. The study highlights points of convergence between civic nationalism and faith-based narratives.&lt;/p&gt;&#xA;&lt;h3 id=&#34;institutional-pathways&#34;&gt;Institutional Pathways&lt;/h3&gt;&#xA;&lt;p&gt;Reform initiatives require deliberate alignment across federal, provincial, and local institutions. Case studies from Punjab and Khyber Pakhtunkhwa reveal how administrative experimentation is reshaping citizen engagement.&lt;/p&gt;&#xA;&lt;h3 id=&#34;implications-for-cohesion&#34;&gt;Implications for Cohesion&lt;/h3&gt;&#xA;&lt;p&gt;Investing in inclusive curricula, digital public services, and open data transparency can dilute ethno-sectarian polarization while reinforcing trust in governance.&lt;/p&gt;</description>
     </item>
   </channel>
