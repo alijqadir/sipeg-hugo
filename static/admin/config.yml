@@ -91,7 +91,8 @@ collections:
           required: false,
         }
       - { label: "Summary", name: "summary", widget: "text", required: false }
-      - { label: "Authors", name: "author", widget: "list", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - { label: "Authors", name: "authors", widget: "list", required: false }
       - {
           label: "Topics/Tags",
           name: "topics",
