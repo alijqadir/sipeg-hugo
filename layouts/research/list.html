@@ -23,6 +23,12 @@
 
   {{ $years := slice }}
   {{ $topics := slice }}
+  {{ $focusAreas := slice }}
+  {{ $programs := sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc" }}
+  {{ range $programs }}
+    {{ $key := .Params.focus_key | default .File.TranslationBaseName }}
+    {{ if $key }}{{ $focusAreas = $focusAreas | append (dict "key" $key "title" .Title) }}{{ end }}
+  {{ end }}
   {{ range $pages }}
     {{ with .Params.year }}{{ $years = $years | append . }}{{ end }}
     {{ with .Params.topics }}{{ range . }}{{ $topics = $topics | append . }}{{ end }}{{ end }}
@@ -86,6 +92,17 @@
             {{ end }}
           </div>
         </section>
+        <section class="filters-section">
+          <h3>Focus areas</h3>
+          <div class="filters-section__tags">
+            {{ range $focusAreas }}
+              <label>
+                <input type="checkbox" value="{{ .key }}" data-filter-focus>
+                <span>{{ .title }}</span>
+              </label>
+            {{ end }}
+          </div>
+        </section>
       </div>
       <footer class="filters-panel__footer">
         <button type="button" class="btn btn-outline" id="filters-clear">Clear filters</button>
@@ -117,6 +134,7 @@
     const authorInput = document.getElementById('filter-author');
     const yearInputs = Array.from(document.querySelectorAll('[data-filter-year]'));
     const topicInputs = Array.from(document.querySelectorAll('[data-filter-topic]'));
+    const focusInputs = Array.from(document.querySelectorAll('[data-filter-focus]'));
     const clearBtn = document.getElementById('filters-clear');
     const summaryEl = document.getElementById('filters-summary');
     const emptyEl = document.getElementById('no-results');
@@ -176,6 +194,7 @@
 
     const getActiveYears = () => yearInputs.filter((input) => input.checked).map((input) => input.value);
     const getActiveTopics = () => topicInputs.filter((input) => input.checked).map((input) => input.value.toLowerCase());
+    const getActiveFocus = () => focusInputs.filter((input) => input.checked).map((input) => input.value);
 
     const compare = (mode) => {
       return (a, b) => {
@@ -225,12 +244,14 @@
       const authorTerm = (authorInput?.value || '').trim().toLowerCase();
       const activeYears = getActiveYears();
       const activeTopics = getActiveTopics();
+      const activeFocus = getActiveFocus();
       let visible = 0;
 
       cards.forEach((card) => {
         const data = card.dataset;
         const haystack = `${data.title || ''} ${data.abstract || ''} ${data.topics || ''} ${data.authors || ''}`;
         const topics = (data.topics || '').split('|');
+        const focusList = (data.focus || '').split('|').filter(Boolean);
         let show = true;
 
         if (searchTerm && !haystack.includes(searchTerm)) {
@@ -250,12 +271,17 @@
           if (!match) show = false;
         }
 
+        if (show && activeFocus.length) {
+          const matchFocus = focusList.some((f) => activeFocus.includes(f));
+          if (!matchFocus) show = false;
+        }
+
         card.classList.toggle('is-hidden', !show);
         if (show) visible += 1;
       });
 
       if (summaryEl) {
-        const filtersActive = Boolean(searchTerm || authorTerm || activeYears.length || activeTopics.length);
+        const filtersActive = Boolean(searchTerm || authorTerm || activeYears.length || activeTopics.length || activeFocus.length);
         if (visible === total && !filtersActive) {
           summaryEl.textContent = `${total} publications available.`;
         } else {
@@ -293,12 +319,14 @@
     authorInput?.addEventListener('input', handleInputChange);
     yearInputs.forEach((input) => input.addEventListener('change', applyFilters));
     topicInputs.forEach((input) => input.addEventListener('change', applyFilters));
+    focusInputs.forEach((input) => input.addEventListener('change', applyFilters));
 
     clearBtn?.addEventListener('click', () => {
       if (searchInput) searchInput.value = '';
       if (authorInput) authorInput.value = '';
       yearInputs.forEach((input) => (input.checked = false));
       topicInputs.forEach((input) => (input.checked = false));
+      focusInputs.forEach((input) => (input.checked = false));
       if (sortSelect) {
         sortSelect.value = defaultSort;
         applySort(defaultSort, true);

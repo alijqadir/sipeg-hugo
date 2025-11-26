@@ -22,7 +22,7 @@
   
   
   
-   {{ $programs := first 6 (sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc") }}
+   {{ $programs := sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc" }}
   {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
   <section class="section section--offwhite" aria-labelledby="focus-areas">
     <div class="container">

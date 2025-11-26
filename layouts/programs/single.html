@@ -20,13 +20,18 @@
       </div>
     </article>
 
-    {{ $topics := .Params.topics | default (slice) }}
-    {{ $cats := .Params.categories | default (slice) }}
+    {{ $focusKey := .Params.focus_key | default .File.TranslationBaseName }}
     {{ $related := where .Site.RegularPages "Section" "research" }}
-    {{ if gt (len $cats) 0 }}
-      {{ $related = where $related "Params.categories" "intersect" $cats }}
-    {{ else if gt (len $topics) 0 }}
-      {{ $related = where $related "Params.topics" "intersect" $topics }}
+    {{ if $focusKey }}
+      {{ $related = where $related "Params.focus_areas" "intersect" (slice $focusKey) }}
+    {{ else }}
+      {{ $topics := .Params.topics | default (slice) }}
+      {{ $cats := .Params.categories | default (slice) }}
+      {{ if gt (len $cats) 0 }}
+        {{ $related = where $related "Params.categories" "intersect" $cats }}
+      {{ else if gt (len $topics) 0 }}
+        {{ $related = where $related "Params.topics" "intersect" $topics }}
+      {{ end }}
     {{ end }}
     {{ $related = first 6 (sort $related "Date" "desc") }}
     {{ if gt (len $related) 0 }}

@@ -12,6 +12,8 @@
 {{ with $topics }}
   {{ $primaryTopic = index . 0 }}
 {{ end }}
+{{ $focus := .Params.focus_areas | default (slice) }}
+{{ $focusAttr := delimit $focus "|" }}
 {{ $abstractAttr := (.Params.abstract | default "" | plainify | lower) }}
 <article class="card research-card"
   data-year="{{ .Params.year }}"
@@ -20,6 +22,7 @@
   data-topic="{{ $primaryTopic | lower }}"
   data-authors="{{ $authorsAttr }}"
   data-topics="{{ $topicsAttr }}"
+  data-focus="{{ $focusAttr }}"
   data-abstract="{{ $abstractAttr }}">
   <a class="research-card__image" href="{{ .RelPermalink }}">
     <img src="{{ with .Params.cover }}{{ . }}{{ else }}/images/r-placeholder.webp{{ end }}" alt="{{ .Title }} cover" loading="lazy" decoding="async">
@@ -43,5 +46,8 @@
   {{ end }}
   {{ range .Params.authors }}
     <span class="pf" data-pagefind-filter="author:{{ . }}"></span>
+  {{ end }}
+  {{ range $focus }}
+    <span class="pf" data-pagefind-filter="focus:{{ . }}"></span>
   {{ end }}
 </article>

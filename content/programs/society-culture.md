@@ -3,6 +3,7 @@ title: "Culture, Identity & Diplomacy"
 summary: "Identity, media, and cultural production as strategic assets in Pakistan’s diplomacy and social cohesion."
 icon: "users"
 icon_text: "CID"
+focus_key: "culture-identity-diplomacy"
 categories: ["Culture, Identity & Diplomacy"]
 topics: ["Culture", "Identity", "Diplomacy"]
 weight: 4

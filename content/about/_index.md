@@ -16,13 +16,13 @@ highlights:
 gallery:
   - title: "Policy Dialogues"
     caption: "Roundtables that convene scholars, practitioners, and civic leaders."
-    image: "/images/p1.webp"
+    image: "/images/Policy-Dialouge.png"
   - title: "Strategic Research"
     caption: "Interdisciplinary teams translating data into actionable guidance."
-    image: "/images/p2.webp"
+    image: "/images/StrategicResearch.png"
   - title: "Capacity Building"
     caption: "Training labs and executive education for public and private partners."
-    image: "/images/p3.webp"
+    image: "/images/Capacity-Building.png"
 list_sections:
   - title: "Pivoting Research & Policy"
     icon: "layers"

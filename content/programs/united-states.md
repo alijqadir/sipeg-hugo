@@ -3,6 +3,7 @@ title: "Education, Curriculum & National Capacity"
 summary: "Building human capital through curriculum reform, skills, and leadership development."
 icon: "book"
 icon_text: "EDU"
+focus_key: "education-curriculum-capacity"
 categories: ["Education, Curriculum & National Capacity"]
 topics: ["Education", "Curriculum", "Capacity"]
 weight: 3

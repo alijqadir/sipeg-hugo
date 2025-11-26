@@ -60,7 +60,7 @@
           <div class="about-list-card__header">
             {{ $iconName := or (index $iconMap .icon) .icon }}
             {{ with $iconName }}
-            <span class="icon-circle icon-circle--sm about-list-card__icon" aria-hidden="true">
+            <span class="about-list-card__icon" aria-hidden="true">
               <i class="ph ph-{{ . }}"></i>
             </span>
             {{ end }}
