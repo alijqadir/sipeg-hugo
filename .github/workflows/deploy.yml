@@ -42,8 +42,3 @@ jobs:
           server-dir: ${{ secrets.FTP_PATH }}
           local-dir: public/
           dangerous-clean-slate: false
-          exclude: |
-            blog/**
-            events/**
-            research/**
-            people/**
