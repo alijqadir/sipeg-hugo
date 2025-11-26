@@ -60,9 +60,9 @@
               {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
               <div class="event-card-actions">
                 {{ if $hasForm }}
-                  <a class="btn btn-link" href="{{ .RelPermalink }}#event-register">Register</a>
+                  <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Register</a>
                 {{ else if .Params.registration_url }}
-                  <a class="btn btn-link" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Register</a>
+                  <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Register</a>
                 {{ end }}
                 <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
               </div>

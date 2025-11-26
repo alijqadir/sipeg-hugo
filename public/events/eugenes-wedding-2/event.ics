@@ -4,14 +4,14 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID://localhost:1313/events/eugenes-wedding-2/
-DTSTAMP:20251125T121930Z
+UID:/events/eugenes-wedding-2/
+DTSTAMP:20251126T123931Z
 DTSTART:20251231T015036Z
 DTEND:20251231T015036Z
 SUMMARY:Eugenes Wedding 2
 DESCRIPTION:ddddddddddddddddddddddddddddddddddddddddddddd
 
 LOCATION:Lahore
-URL://localhost:1313/events/eugenes-wedding-2/
+URL:/events/eugenes-wedding-2/
 END:VEVENT
 END:VCALENDAR

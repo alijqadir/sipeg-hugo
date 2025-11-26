@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Economics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/topics/economics/</link>
+    <link>/topics/economics/</link>
     <description>Recent content in Economics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Nov 2025 10:02:35 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/topics/economics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/topics/economics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>research1</title>
-      <link>//localhost:1313/research/research1/</link>
+      <link>/research/research1/</link>
       <pubDate>Tue, 25 Nov 2025 10:02:35 +0000</pubDate>
-      <guid>//localhost:1313/research/research1/</guid>
+      <guid>/research/research1/</guid>
       <description>&lt;p&gt;Positioning Pakistan through Knowledge, People Centric Policies and Global Insight.&lt;/p&gt;&#xA;&lt;p&gt;Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices&lt;/p&gt;&#xA;</description>
     </item>
   </channel>

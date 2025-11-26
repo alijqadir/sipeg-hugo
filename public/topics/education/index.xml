@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Education on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/topics/education/</link>
+    <link>/topics/education/</link>
     <description>Recent content in Education on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 12 Aug 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/topics/education/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/topics/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education, Curriculum &amp; National Capacity</title>
-      <link>//localhost:1313/programs/education-curriculum-national-capacity/</link>
+      <link>/programs/education-curriculum-national-capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/education-curriculum-national-capacity/</guid>
+      <guid>/programs/education-curriculum-national-capacity/</guid>
       <description>Building human capital through curriculum reform, skills, and leadership development.</description>
     </item>
     <item>
       <title>Education, Curriculum &amp; National Capacity Brief</title>
-      <link>//localhost:1313/research/education-curriculum-national-capacity-brief/</link>
+      <link>/research/education-curriculum-national-capacity-brief/</link>
       <pubDate>Mon, 12 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/research/education-curriculum-national-capacity-brief/</guid>
+      <guid>/research/education-curriculum-national-capacity-brief/</guid>
       <description>Aligning curriculum reform and skills pipelines with Pakistan’s strategic and economic needs.</description>
     </item>
   </channel>
