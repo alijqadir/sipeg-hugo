@@ -2,9 +2,9 @@
 sort: 20
 title: Dr. Ahsan Rana
 role: Advisor — Public Policy
-affiliation: 'Associate Professor, Suleman Dawood School of Business, LUMS'
+affiliation: "Associate Professor, Suleman Dawood School of Business, LUMS"
 email: info@sipeg.org
-image: /images/p1.webp
+image: ""
 summary: >-
   Advises on public policy design, institutional reform, and state capacity,
   linking research evidence to governance practice.

@@ -1,16 +1,24 @@
 {{ define "main" }}
+{{ $avatar := "/images/people-avatar.svg" }}
+{{ $isSaeed := eq .File.BaseFileName "saeed-shafqat" }}
+{{ $image := cond $isSaeed (.Params.image | default "/images/SaeedShafqat.jpg") (.Params.image | default $avatar) }}
 <section class="section section--light">
   <div class="container">
-    <article>
-      <header class="section__intro">
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.role }}<p class="lead">{{ . }}</p>{{ end }}
-        {{ if .Params.email }}
-          <p><a class="btn btn-outline" href="mailto:{{ .Params.email }}">Email {{ .Title }}</a></p>
-        {{ end }}
-      </header>
-      <div class="content">
-        {{ .Content }}
+    <article class="person-profile">
+      <div class="person-profile__image">
+        <img src="{{ $image | relURL }}" alt="Portrait of {{ .Title }}" loading="lazy" decoding="async">
+      </div>
+      <div class="person-profile__body">
+        <header class="section__intro">
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.role }}<p class="lead">{{ . }}</p>{{ end }}
+          {{ if .Params.email }}
+            <p><a class="btn btn-outline" href="mailto:{{ .Params.email }}">Email {{ .Title }}</a></p>
+          {{ end }}
+        </header>
+        <div class="content">
+          {{ .Content }}
+        </div>
       </div>
     </article>
   </div>

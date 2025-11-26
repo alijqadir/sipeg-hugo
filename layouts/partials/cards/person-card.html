@@ -1,9 +1,15 @@
+{{ $avatar := "/images/people-avatar.svg" }}
+{{ $isSaeed := eq .File.BaseFileName "saeed-shafqat" }}
+{{ $image := .Params.image }}
+{{ if and (not $image) $isSaeed }}
+  {{ $image = "/images/SaeedShafqat.jpg" }}
+{{ else if not $image }}
+  {{ $image = $avatar }}
+{{ end }}
 <article class="person-card {{ if eq .Params.team "director" }}person-card--director{{ end }}">
-  {{ with .Params.image }}
-    <div class="person-card__image">
-      <img src="{{ . | relURL }}" alt="Portrait of {{ $.Title }}" loading="lazy" decoding="async">
-    </div>
-  {{ end }}
+  <div class="person-card__image">
+    <img src="{{ $image | relURL }}" alt="Portrait of {{ .Title }}" loading="lazy" decoding="async">
+  </div>
   <div class="person-card__body">
     <span class="person-card__role">{{ .Params.role }}</span>
     <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
