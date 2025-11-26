@@ -205,13 +205,6 @@
       <description>&lt;p&gt;Positioning Pakistan through Knowledge, People Centric Policies and Global Insight.&lt;/p&gt;&#xA;&lt;p&gt;Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices&lt;/p&gt;&#xA;</description>
     </item>
     <item>
-      <title>random blog post</title>
-      <link>/blog/random-blog-post/</link>
-      <pubDate>Tue, 25 Nov 2025 09:44:07 +0000</pubDate>
-      <guid>/blog/random-blog-post/</guid>
-      <description>&lt;p&gt;/**&lt;/p&gt;&#xA;&lt;p&gt;* Google Apps Script Web App for SIPEG event RSVP automation.&lt;/p&gt;&#xA;&lt;p&gt;* Deploy as a Web App and drop the URL into each event&amp;rsquo;s front matter (`registration_endpoint`).&lt;/p&gt;&#xA;&lt;p&gt;*&lt;/p&gt;&#xA;&lt;p&gt;* Expected POST fields from the Hugo form:&lt;/p&gt;&#xA;&lt;p&gt;* - name, email (required)&lt;/p&gt;&#xA;&lt;p&gt;* - hp_field (honeypot)&lt;/p&gt;&#xA;&lt;p&gt;* - event_title, event_url, event_start, event_end, event_location&lt;/p&gt;&#xA;&lt;p&gt;* - gcal_calendar_id (optional override)&lt;/p&gt;&#xA;&lt;p&gt;* - gcal_event_id (optional existing event UID)&lt;/p&gt;&#xA;&lt;p&gt;* - event_join_link (Zoom/Meet URL fallback)&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>alis birthday</title>
       <link>/events/alis-birthday/</link>
       <pubDate>Tue, 25 Nov 2025 03:50:32 +0000</pubDate>
@@ -266,13 +259,6 @@
       <pubDate>Tue, 25 Nov 2025 01:34:13 +0000</pubDate>
       <guid>/events/euegenes-wedding/</guid>
       <description>ZWCAD Year-End Promotion 2025&#xA;Enjoy up to 15% off new purchases or Yearly Maintenance&#xA;Campaign period: 25 November – 25 December 2025</description>
-    </item>
-    <item>
-      <title>TEst</title>
-      <link>/blog/test/</link>
-      <pubDate>Sun, 23 Nov 2025 00:35:29 +0000</pubDate>
-      <guid>/blog/test/</guid>
-      <description>teste</description>
     </item>
     <item>
       <title>PCEC: Risks and Opportunities in a Fragmenting Energy Market</title>
