@@ -1,13 +1,13 @@
 ---
-title: "Raza Shahid"
-role: "Communication & Outreach"
+title: Raza Shahid
+role: Communication & Outreach
 affiliation: ""
-image: ""
-summary: "Connects SIPEG research with stakeholders through outreach and communications."
-email: "info@sipeg.org"
-sort: 110
+email: info@sipeg.org
+image: /uploads/image_fx-33-.jpg
+summary: Connects SIPEG research with stakeholders through outreach and communications.
+team: research
 weight: 3
-team: "research"
+sort: 110
 ---
 
 Oversees communication and outreach, connecting SIPEG research to stakeholders and the public.
