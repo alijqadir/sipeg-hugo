@@ -8,6 +8,7 @@ year: 2009
 focus_areas:
   - culture-identity-diplomacy
   - geopolitics-security
+cover: /uploads/d4712a2c-4858-4cb0-b7be-ed8ea7a92400.png
 pdf: /uploads/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states-saeed-shafqat-1-.pdf
 featured: true
 draft: false
