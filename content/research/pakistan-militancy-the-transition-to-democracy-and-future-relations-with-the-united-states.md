@@ -17,6 +17,9 @@ abstract: Pakistan’s geostrategic location has made it a country of pivotal
 authors:
   - Saeed Shafqat
 year: 2009
+topics:
+  - society
+  - democracy
 focus_areas:
   - culture-identity-diplomacy
   - geopolitics-security
