@@ -1,13 +1,13 @@
 ---
-title: "Dr. Matthew McCartney"
-role: "Advisor — Economics & Development"
-affiliation: "Professor of Economics"
+title: Dr. Matthew McCartney
+role: Advisor — Economics, Development, Urbanism, Migration, China & South Asia
+affiliation: Professor of Economics
+email: info@sipeg.org
 image: ""
-summary: "Guides SIPEG on economic development, industrial policy, and the regional impact of global economic shifts."
-email: "info@sipeg.org"
-sort: 40
+summary: Guides SIPEG on economic development, urbanization, migration and
+  China's impact on the regional global economic shifts.
+team: advisory
 weight: 13
-team: "advisory"
+sort: 40
 ---
-
-Guides SIPEG on economic development, industrial policy, and the regional consequences of global economic shifts.
+Guides SIPEG on economic development, urbanization,migration and China's impact on the regional connectivity  and global economic shifts.
