@@ -1,15 +1,14 @@
 ---
-sort: 20
 title: Dr. Ahsan Rana
-role: Advisor — Public Policy
-affiliation: "Associate Professor, Suleman Dawood School of Business, LUMS"
+role: Advisor — Social Policy, Civil Service reorm and Agricultural Economics
+affiliation: Associate Professor, Suleman Dawood School of Business, LUMS
 email: info@sipeg.org
 image: ""
-summary: >-
-  Advises on public policy design, institutional reform, and state capacity,
-  linking research evidence to governance practice.
-weight: 11
-team: "advisory"
+summary: Advises on social policy design, institutional reform and state
+  capacity, linking  emperical research to governance practice. Developing
+  linkanges between agricultural practices and economic development.
+team: advisory
+weight: ""
+sort: 20
 ---
-
-Advises on public policy design, institutional reform, and state capacity, linking research evidence to governance practice.
+Advises on social policy design, institutional reform, and state capacity, linking research on policies to innovative agricultural production
