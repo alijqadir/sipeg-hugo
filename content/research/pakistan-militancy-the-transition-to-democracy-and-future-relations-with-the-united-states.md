@@ -2,6 +2,18 @@
 title: "PAKISTAN: MILITANCY, THE TRANSITION TO DEMOCRACY AND FUTURE RELATIONS
   WITH THE UNITED STATES"
 date: 2025-11-28T00:15:07.459Z
+abstract: Pakistan’s geostrategic location has made it a country of pivotal
+  importance from the Cold War to the present day. Geography not only shapes
+  Pakistan’s foreign policy, but also its defense considerations and strategic
+  outlook. Its crucial position in South Asia, with its proximity to the Arabian
+  Peninsula and access to the Horn of Africa and Central Asia, make it a
+  strategically attractive and unavoidable state for global and regional powers.
+  China continues to be a reliable friend and considers Pakistan a window of
+  strategic opportunity.¹ For Russia, Pakistan could offer access to “warm
+  waters” if Afghanistan were to gain stability, thus improving the level of
+  trust between the two nations. India’s imminent emergence as a regional power
+  will likely be contested by Pakistan, and the peace process between the two
+  rivals will continue at a snail’s pace.
 authors:
   - Saeed Shafqat
 year: 2009
