@@ -1,13 +1,13 @@
 ---
-title: "Dr. Mariam Saeed Shafqat"
-role: "Advisor — Education & Capacity"
-affiliation: "California Polytechnic State University"
+title: Dr. Mariam Saeed Shafqat
+role: Advisor — Science, technology  and education
+affiliation: California Polytechnic State University
+email: info@sipeg.org
 image: ""
-summary: "Advises on education, curriculum, and national capacity building aligned with Pakistan’s strategic needs."
-email: "info@sipeg.org"
+summary: Advises on  science, technology, education, and curriculum development
+  needs of Pakistan in the 21st Century.
+team: advisory
+weight: ""
 sort: 50
-weight: 2
-team: "advisory"
 ---
-
-Advises on education, curriculum, and national capacity building to link learning outcomes with Pakistan’s strategic needs.
+Advises on science, technology, education, and curriculum development needs of Pakistan in the 21st Century
