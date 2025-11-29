@@ -3,7 +3,7 @@ title: Ali Jan Qadir
 role: Communication & Outreach
 affiliation: ""
 email: info@sipeg.org
-image: /uploads/image_fx-33-.jpg
+image: ""
 summary: Connects SIPEG research with stakeholders through outreach and communications.
 team: research
 weight: 3
