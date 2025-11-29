@@ -7,7 +7,8 @@
     </p>
   </header>
 
-  {{ with .Params.cover }}
+  {{ $cover := or .Params.cover "/images/default-research.png" }}
+  {{ with $cover }}
     <figure class="research-single__hero">
       <img src="{{ . }}" alt="" loading="lazy" decoding="async">
     </figure>
@@ -17,6 +18,27 @@
     <section class="research-single__abstract">
       <h2>Abstract</h2>
       <p>{{ . }}</p>
+      {{ $shareUrl := $.Permalink }}
+      {{ $shareText := $.Title }}
+      <div class="research-share">
+        <span class="research-share__label">Download &amp; share</span>
+        <div class="research-share__actions">
+          {{ with $.Params.pdf }}
+            <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+              <i class="ph ph-file-pdf" aria-hidden="true"></i><span>Download PDF</span>
+            </a>
+          {{ end }}
+          <a class="btn btn-outline btn-share btn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $shareUrl | urlquery }}" target="_blank" rel="noopener">
+            <i class="ph ph-linkedin-logo" aria-hidden="true"></i><span>LinkedIn</span>
+          </a>
+          <a class="btn btn-outline btn-share btn-sm" href="https://twitter.com/intent/tweet?url={{ $shareUrl | urlquery }}&text={{ $shareText | urlquery }}" target="_blank" rel="noopener">
+            <i class="ph ph-twitter-logo" aria-hidden="true"></i><span>X</span>
+          </a>
+          <button class="btn btn-outline btn-share btn-sm research-share__copy" type="button" data-copy-url="{{ $shareUrl }}">
+            <i class="ph ph-link" aria-hidden="true"></i><span>Copy</span>
+          </button>
+        </div>
+      </div>
     </section>
   {{ end }}
 
@@ -35,6 +57,23 @@
     {{ end }}
   </div>
 
+  {{ $shareUrl := .Permalink }}
+  {{ $shareText := .Title }}
+  <div class="research-share research-share--footer">
+    <span class="research-share__label">Share</span>
+    <div class="research-share__actions">
+      <a class="btn btn-outline btn-share btn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $shareUrl | urlquery }}" target="_blank" rel="noopener">
+        <i class="ph ph-linkedin-logo" aria-hidden="true"></i><span>LinkedIn</span>
+      </a>
+      <a class="btn btn-outline btn-share btn-sm" href="https://twitter.com/intent/tweet?url={{ $shareUrl | urlquery }}&text={{ $shareText | urlquery }}" target="_blank" rel="noopener">
+        <i class="ph ph-twitter-logo" aria-hidden="true"></i><span>X</span>
+      </a>
+      <button class="btn btn-outline btn-share btn-sm research-share__copy" type="button" data-copy-url="{{ $shareUrl }}">
+        <i class="ph ph-link" aria-hidden="true"></i><span>Copy</span>
+      </button>
+    </div>
+  </div>
+
   {{ with .Params.pdf }}
     <details class="research-single__preview">
       <summary>Preview PDF</summary>
@@ -45,4 +84,21 @@
   {{ end }}
   {{ partial "comments.html" . }}
 </article>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.research-share__copy').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const url = btn.getAttribute('data-copy-url');
+        try {
+          await navigator.clipboard.writeText(url);
+          btn.textContent = 'Copied';
+          setTimeout(() => (btn.textContent = 'Copy link'), 2000);
+        } catch (e) {
+          btn.textContent = 'Failed';
+          setTimeout(() => (btn.textContent = 'Copy link'), 2000);
+        }
+      });
+    });
+  });
+</script>
 {{ end }}

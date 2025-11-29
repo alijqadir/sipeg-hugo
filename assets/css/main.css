@@ -1355,6 +1355,11 @@ button,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+@media (max-width: 640px) {
+  .events-list--grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 .events-calendar-wrap {
   margin-top: 3rem;
@@ -1445,6 +1450,12 @@ button,
   margin: 0 auto;
   display: grid;
   gap: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .event-single__wrapper {
+    padding: 0 1.25rem;
+  }
 }
 
 .event-header h1 {
@@ -2207,6 +2218,9 @@ pre {
 .research-single__header {
   margin: 2rem 0 1rem;
 }
+.research-single__top-actions {
+  margin-top: 0.5rem;
+}
 .research-single__meta {
   color: rgba(47, 72, 88, 0.75);
   font-size: 1rem;
@@ -2215,6 +2229,9 @@ pre {
   margin: 1.5rem 0;
   border-radius: 18px;
   overflow: hidden;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .research-single__abstract {
   background: var(--color-offwhite);
@@ -2222,6 +2239,41 @@ pre {
   border-radius: 16px;
   padding: 1.5rem;
   margin: 1.5rem 0;
+}
+.research-share {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.research-share__label {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.research-share__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.research-share__actions .btn-sm {
+  padding: 0.35rem 0.9rem;
+  font-size: 0.92rem;
+}
+.btn-share {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.btn-share i {
+  font-size: 1rem;
+}
+.research-share__copy {
+  padding: 0.35rem 0.9rem;
+}
+.research-share--footer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 .research-single__actions {
   display: flex;

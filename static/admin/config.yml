@@ -122,8 +122,15 @@ collections:
           name: "cover",
           widget: "image",
           required: false,
+          hint: "Drag & drop or click to upload a cover image.",
         }
-      - { label: "PDF", name: "pdf", widget: "file", required: false }
+      - {
+          label: "PDF",
+          name: "pdf",
+          widget: "file",
+          required: false,
+          hint: "Drag & drop or click to upload the research PDF.",
+        }
       - {
           label: "Featured",
           name: "featured",
@@ -258,7 +265,7 @@ collections:
               { label: "Advisory Board", value: "advisory" },
               { label: "Research & Outreach", value: "research" },
             ],
-          required: false,
+          required: true,
           hint: "Used to place cards into Director, Advisory Board, or Research & Outreach sections.",
         }
       - { label: "Weight", name: "weight", widget: "number", required: false }
