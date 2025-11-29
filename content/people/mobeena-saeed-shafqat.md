@@ -1,7 +1,8 @@
 ---
 title: Mobeena Saeed Shafqat
-role: ""
+role: Research Fellow
 affiliation: History , FCCU
+email: Info@sipeg.org
 summary: " Keen researcher on syncronizing literature and  history; culture,
   identity and cultural change."
 team: research
