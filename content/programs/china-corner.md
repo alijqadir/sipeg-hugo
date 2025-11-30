@@ -1,12 +1,15 @@
 ---
-title: "China Corner"
-summary: "Tracking China’s footprint in Pakistan’s economy, security, and technology corridors, and its implications for regional strategy."
-icon: "globe-hemisphere-east"
-icon_text: "CHN"
-focus_key: "china-corner"
-categories: ["China Corner"]
-topics: ["China", "CPEC", "Belt and Road"]
-weight: 7
+title: China Corner
+summary: ""
+icon: globe-hemisphere-east
+icon_text: CHN
+focus_key: china-corner
+categories:
+  - China Corner
+topics:
+  - China
+  - CPEC
+  - Belt and Road
+weight: ""
 ---
-
-We examine China’s policy signals, investment flows, and defense cooperation with Pakistan, connecting them to broader Indo-Pacific competition and Pakistan’s strategic choices.
+China's rise and changing dynamics of cooperative to competitive relations with the U.S are re-shaing the world order. We analyze China’s policy signals, investment flows, defense and security policies, particularly the Belt and Road Initiative(BRI).China- Pakistan Economic Corridor (CPEC) and broadly its linakges with the U.S  Indo-Pacific strategy and Pakistan’s strategic interests and future direction.
