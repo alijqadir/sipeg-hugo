@@ -1,6 +1,6 @@
 ---
 title: Dr. Ahsan Rana
-role: Advisor — Social Policy, Civil Service reorm and Agricultural Economics
+role: Advisor — Social Policy, Civil Service reform and Agricultural Economics
 affiliation: Associate Professor, Suleman Dawood School of Business, LUMS
 email: info@sipeg.org
 image: ""

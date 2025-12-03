@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CPEC on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/cpec/</link>
+    <link>//localhost:1313/topics/cpec/</link>
     <description>Recent content in CPEC on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/topics/cpec/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/topics/cpec/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>China Corner</title>
-      <link>/programs/china-corner/</link>
+      <link>//localhost:1313/programs/china-corner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/programs/china-corner/</guid>
+      <guid>//localhost:1313/programs/china-corner/</guid>
       <description>China&amp;rsquo;s rise and changing dynamics of cooperative to competitive relations with the U.S are re-shaing the world order. We analyze China’s policy signals, investment flows, defense and security policies, particularly the Belt and Road Initiative(BRI).China- Pakistan Economic Corridor (CPEC) and broadly its linakges with the U.S  Indo-Pacific strategy and Pakistan’s strategic interests and future direction.</description>
     </item>
   </channel>

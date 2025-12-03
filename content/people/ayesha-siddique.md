@@ -4,7 +4,7 @@ role: Research Fellow
 affiliation: LUMS
 email: info@sipeg.org
 image: ""
-summary: Conducts applied research across political economy, with a particualr
+summary: Conducts applied research across political economy, with a particular
   focus on China- Pakistan, emerging trends and changing dynamics in the 21st
   Century.
 team: research

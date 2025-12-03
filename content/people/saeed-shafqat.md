@@ -5,7 +5,7 @@ affiliation: Shafqat Institute for Pakistan and Emerging Geopolitics (SIPEG)
 email: info@sipeg.org
 image: images/SaeedShafqat.jpg
 summary: Leads SIPEG’s strategic direction across research, advisory,
-  stakeholder engagement, collaborations and on re-defining Pakistan’s evolving
+  stakeholder engagement, collaborations and on redefining Pakistan’s evolving
   role in a changing world.
 team: director
 weight: ""

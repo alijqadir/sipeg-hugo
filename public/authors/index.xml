@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/authors/</link>
+    <link>//localhost:1313/authors/</link>
     <description>Recent content in Authors on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Nov 2025 05:50:26 +0000</lastBuildDate>
-    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Saeed Shafqat</title>
-      <link>/authors/saeed-shafqat/</link>
+      <link>//localhost:1313/authors/saeed-shafqat/</link>
       <pubDate>Sat, 29 Nov 2025 05:50:26 +0000</pubDate>
-      <guid>/authors/saeed-shafqat/</guid>
+      <guid>//localhost:1313/authors/saeed-shafqat/</guid>
       <description></description>
     </item>
     <item>
       <title>Saeed</title>
-      <link>/authors/saeed/</link>
+      <link>//localhost:1313/authors/saeed/</link>
       <pubDate>Wed, 26 Nov 2025 13:29:25 +0000</pubDate>
-      <guid>/authors/saeed/</guid>
+      <guid>//localhost:1313/authors/saeed/</guid>
       <description></description>
     </item>
     <item>
       <title>Shafqat</title>
-      <link>/authors/shafqat/</link>
+      <link>//localhost:1313/authors/shafqat/</link>
       <pubDate>Wed, 26 Nov 2025 13:29:25 +0000</pubDate>
-      <guid>/authors/shafqat/</guid>
+      <guid>//localhost:1313/authors/shafqat/</guid>
       <description></description>
     </item>
   </channel>

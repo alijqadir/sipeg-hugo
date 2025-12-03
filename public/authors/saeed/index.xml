@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Saeed on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/authors/saeed/</link>
+    <link>//localhost:1313/authors/saeed/</link>
     <description>Recent content in Saeed on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Nov 2025 13:29:25 +0000</lastBuildDate>
-    <atom:link href="/authors/saeed/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/authors/saeed/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pathways to Governance and Civil Service Reform in Pakistan: Federal, Provincial and Local</title>
-      <link>/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</link>
+      <link>//localhost:1313/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</link>
       <pubDate>Wed, 26 Nov 2025 13:29:25 +0000</pubDate>
-      <guid>/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</guid>
+      <guid>//localhost:1313/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</guid>
       <description>&lt;p&gt;The purpose of this research is to provide a framework for dialogue on the concept of governance and issues of civil service reform in Pakistan in general, and the Provinces in particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may be pursued to induce behavioral and structural change. So the paper, therefore argues that, following the implementation of the 18th Amendment, provincial and local governments should be the pivot for improving governance and pushing the long overdue civil service reform.&lt;/p&gt;</description>
     </item>
   </channel>

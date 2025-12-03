@@ -2,7 +2,7 @@
 title: Guillaume Beaud
 role: "Research Fellow "
 summary: >-
-  Postoctoral researcher, University of Oxford, Department of Politics and IR
+  postdoctoral researcher, University of Oxford, Department of Politics and IR
   (UK)
 
   Associate researcher, Sciences Po, Center for International Studies (France)
