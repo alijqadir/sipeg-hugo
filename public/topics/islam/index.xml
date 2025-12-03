@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Islam on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/topics/islam/</link>
+    <link>/topics/islam/</link>
     <description>Recent content in Islam on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Nov 2025 05:50:26 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/topics/islam/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/topics/islam/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>From Official Islam to Islamism: The Rise of Dawat-ul-Irshad and Lashkar-e-Taiba</title>
-      <link>//localhost:1313/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</link>
+      <link>/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</link>
       <pubDate>Sat, 29 Nov 2025 05:50:26 +0000</pubDate>
-      <guid>//localhost:1313/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</guid>
+      <guid>/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Study on Islam and Nationalism in Pakistan&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This study ventures to highlight the relation between Islam and nationalism in Pakistan. These two notions may appear self-contradictory since Islam transcends the frontiers of nation-states, including Pakistan. At the same time, the ideology of Pakistan has been built on the basis of the Muslim identity of the followers of Islam inhabiting the territories of British India. This paradox is even more evident from the discourse of the Islamist groups which are gaining momentum in Pakistan, especially in Punjab.&lt;/p&gt;</description>
     </item>
   </channel>
