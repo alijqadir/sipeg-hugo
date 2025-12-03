@@ -2,206 +2,206 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>//localhost:1313/</link>
+    <link>/</link>
     <description>Recent content in Home on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Nov 2025 05:50:26 +0000</lastBuildDate>
-    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>China Corner</title>
+      <link>/programs/china-corner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/programs/china-corner/</guid>
+      <description>China&amp;rsquo;s rise and changing dynamics of cooperative to competitive relations with the U.S are re-shaing the world order. We analyze China’s policy signals, investment flows, defense and security policies, particularly the Belt and Road Initiative(BRI).China- Pakistan Economic Corridor (CPEC) and broadly its linakges with the U.S  Indo-Pacific strategy and Pakistan’s strategic interests and future direction.</description>
+    </item>
     <item>
       <title>Geopolitics &amp; Regional Security</title>
-      <link>//localhost:1313/programs/geopolitics-regional-security/</link>
+      <link>/programs/geopolitics-regional-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/geopolitics-regional-security/</guid>
+      <guid>/programs/geopolitics-regional-security/</guid>
       <description>Mapping power shifts, conflict/cooperation patterns, and Pakistan’s security calculus across its neighborhood and great-power competition.</description>
     </item>
     <item>
       <title>Trade, Investment &amp; Economic Policy</title>
-      <link>//localhost:1313/programs/trade-investment-economic-policy/</link>
+      <link>/programs/trade-investment-economic-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/trade-investment-economic-policy/</guid>
+      <guid>/programs/trade-investment-economic-policy/</guid>
       <description>Fiscal stability, trade architecture, and investment that drive inclusive, innovation-led growth.</description>
     </item>
     <item>
       <title>Ali Jan Qadir</title>
-      <link>//localhost:1313/people/ali-jan-qadir/</link>
+      <link>/people/ali-jan-qadir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/ali-jan-qadir/</guid>
+      <guid>/people/ali-jan-qadir/</guid>
       <description>Connects SIPEG research with stakeholders through outreach and communications.</description>
     </item>
     <item>
       <title>Education, Curriculum &amp; National Capacity</title>
-      <link>//localhost:1313/programs/education-curriculum-national-capacity/</link>
+      <link>/programs/education-curriculum-national-capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/education-curriculum-national-capacity/</guid>
+      <guid>/programs/education-curriculum-national-capacity/</guid>
       <description>Building human capital through curriculum reform, skills, and leadership development.</description>
     </item>
     <item>
       <title>Culture, Identity &amp; Diplomacy</title>
-      <link>//localhost:1313/programs/culture-identity-diplomacy/</link>
+      <link>/programs/culture-identity-diplomacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/culture-identity-diplomacy/</guid>
+      <guid>/programs/culture-identity-diplomacy/</guid>
       <description>Identity, media, and cultural production as strategic assets in Pakistan’s diplomacy and social cohesion.</description>
     </item>
     <item>
       <title>Technology &amp; Strategic Foresight</title>
-      <link>//localhost:1313/programs/technology-strategic-foresight/</link>
+      <link>/programs/technology-strategic-foresight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/technology-strategic-foresight/</guid>
+      <guid>/programs/technology-strategic-foresight/</guid>
       <description>Technology rivalry, AI, and strategic foresight shaping Pakistan’s economic and security choices.</description>
     </item>
     <item>
       <title>Advisory, Training &amp; Collaboration</title>
-      <link>//localhost:1313/programs/advisory-training-collaboration/</link>
+      <link>/programs/advisory-training-collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/advisory-training-collaboration/</guid>
+      <guid>/programs/advisory-training-collaboration/</guid>
       <description>Advising, consultancy, trainings, collaborations, and research that link insight to action.</description>
     </item>
     <item>
-      <title>China Corner</title>
-      <link>//localhost:1313/programs/china-corner/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/programs/china-corner/</guid>
-      <description>Tracking China’s footprint in Pakistan’s economy, security, and technology corridors, and its implications for regional strategy.</description>
-    </item>
-    <item>
       <title>Dr. Tayyeb Shabbir</title>
-      <link>//localhost:1313/people/dr.-tayyeb-shabbir/</link>
+      <link>/people/dr.-tayyeb-shabbir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-tayyeb-shabbir/</guid>
+      <guid>/people/dr.-tayyeb-shabbir/</guid>
       <description>Advises on finance, risk, and governance, connecting macro trends to board-level decision-making.</description>
     </item>
     <item>
       <title>Dr. Matthew McCartney</title>
-      <link>//localhost:1313/people/dr.-matthew-mccartney/</link>
+      <link>/people/dr.-matthew-mccartney/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-matthew-mccartney/</guid>
+      <guid>/people/dr.-matthew-mccartney/</guid>
       <description>Guides SIPEG on economic development, urbanization, migration and China&amp;rsquo;s impact on the regional global economic shifts.</description>
     </item>
     <item>
       <title>Ali Jaffer Zaidi</title>
-      <link>//localhost:1313/people/ali-jaffer-zaidi/</link>
+      <link>/people/ali-jaffer-zaidi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/ali-jaffer-zaidi/</guid>
+      <guid>/people/ali-jaffer-zaidi/</guid>
       <description>Offers strategic perspectives, historical framing, and narrative thinking for SIPEG’s research and outreach.</description>
     </item>
     <item>
       <title>Jean-Luc Racine</title>
-      <link>//localhost:1313/people/jean-luc-racine/</link>
+      <link>/people/jean-luc-racine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/jean-luc-racine/</guid>
+      <guid>/people/jean-luc-racine/</guid>
       <description>Advises on South Asia–Europe relations, regional connectivity, and comparative geopolitical perspectives.</description>
     </item>
     <item>
       <title>Haseeb</title>
-      <link>//localhost:1313/people/haseeb/</link>
+      <link>/people/haseeb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/haseeb/</guid>
+      <guid>/people/haseeb/</guid>
       <description>Supports data collection, analysis, and publication workflows across SIPEG projects.</description>
     </item>
     <item>
       <title>Ali Jan Qadir</title>
-      <link>//localhost:1313/people/ali-jan-qadir/</link>
+      <link>/people/ali-jan-qadir/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/ali-jan-qadir/</guid>
+      <guid>/people/ali-jan-qadir/</guid>
       <description>Supports outreach and storytelling to broaden the impact of SIPEG’s research and events.</description>
     </item>
     <item>
       <title>From Official Islam to Islamism: The Rise of Dawat-ul-Irshad and Lashkar-e-Taiba</title>
-      <link>//localhost:1313/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</link>
+      <link>/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</link>
       <pubDate>Sat, 29 Nov 2025 05:50:26 +0000</pubDate>
-      <guid>//localhost:1313/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</guid>
+      <guid>/research/from-official-islam-to-islamism-the-rise-of-dawat-ul-irshad-and-lashkar-e-taiba/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Study on Islam and Nationalism in Pakistan&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;This study ventures to highlight the relation between Islam and nationalism in Pakistan. These two notions may appear self-contradictory since Islam transcends the frontiers of nation-states, including Pakistan. At the same time, the ideology of Pakistan has been built on the basis of the Muslim identity of the followers of Islam inhabiting the territories of British India. This paradox is even more evident from the discourse of the Islamist groups which are gaining momentum in Pakistan, especially in Punjab.&lt;/p&gt;</description>
     </item>
     <item>
       <title>PAKISTAN: MILITANCY, THE TRANSITION TO DEMOCRACY AND FUTURE RELATIONS WITH THE UNITED STATES</title>
-      <link>//localhost:1313/research/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states/</link>
+      <link>/research/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states/</link>
       <pubDate>Fri, 28 Nov 2025 00:15:07 +0000</pubDate>
-      <guid>//localhost:1313/research/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states/</guid>
+      <guid>/research/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states/</guid>
       <description>&lt;p&gt;Pakistan’s geostrategic location has made it a country of pivotal importance from the Cold War to the present day. Geography not only shapes Pakistan’s foreign policy, but also its defense considerations and strategic outlook. Its crucial position in South Asia, with its proximity to the Arabian Peninsula and access to the Horn of Africa and Central Asia, make it a strategically attractive and unavoidable state for global and regional powers. China continues to be a reliable friend and considers Pakistan a window of strategic opportunity.¹ For Russia, Pakistan could offer access to “warm waters” if Afghanistan were to gain stability, thus improving the level of trust between the two nations. India’s imminent emergence as a regional power will likely be contested by Pakistan, and the peace process between the two rivals will continue at a snail’s pace.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pluralist Society and Civic Responsibility in Pakistan</title>
-      <link>//localhost:1313/research/pluralist-society-and-civic-responsibility-in-pakistan/</link>
+      <link>/research/pluralist-society-and-civic-responsibility-in-pakistan/</link>
       <pubDate>Wed, 26 Nov 2025 23:54:03 +0000</pubDate>
-      <guid>//localhost:1313/research/pluralist-society-and-civic-responsibility-in-pakistan/</guid>
+      <guid>/research/pluralist-society-and-civic-responsibility-in-pakistan/</guid>
       <description>&lt;p&gt;This&#x9;paper&#x9;is&#x9;divided&#x9;into&#x9; four&#x9;parts.&#x9; In&#x9; the&#x9; first&#x9;part,&#x9; I&#x9;would&#x9;like&#x9; to&#x9;provide&#x9;a&lt;/p&gt;&#xA;&lt;p&gt;conceptual&#x9; framework&#x9; of&#x9; the&#x9; Pluralist&#x9; Society&#x9; and&#x9; its&#x9; key&#x9; components.&#x9; In&#x9; the&lt;/p&gt;&#xA;&lt;p&gt;second&#x9; part&#x9; I&#x9; will&#x9; examine,&#x9; analyse&#x9; and&#x9; contend&#x9; that&#x9; Pakistan&#x9; was&#x9; born&#x9; as&#x9; a&lt;/p&gt;&#xA;&lt;p&gt;Pluralist&#x9;Society&#x9;and&#x9;in&#x9; reality&#x9; continues&#x9; to&#x9; be&#x9; vibrant&#x9;and&#x9; diverse&amp;ndash;&#x9;ethnically,&lt;/p&gt;&#xA;&lt;p&gt;linguistically,&#x9;culturally&#x9;and&#x9;in&#x9; terms&#x9;of&#x9;understanding&#x9;of&#x9;all&#x9; these&#x9;aspects.&#x9;&#x9;Yet&lt;/p&gt;&#xA;&lt;p&gt;over&#x9;the&#x9;decades,&#x9;security&#x9;imperatives&#x9;of&#x9;the&#x9;State&#x9;and&#x9;the&#x9;governing&#x9;elites&#x9;have&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pathways to Governance and Civil Service Reform in Pakistan: Federal, Provincial and Local</title>
-      <link>//localhost:1313/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</link>
+      <link>/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</link>
       <pubDate>Wed, 26 Nov 2025 13:29:25 +0000</pubDate>
-      <guid>//localhost:1313/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</guid>
+      <guid>/research/pathways-to-governance-and-civil-service-reform-in-pakistan-federal-provincial-and-local/</guid>
       <description>&lt;p&gt;The purpose of this research is to provide a framework for dialogue on the concept of governance and issues of civil service reform in Pakistan in general, and the Provinces in particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may be pursued to induce behavioral and structural change. So the paper, therefore argues that, following the implementation of the 18th Amendment, provincial and local governments should be the pivot for improving governance and pushing the long overdue civil service reform.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SIPEG Website Launch</title>
-      <link>//localhost:1313/events/sipeg-website-launch/</link>
+      <link>/events/sipeg-website-launch/</link>
       <pubDate>Thu, 20 Nov 2025 10:00:00 +0500</pubDate>
-      <guid>//localhost:1313/events/sipeg-website-launch/</guid>
+      <guid>/events/sipeg-website-launch/</guid>
       <description>Celebrate the launch of the new SIPEG website with a walkthrough of features, content, and upcoming research and events.</description>
     </item>
     <item>
       <title>Emerging Geopolitics: Meaning, Why It Matters, and Key Implications</title>
-      <link>//localhost:1313/blog/emerging-geopolitics/</link>
+      <link>/blog/emerging-geopolitics/</link>
       <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/blog/emerging-geopolitics/</guid>
+      <guid>/blog/emerging-geopolitics/</guid>
       <description>A concise guide to the forces reshaping state behavior, markets, and societies—from technology rivalry and climate to demographics and security.</description>
     </item>
     <item>
       <title>Ayesha Siddique</title>
-      <link>//localhost:1313/people/ayesha-siddique/</link>
+      <link>/people/ayesha-siddique/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/ayesha-siddique/</guid>
+      <guid>/people/ayesha-siddique/</guid>
       <description>Conducts applied research across political economy, with a particualr focus on China- Pakistan, emerging trends and changing dynamics in the 21st Century.</description>
     </item>
     <item>
       <title>Dr. Ahsan Rana</title>
-      <link>//localhost:1313/people/dr.-ahsan-rana/</link>
+      <link>/people/dr.-ahsan-rana/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-ahsan-rana/</guid>
+      <guid>/people/dr.-ahsan-rana/</guid>
       <description>Advises on social policy design, institutional reform and state capacity, linking  emperical research to governance practice. Developing linkanges between agricultural practices and economic development.</description>
     </item>
     <item>
       <title>Dr. Mariam Saeed Shafqat</title>
-      <link>//localhost:1313/people/dr.-mariam-saeed-shafqat/</link>
+      <link>/people/dr.-mariam-saeed-shafqat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-mariam-saeed-shafqat/</guid>
+      <guid>/people/dr.-mariam-saeed-shafqat/</guid>
       <description>Advises on  science, technology, education, and curriculum development needs of Pakistan in the 21st Century.</description>
     </item>
     <item>
-      <title>Dr. Paul Rollier</title>
-      <link>//localhost:1313/people/dr.-paul-rollier/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-paul-rollier/</guid>
-      <description>Provides anthropological insight on culture, identity, and societal change in Pakistan and across South Asia.</description>
-    </item>
-    <item>
       <title>Dr. Rabia Chaudhry</title>
-      <link>//localhost:1313/people/dr.-rabia-chaudhry/</link>
+      <link>/people/dr.-rabia-chaudhry/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/dr.-rabia-chaudhry/</guid>
+      <guid>/people/dr.-rabia-chaudhry/</guid>
       <description>Leads research on development studies, climate change, migration, urbanization and globalization</description>
     </item>
     <item>
-      <title>Mobeena Saeed Shafqat</title>
-      <link>//localhost:1313/people/mobeena-saeed-shafqat/</link>
+      <title>Guillaume Beaud</title>
+      <link>/people/guillaume-beaud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/mobeena-saeed-shafqat/</guid>
+      <guid>/people/guillaume-beaud/</guid>
+      <description>Postoctoral researcher, University of Oxford, Department of Politics and IR (UK)&#xA;Associate researcher, Sciences Po, Center for International Studies (France)</description>
+    </item>
+    <item>
+      <title>Mobeena Saeed Shafqat</title>
+      <link>/people/mobeena-saeed-shafqat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/people/mobeena-saeed-shafqat/</guid>
       <description>Keen researcher on syncronizing literature and  history; culture, identity and cultural change.</description>
     </item>
     <item>
       <title>Professor Dr. Saeed Shafqat</title>
-      <link>//localhost:1313/people/professor-dr.-saeed-shafqat/</link>
+      <link>/people/professor-dr.-saeed-shafqat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/professor-dr.-saeed-shafqat/</guid>
+      <guid>/people/professor-dr.-saeed-shafqat/</guid>
       <description>Leads SIPEG’s strategic direction across research, advisory, stakeholder engagement, collaborations and on re-defining Pakistan’s evolving role in a changing world.</description>
     </item>
     <item>
       <title>Raza Shahid</title>
-      <link>//localhost:1313/people/raza-shahid/</link>
+      <link>/people/raza-shahid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>//localhost:1313/people/raza-shahid/</guid>
+      <guid>/people/raza-shahid/</guid>
       <description>Connects SIPEG research with stakeholders through outreach and communications.</description>
     </item>
   </channel>

@@ -4,13 +4,13 @@ PRODID:-//SIPEG//Events//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID://localhost:1313/events/sipeg-website-launch/
-DTSTAMP:20251203T094925Z
+UID:/events/sipeg-website-launch/
+DTSTAMP:20251203T101000Z
 DTSTART:20251130T170000Z
 DTEND:20251130T183000Z
 SUMMARY:SIPEG Website Launch
 DESCRIPTION:Celebrate the launch of the new SIPEG website with a walkthrough of features, content, and upcoming research and events.
 LOCATION:Online
-URL://localhost:1313/events/sipeg-website-launch/
+URL:/events/sipeg-website-launch/
 END:VEVENT
 END:VCALENDAR
