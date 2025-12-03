@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Education on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/education/</link>
+    <link>//localhost:1313/topics/education/</link>
     <description>Recent content in Education on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="/topics/education/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/topics/education/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Education, Curriculum &amp; National Capacity</title>
-      <link>/programs/education-curriculum-national-capacity/</link>
+      <link>//localhost:1313/programs/education-curriculum-national-capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/programs/education-curriculum-national-capacity/</guid>
+      <guid>//localhost:1313/programs/education-curriculum-national-capacity/</guid>
       <description>Building human capital through curriculum reform, skills, and leadership development.</description>
     </item>
   </channel>

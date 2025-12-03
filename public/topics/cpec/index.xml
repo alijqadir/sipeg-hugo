@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CPEC on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>//localhost:1313/topics/cpec/</link>
+    <description>Recent content in CPEC on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/topics/cpec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>China Corner</title>
+      <link>//localhost:1313/programs/china-corner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/programs/china-corner/</guid>
+      <description>Tracking China’s footprint in Pakistan’s economy, security, and technology corridors, and its implications for regional strategy.</description>
+    </item>
+  </channel>
+</rss>

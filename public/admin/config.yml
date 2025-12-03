@@ -90,9 +90,9 @@ collections:
           widget: "datetime",
           required: false,
         }
-      - { label: "Summary", name: "summary", widget: "text", required: false }
       - { label: "Abstract", name: "abstract", widget: "text", required: false }
       - { label: "Authors", name: "authors", widget: "list", required: false }
+      - { label: "Year", name: "year", widget: "number", value_type: "int", required: true }
       - {
           label: "Topics/Tags",
           name: "topics",
@@ -100,12 +100,45 @@ collections:
           required: false,
         }
       - {
+          label: "Focus Areas",
+          name: "focus_areas",
+          widget: "select",
+          options:
+            [
+              { label: "Geopolitics & Regional Security", value: "geopolitics-security" },
+              { label: "Trade, Investment & Economic Policy", value: "trade-investment-economic-policy" },
+              { label: "Education, Curriculum & National Capacity", value: "education-curriculum-capacity" },
+              { label: "Culture, Identity & Diplomacy", value: "culture-identity-diplomacy" },
+              { label: "Technology & Strategic Foresight", value: "technology-strategic-foresight" },
+              { label: "Advisory, Training & Collaboration", value: "advisory-training-collaboration" },
+              { label: "China Corner", value: "china-corner" },
+            ],
+          multiple: true,
+          required: true,
+          hint: "Select at least one focus area so the research appears on the relevant program page and filters.",
+        }
+      - {
           label: "Cover Image",
           name: "cover",
           widget: "image",
           required: false,
+          hint: "Drag & drop or click to upload a cover image.",
         }
-      - { label: "PDF", name: "pdf", widget: "file", required: false }
+      - {
+          label: "PDF",
+          name: "pdf",
+          widget: "file",
+          required: false,
+          hint: "Drag & drop or click to upload the research PDF.",
+        }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+          required: false,
+          hint: "Marks the publication for the homepage featured research area.",
+        }
       - {
           label: "Draft",
           name: "draft",
@@ -114,6 +147,24 @@ collections:
           required: false,
         }
       - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "programs"
+    label: "Focus Areas"
+    folder: "content/programs"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "weight"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Icon", name: "icon", widget: "string", required: false, hint: "Phosphor icon name (regular set)." }
+      - { label: "Icon Text", name: "icon_text", widget: "string", required: false }
+      - { label: "Focus Key", name: "focus_key", widget: "string", required: true, hint: "Machine-friendly key used to link research (e.g., geopolitics-security)." }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Topics", name: "topics", widget: "list", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false, hint: "Ordering in Focus Areas grid (lower is earlier)." }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
 
   - name: "events"
     label: "Events"
@@ -214,7 +265,7 @@ collections:
               { label: "Advisory Board", value: "advisory" },
               { label: "Research & Outreach", value: "research" },
             ],
-          required: false,
+          required: true,
           hint: "Used to place cards into Director, Advisory Board, or Research & Outreach sections.",
         }
       - { label: "Weight", name: "weight", widget: "number", required: false }

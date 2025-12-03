@@ -2,157 +2,199 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/</link>
+    <link>//localhost:1313/topics/</link>
     <description>Recent content in Topics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Nov 2025 05:50:26 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/topics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Climate</title>
-      <link>/topics/climate/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/climate/</guid>
+      <title>Islam</title>
+      <link>//localhost:1313/topics/islam/</link>
+      <pubDate>Sat, 29 Nov 2025 05:50:26 +0000</pubDate>
+      <guid>//localhost:1313/topics/islam/</guid>
       <description></description>
     </item>
     <item>
-      <title>Demography</title>
-      <link>/topics/demography/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/demography/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Geopolitics</title>
-      <link>/topics/geopolitics/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/geopolitics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Technology</title>
-      <link>/topics/technology/</link>
-      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/technology/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Governance</title>
-      <link>/topics/governance/</link>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/governance/</guid>
+      <title>Democracy</title>
+      <link>//localhost:1313/topics/democracy/</link>
+      <pubDate>Fri, 28 Nov 2025 00:15:07 +0000</pubDate>
+      <guid>//localhost:1313/topics/democracy/</guid>
       <description></description>
     </item>
     <item>
       <title>Society</title>
-      <link>/topics/society/</link>
-      <pubDate>Mon, 02 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>/topics/society/</guid>
+      <link>//localhost:1313/topics/society/</link>
+      <pubDate>Fri, 28 Nov 2025 00:15:07 +0000</pubDate>
+      <guid>//localhost:1313/topics/society/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Civic Responsability</title>
+      <link>//localhost:1313/topics/civic-responsability/</link>
+      <pubDate>Wed, 26 Nov 2025 23:54:03 +0000</pubDate>
+      <guid>//localhost:1313/topics/civic-responsability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Governance</title>
+      <link>//localhost:1313/topics/governance/</link>
+      <pubDate>Wed, 26 Nov 2025 13:29:25 +0000</pubDate>
+      <guid>//localhost:1313/topics/governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Climate</title>
+      <link>//localhost:1313/topics/climate/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/climate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Demography</title>
+      <link>//localhost:1313/topics/demography/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/demography/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Geopolitics</title>
+      <link>//localhost:1313/topics/geopolitics/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/geopolitics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>//localhost:1313/topics/technology/</link>
+      <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/technology/</guid>
       <description></description>
     </item>
     <item>
       <title>Advisory</title>
-      <link>/topics/advisory/</link>
+      <link>//localhost:1313/topics/advisory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/advisory/</guid>
+      <guid>//localhost:1313/topics/advisory/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>/topics/ai/</link>
+      <link>//localhost:1313/topics/ai/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/ai/</guid>
+      <guid>//localhost:1313/topics/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Belt and Road</title>
+      <link>//localhost:1313/topics/belt-and-road/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/belt-and-road/</guid>
       <description></description>
     </item>
     <item>
       <title>Capacity</title>
-      <link>/topics/capacity/</link>
+      <link>//localhost:1313/topics/capacity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/capacity/</guid>
+      <guid>//localhost:1313/topics/capacity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>China</title>
+      <link>//localhost:1313/topics/china/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/china/</guid>
       <description></description>
     </item>
     <item>
       <title>Collaboration</title>
-      <link>/topics/collaboration/</link>
+      <link>//localhost:1313/topics/collaboration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/collaboration/</guid>
+      <guid>//localhost:1313/topics/collaboration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CPEC</title>
+      <link>//localhost:1313/topics/cpec/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/topics/cpec/</guid>
       <description></description>
     </item>
     <item>
       <title>Culture</title>
-      <link>/topics/culture/</link>
+      <link>//localhost:1313/topics/culture/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/culture/</guid>
+      <guid>//localhost:1313/topics/culture/</guid>
       <description></description>
     </item>
     <item>
       <title>Curriculum</title>
-      <link>/topics/curriculum/</link>
+      <link>//localhost:1313/topics/curriculum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/curriculum/</guid>
+      <guid>//localhost:1313/topics/curriculum/</guid>
       <description></description>
     </item>
     <item>
       <title>Diplomacy</title>
-      <link>/topics/diplomacy/</link>
+      <link>//localhost:1313/topics/diplomacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/diplomacy/</guid>
+      <guid>//localhost:1313/topics/diplomacy/</guid>
       <description></description>
     </item>
     <item>
       <title>Economic Policy</title>
-      <link>/topics/economic-policy/</link>
+      <link>//localhost:1313/topics/economic-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/economic-policy/</guid>
+      <guid>//localhost:1313/topics/economic-policy/</guid>
       <description></description>
     </item>
     <item>
       <title>Education</title>
-      <link>/topics/education/</link>
+      <link>//localhost:1313/topics/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/education/</guid>
+      <guid>//localhost:1313/topics/education/</guid>
       <description></description>
     </item>
     <item>
       <title>Foresight</title>
-      <link>/topics/foresight/</link>
+      <link>//localhost:1313/topics/foresight/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/foresight/</guid>
+      <guid>//localhost:1313/topics/foresight/</guid>
       <description></description>
     </item>
     <item>
       <title>Identity</title>
-      <link>/topics/identity/</link>
+      <link>//localhost:1313/topics/identity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/identity/</guid>
+      <guid>//localhost:1313/topics/identity/</guid>
       <description></description>
     </item>
     <item>
       <title>Investment</title>
-      <link>/topics/investment/</link>
+      <link>//localhost:1313/topics/investment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/investment/</guid>
+      <guid>//localhost:1313/topics/investment/</guid>
       <description></description>
     </item>
     <item>
       <title>Regional Security</title>
-      <link>/topics/regional-security/</link>
+      <link>//localhost:1313/topics/regional-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/regional-security/</guid>
+      <guid>//localhost:1313/topics/regional-security/</guid>
       <description></description>
     </item>
     <item>
       <title>Trade</title>
-      <link>/topics/trade/</link>
+      <link>//localhost:1313/topics/trade/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/trade/</guid>
+      <guid>//localhost:1313/topics/trade/</guid>
       <description></description>
     </item>
     <item>
       <title>Training</title>
-      <link>/topics/training/</link>
+      <link>//localhost:1313/topics/training/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/topics/training/</guid>
+      <guid>//localhost:1313/topics/training/</guid>
       <description></description>
     </item>
   </channel>

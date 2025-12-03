@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Geopolitics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
-    <link>/topics/geopolitics/</link>
+    <link>//localhost:1313/topics/geopolitics/</link>
     <description>Recent content in Geopolitics on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/topics/geopolitics/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/topics/geopolitics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Geopolitics &amp; Regional Security</title>
-      <link>/programs/geopolitics-regional-security/</link>
+      <link>//localhost:1313/programs/geopolitics-regional-security/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/programs/geopolitics-regional-security/</guid>
+      <guid>//localhost:1313/programs/geopolitics-regional-security/</guid>
       <description>Mapping power shifts, conflict/cooperation patterns, and Pakistan’s security calculus across its neighborhood and great-power competition.</description>
     </item>
     <item>
       <title>Emerging Geopolitics: Meaning, Why It Matters, and Key Implications</title>
-      <link>/blog/emerging-geopolitics/</link>
+      <link>//localhost:1313/blog/emerging-geopolitics/</link>
       <pubDate>Sat, 23 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/blog/emerging-geopolitics/</guid>
+      <guid>//localhost:1313/blog/emerging-geopolitics/</guid>
       <description>A concise guide to the forces reshaping state behavior, markets, and societies—from technology rivalry and climate to demographics and security.</description>
     </item>
   </channel>
