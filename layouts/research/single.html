@@ -1,0 +1,166 @@
+{{ define "main" }}
+{{ $shareUrl := .Permalink }}
+{{ $shareText := .Title }}
+{{ $cover := or .Params.cover "/images/default-research.png" }}
+<article class="research-single">
+  <div class="research-single__eyebrow">
+    <span class="pill">Research</span>
+    {{ with .Params.topics }}
+      {{ range . }}
+        <span class="pill pill--outline">{{ . }}</span>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <h1 class="h1">{{ .Title }}</h1>
+  <div class="research-single__meta">
+    {{ with .Params.authors }}
+      <span><i class="ph ph-user" aria-hidden="true"></i>{{ delimit . ", " }}</span>
+    {{ end }}
+    {{ with .Params.year }}
+      <span><i class="ph ph-calendar-blank" aria-hidden="true"></i>{{ . }}</span>
+    {{ end }}
+    <span><i class="ph ph-timer" aria-hidden="true"></i>{{ .ReadingTime }} min read</span>
+  </div>
+
+  <div class="research-single__actions">
+    {{ with .Params.pdf }}
+      <a class="btn btn-primary btn-sm" href="{{ . }}" target="_blank" rel="noopener">
+        <i class="ph ph-file-pdf" aria-hidden="true"></i><span>Download PDF</span>
+      </a>
+    {{ end }}
+    <a class="btn btn-outline btn-share btn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $shareUrl | urlquery }}" target="_blank" rel="noopener">
+      <i class="ph ph-linkedin-logo" aria-hidden="true"></i><span>LinkedIn</span>
+    </a>
+    <a class="btn btn-outline btn-share btn-sm" href="https://twitter.com/intent/tweet?url={{ $shareUrl | urlquery }}&text={{ $shareText | urlquery }}" target="_blank" rel="noopener">
+      <i class="ph ph-twitter-logo" aria-hidden="true"></i><span>X</span>
+    </a>
+    <button class="btn btn-outline btn-share btn-sm js-copy-link" type="button" data-copy-url="{{ $shareUrl }}">
+      <i class="ph ph-link" aria-hidden="true"></i><span>Copy</span>
+    </button>
+  </div>
+
+  <div class="research-hero-grid">
+    {{ with .Params.abstract }}
+      <section class="research-single__abstract">
+        <h2>Abstract</h2>
+        <p>{{ . }}</p>
+      </section>
+    {{ end }}
+    {{ with $cover }}
+      <figure class="research-single__hero">
+        <img src="{{ . }}" alt="Cover image for {{ $.Title }}" loading="lazy" decoding="async">
+      </figure>
+    {{ end }}
+  </div>
+
+  <div class="research-layout">
+    <aside class="research-single__aside">
+      <div class="meta-card">
+        <h3>At a glance</h3>
+        <ul class="meta-list">
+          {{ with .Params.authors }}<li><i class="ph ph-user" aria-hidden="true"></i><span>{{ delimit . ", " }}</span></li>{{ end }}
+          {{ with .Params.year }}<li><i class="ph ph-calendar-blank" aria-hidden="true"></i><span>{{ . }}</span></li>{{ end }}
+          <li><i class="ph ph-timer" aria-hidden="true"></i><span>{{ .ReadingTime }} min read</span></li>
+          {{ with .Params.topics }}
+            <li><i class="ph ph-tag" aria-hidden="true"></i><span>{{ delimit . ", " }}</span></li>
+          {{ end }}
+          {{ with .Params.focus_areas }}
+            <li><i class="ph ph-compass" aria-hidden="true"></i><span>{{ delimit . ", " }}</span></li>
+          {{ end }}
+          {{ with .Params.pdf }}
+            <li><i class="ph ph-file-pdf" aria-hidden="true"></i><a href="{{ . }}" target="_blank" rel="noopener">Download PDF</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      <div class="meta-card">
+        <h3>Share</h3>
+        <div class="share-stack">
+          <a class="btn btn-outline btn-share btn-sm" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $shareUrl | urlquery }}" target="_blank" rel="noopener">
+            <i class="ph ph-linkedin-logo" aria-hidden="true"></i><span>LinkedIn</span>
+          </a>
+          <a class="btn btn-outline btn-share btn-sm" href="https://twitter.com/intent/tweet?url={{ $shareUrl | urlquery }}&text={{ $shareText | urlquery }}" target="_blank" rel="noopener">
+            <i class="ph ph-twitter-logo" aria-hidden="true"></i><span>X</span>
+          </a>
+          <button class="btn btn-outline btn-share btn-sm js-copy-link" type="button" data-copy-url="{{ $shareUrl }}">
+            <i class="ph ph-link" aria-hidden="true"></i><span>Copy</span>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <div class="research-single__body content">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{ with .Params.pdf }}
+    <details class="research-single__preview">
+      <summary>Preview PDF</summary>
+      <object data="{{ . }}" type="application/pdf" width="100%" height="720">
+        <p>Your browser can’t display PDFs. <a href="{{ . }}" target="_blank" rel="noopener">Download the PDF</a>.</p>
+      </object>
+    </details>
+  {{ end }}
+
+  {{ $current := . }}
+  {{ $pool := where site.RegularPages "Section" "research" }}
+  {{ $related := slice }}
+  {{ range $pool }}
+    {{ if ne .RelPermalink $current.RelPermalink }}
+      {{ $topicOverlap := intersect .Params.topics $current.Params.topics }}
+      {{ $focusOverlap := intersect .Params.focus_areas $current.Params.focus_areas }}
+      {{ if or (gt (len $topicOverlap) 0) (gt (len $focusOverlap) 0) }}
+        {{ $related = $related | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if lt (len $related) 3 }}
+    {{ range $pool }}
+      {{ if ne .RelPermalink $current.RelPermalink }}
+        {{ $related = $related | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ with first 3 $related }}
+    <section class="section section--light" aria-labelledby="related-research">
+      <div class="container">
+        <div class="section__intro">
+          <h2 id="related-research">Related Research</h2>
+          <p>More reads connected by topic and focus.</p>
+        </div>
+        <div class="grid related-grid">
+          {{ range . }}
+            {{ partial "cards/research-card.html" . }}
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ partial "comments.html" . }}
+</article>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.js-copy-link').forEach((btn) => {
+      btn.addEventListener('click', async () => {
+        const url = btn.getAttribute('data-copy-url');
+        const label = btn.querySelector('span');
+        const original = label ? label.textContent : btn.textContent;
+        try {
+          await navigator.clipboard.writeText(url);
+          if (label) { label.textContent = 'Copied'; } else { btn.textContent = 'Copied'; }
+          setTimeout(() => {
+            if (label) { label.textContent = original; } else { btn.textContent = original; }
+          }, 2000);
+        } catch (e) {
+          if (label) { label.textContent = 'Failed'; } else { btn.textContent = 'Failed'; }
+          setTimeout(() => {
+            if (label) { label.textContent = original; } else { btn.textContent = original; }
+          }, 2000);
+        }
+      });
+    });
+  });
+</script>
+{{ end }}

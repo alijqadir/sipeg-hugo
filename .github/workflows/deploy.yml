@@ -1,0 +1,54 @@
+name: Build and Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - master
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.133.0"
+          extended: true
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: ${{ secrets.FTP_PORT || 21 }}
+          protocol: ftp
+          timeout: 60000
+          log-level: verbose
+          server-dir: ${{ secrets.FTP_PATH }}
+          local-dir: public/
+          dangerous-clean-slate: false
+          state-name: .ftp-deploy-sync-state-202602.json
+          exclude: |
+            **/.git*
+            **/.git*/**
+            pagefind/**
+            research/identity-culture-governance-societal-cleavages-national-harmony/**

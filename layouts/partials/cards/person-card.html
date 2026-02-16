@@ -1,0 +1,25 @@
+{{ $avatar := "/images/people-avatar.svg" }}
+{{ $isSaeed := eq .File.BaseFileName "saeed-shafqat" }}
+{{ $image := .Params.image }}
+{{ if and (not $image) $isSaeed }}
+  {{ $image = "/images/SaeedShafqat.jpg" }}
+{{ else if not $image }}
+  {{ $image = $avatar }}
+{{ end }}
+<article class="person-card {{ if eq .Params.team "director" }}person-card--director{{ end }}">
+  <div class="person-card__image">
+    <img src="{{ $image | relURL }}" alt="Portrait of {{ .Title }}" loading="lazy" decoding="async">
+  </div>
+  <div class="person-card__body">
+    <span class="person-card__role">{{ .Params.role }}</span>
+    <h3 class="card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ with .Params.summary }}
+      <p class="person-card__bio">{{ . }}</p>
+    {{ else }}
+      <p class="person-card__bio">{{ .Summary }}</p>
+    {{ end }}
+    {{ with .Params.email }}
+      <a class="card__link" href="mailto:{{ . }}">Email {{ $.Title }}</a>
+    {{ end }}
+  </div>
+</article>

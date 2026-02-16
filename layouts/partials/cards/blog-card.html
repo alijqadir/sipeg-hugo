@@ -1,0 +1,29 @@
+{{ $image := .Params.image | default .Params.featured_image | default .Params.cover | default "/images/hero.jpg" }}
+{{ $summary := .Params.summary | default .Params.description | default .Summary }}
+{{ $authors := .Params.author | default .Params.authors | default (slice) }}
+{{ if and (ne $authors nil) (not (reflect.IsSlice $authors)) }}
+  {{ $authors = slice $authors }}
+{{ end }}
+{{ $topics := .Params.topics | default (slice) }}
+{{ if and (ne $topics nil) (not (reflect.IsSlice $topics)) }}
+  {{ $topics = slice $topics }}
+{{ end }}
+<article class="card research-card blog-card">
+  <a class="research-card__image" href="{{ .RelPermalink }}">
+    <img src="{{ $image }}" alt="{{ .Title }} cover" loading="lazy" decoding="async">
+  </a>
+  <div class="research-card__body">
+    <h3 class="research-card__title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    {{ if or .Date (gt (len $authors) 0) (gt (len $topics) 0) }}
+    <p class="research-card__meta">
+      {{ with .Date }}<span>{{ .Format "02 Jan 2006" }}</span>{{ end }}
+      {{ if gt (len $authors) 0 }}<span>{{ if .Date }} · {{ end }}{{ delimit $authors ", " }}</span>{{ end }}
+      {{ if gt (len $topics) 0 }}<span>{{ if or .Date (gt (len $authors) 0) }} · {{ end }}{{ delimit $topics ", " }}</span>{{ end }}
+    </p>
+    {{ end }}
+    {{ with $summary }}<p class="research-card__abstract">{{ . | plainify | truncate 180 }}</p>{{ end }}
+    <div class="research-card__actions">
+      <a class="btn btn-outline" href="{{ .RelPermalink }}">Read</a>
+    </div>
+  </div>
+</article>

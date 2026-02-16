@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">Focus areas aligning scholarship with policy dialogues across Pakistan’s strategic landscape.</p>
+      {{ with .Content }}{{ . }}{{ end }}
+    </header>
+    <div class="grid grid-3">
+      {{ range .Pages.ByWeight }}
+        {{ partial "cards/program-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

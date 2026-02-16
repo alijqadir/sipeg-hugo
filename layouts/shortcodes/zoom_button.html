@@ -1,0 +1,7 @@
+{{ $url := .Get "url" | default .Page.Params.zoom_url }}
+{{ $label := .Get "label" | default "Register on Zoom" }}
+{{ $variant := .Get "variant" | default "gold" }}
+{{ if $url }}
+  {{ $class := cond (eq $variant "navy") "btn btn-navy" "btn btn-primary" }}
+  <a class="{{ $class }}" href="{{ $url }}" target="_blank" rel="noopener">{{ $label }}</a>
+{{ end }}

@@ -1,0 +1,162 @@
+{{ define "main" }}
+<main class="events-main">
+  <header class="events-hero container">
+    <div>
+      <p class="eyebrow">Events &amp; Briefings</p>
+      <h1>Engage with SIPEG</h1>
+      <p>Join briefings, webinars, and strategy sessions decoding Pakistan’s strategic choices.</p>
+    </div>
+  </header>
+
+  {{ $eventsData := partial "events/next-data.html" . }}
+  {{ with $eventsData.next }}
+    {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
+    {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+    <section class="events-highlight">
+      <div class="container events-highlight__card">
+        <div class="events-highlight__body">
+          <p class="eyebrow">Next Up</p>
+          <h2>{{ .Title }}</h2>
+          <p>{{ .Params.summary }}</p>
+          <p class="event-card-meta">
+            {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+            {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+          </p>
+          <div class="event-card-actions">
+            {{ if $hasForm }}
+              <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Join / Register</a>
+            {{ else if .Params.registration_url }}
+              <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
+            {{ end }}
+            <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
+          </div>
+        </div>
+        <figure class="events-highlight__media">
+          <img src="{{ $image }}" alt="{{ printf "Visual for %s" .Title }}" loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+  {{ end }}
+
+  {{ $future := $eventsData.future }}
+  {{ if gt (len $future) 1 }}
+  <section class="events-upcoming">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Upcoming Sessions</h2>
+        <p>Reserve your seat for forthcoming SIPEG convenings.</p>
+      </div>
+      <div class="events-list">
+        {{ range (after 1 $future) | first 4 }}
+          {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
+          {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+          <article class="event-card">
+            <div class="event-card__body">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="event-card-meta">
+                {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+                {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+              </p>
+              {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+              <div class="event-card-actions">
+                {{ if $hasForm }}
+                  <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Register</a>
+                {{ else if .Params.registration_url }}
+                  <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Register</a>
+                {{ end }}
+                <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
+              </div>
+            </div>
+            <figure class="event-card__thumb">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}" loading="lazy" decoding="async">
+            </figure>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="events-calendar-wrap">
+    <div class="container">
+      <div class="events-calendar-card">
+        <div class="events-calendar-card__header">
+          <h2>Monthly Calendar</h2>
+          <p>Browse SIPEG events and add them directly to your calendar.</p>
+        </div>
+        <div id="events-calendar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-all">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Archive &amp; Past Sessions</h2>
+        <p>Catch up on previous dialogues and briefings.</p>
+      </div>
+      <div class="events-list events-list--grid">
+        {{ range sort (where .Site.RegularPages "Section" "events") ".Params.event_start" "desc" }}
+          {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+          <article class="event-card event-card--stacked">
+            <figure class="event-card__thumb">
+              <img src="{{ $image }}" alt="{{ printf "%s image" .Title }}" loading="lazy" decoding="async">
+            </figure>
+            <div class="event-card__body">
+              <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+              <p class="event-card-meta">
+                {{ with .Params.event_start }}<span>{{ . | time | dateFormat "02 Jan 2006, 15:04" }}</span>{{ end }}
+                {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
+              </p>
+              {{ with .Params.summary }}<p class="event-card-summary">{{ . }}</p>{{ end }}
+              <a class="btn btn-outline" href="{{ .Permalink }}">Details</a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+</main>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css">
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script>
+  const eventsFeed = '{{ "/events/events.json" | relURL }}';
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('events-calendar');
+    if (!calendarEl) return;
+
+    fetch(eventsFeed)
+      .then(res => res.json())
+      .then(events => {
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          height: 520,
+          firstDay: 1,
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek'
+          },
+          eventColor: '#2F4858',
+          eventTextColor: '#fff',
+          eventDisplay: 'block',
+          eventBorderColor: '#2F4858',
+          eventBackgroundColor: 'rgba(47,72,88,.18)',
+          events: events.map(function(e) {
+            return {
+              title: e.title,
+              start: e.start,
+              end: e.end,
+              url: e.url
+            };
+          })
+        });
+        calendar.render();
+      })
+      .catch(err => {
+        console.error('Events calendar error:', err);
+      });
+  });
+</script>
+{{ end }}

@@ -1,0 +1,127 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SIPEG — Shafqat Institute for Pakistan and Emerging Geopolitics"
+enableRobotsTXT = true
+buildFuture = true
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "EventsJSON"]
+  page = ["HTML", "ICS"]
+  taxonomy = ["HTML", "RSS"]
+  term = ["HTML", "RSS"]
+
+[permalinks]
+  research = "/research/:slug/"
+  programs = "/programs/:slug/"
+  events = "/events/:slug/"
+  people = "/people/:slug/"
+
+[outputFormats.EventsJSON]
+  mediaType = "application/json"
+  baseName = "events"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.ICS]
+  mediaType = "text/calendar"
+  baseName = "event"
+  isPlainText = true
+  notAlternative = true
+
+[taxonomies]
+  author = "authors"
+  topic = "topics"
+  year = "years"
+
+[params]
+  primary = "#410A48"
+  accent = "#2F4858"
+  secondary = "#C5A15E"
+  charcoal = "#2E2E2E"
+  offwhite = "#d6c4f0ff"
+  softgray = "#E8ECF2"
+  substack_url = "https://sipeg.substack.com/embed"
+  contact_endpoint = "/forms/contact-handler.php"
+  newsletter_endpoint = "/forms/newsletter-handler.php"
+  event_registration_endpoint = "/forms/event-handler.php"
+  vision = "Positioning Pakistan through Knowledge, People Centric Policies and Global Insight."
+  mission = "Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices."
+  tagline = "Pakistan-centered foresight for a multipolar world."
+
+  [params.research]
+    defaultSort = "year_desc"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 5
+  [[menu.main]]
+    identifier = "research"
+    name = "Research"
+    url = "/research/"
+    weight = 10
+  [[menu.main]]
+    identifier = "programs"
+    name = "Programs"
+    url = "/programs/"
+    weight = 20
+  [[menu.main]]
+    identifier = "events"
+    name = "Events"
+    url = "/events/"
+    weight = 30
+  [[menu.main]]
+    identifier = "people"
+    name = "People"
+    url = "/people/"
+    weight = 40
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 60
+  [[menu.main]]
+    identifier = "political-risk-consulting"
+    name = "Consultation and Advisory"
+    url = "/advisory-risk/"
+    weight = 70
+
+  [[menu.footer]]
+    identifier = "about"
+    name = "About"
+    url = "/"
+    weight = 10
+  [[menu.footer]]
+    identifier = "programs"
+    name = "Programs"
+    url = "/programs/"
+    weight = 20
+  [[menu.footer]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
+  [[menu.footer]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+
+[minify]
+  [minify.tdewolff.css]
+    keepComments = false
+  [minify.tdewolff.html]
+    keepComments = false
+  [minify.tdewolff.js]
+    keepComments = false

@@ -1,0 +1,187 @@
+{{ define "main" }}
+  {{ partial "hero.html" . }}
+
+  <section class="section section--light">
+    <div class="container">
+      <div class="section__intro">
+        <h2>Mission</h2>
+        <p>{{ .Site.Params.mission }}</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card__title">Strategic Engagement</h3>
+          <p class="card__summary">We convene scholars, practitioners, and policymakers to interpret Pakistan’s evolving strategic choices across security, economic, and cultural dimensions.</p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Applied Insight</h3>
+          <p class="card__summary">Our research translates geopolitical analysis into actionable guidance for individuals and institutions shaping the region’s future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+   {{ $programs := sort (where .Site.RegularPages "Section" "programs") "Params.weight" "asc" }}
+  {{ $iconMap := dict "globe" "globe-hemisphere-east" "chart" "chart-line-up" "book" "book-open-text" "users" "users-three" "chip" "cpu" "compass" "compass" "sparkle" "sparkle" }}
+  <section class="section section--offwhite" aria-labelledby="focus-areas">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="focus-areas">Focus Areas</h2>
+        <p>Core program areas mapping Pakistan’s strategic, economic, and societal trajectories.</p>
+      </div>
+      <div class="focus-grid">
+        {{ range $programs }}
+          <a class="focus-item" href="{{ .RelPermalink }}">
+            {{ $icon := or (index $iconMap .Params.icon) .Params.icon }}
+            <span class="icon-circle focus-item__icon">
+              <i class="ph ph-{{ $icon }}" aria-hidden="true"></i>
+            </span>
+            <span class="focus-item__title">{{ .Title }}</span>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+
+  {{ $featuredResearch := first 3 (where (where .Site.RegularPages "Section" "research") "Params.featured" true) }}
+  {{ if lt (len $featuredResearch) 3 }}
+    {{ $fallback := first (sub 3 (len $featuredResearch)) (sort (where .Site.RegularPages "Section" "research") "Date" "desc") }}
+    {{ $featuredResearch = append $featuredResearch $fallback }}
+  {{ end }}
+  {{ if $featuredResearch }}
+  <section class="section section--offwhite" aria-labelledby="featured-research">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="featured-research">Featured Research</h2>
+        <p>Analytical spotlights drawn from SIPEG’s latest scholarship.</p>
+      </div>
+      <div class="grid grid-3">
+        {{ range $featuredResearch }}
+          {{ partial "cards/research-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  
+  
+   {{ $people := slice }}
+  {{ with site.GetPage "people/saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/mariam-saeed-shafqat" }}{{ $people = $people | append . }}{{ end }}
+  {{ with site.GetPage "people/tayyeb-shabbir" }}{{ $people = $people | append . }}{{ end }}
+  {{ if $people }}
+  <section class="section section--offwhite" aria-labelledby="people-spotlight">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="people-spotlight">Advisory Board</h2>
+        <p>Meet the scholars leading SIPEG’s research and engagement platforms.</p>
+      </div>
+      <div class="people-spotlight">
+        {{ range $people }}
+          {{ partial "cards/person-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{ $eventsData := partial "events/next-data.html" . }}
+  {{ with $eventsData.next }}
+    {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
+    <section class="section section--light" aria-labelledby="upcoming-webinar">
+      <div class="container">
+        {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+        <div class="webinar">
+          <div class="webinar__content">
+            <h2 id="upcoming-webinar">Upcoming Webinar</h2>
+            <h3>{{ .Title }}</h3>
+            <p class="webinar__details">{{ .Params.summary }}</p>
+            <div class="meta-block">
+              {{ with .Params.event_start }}<span><strong>Date:</strong> {{ (time .).Format "02 January 2006" }}</span>{{ end }}
+              {{ with .Params.event_start }}<span><strong>Time:</strong> {{ (time .).Format "15:04" }}</span>{{ end }}
+            </div>
+            <div class="webinar__actions">
+              {{ if $hasForm }}
+                <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Join / Register</a>
+              {{ else if .Params.registration_url }}
+                <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
+              {{ end }}
+              <a class="btn btn-outline" href="{{ .RelPermalink }}">View details</a>
+            </div>
+          </div>
+          {{ with $image }}
+          <figure class="webinar__media">
+            <img src="{{ . }}" alt="Visual for {{ $.Title }}" loading="lazy" decoding="async">
+          </figure>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+
+  <section class="section section--light" aria-labelledby="advisory-block">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="advisory-block">Consultation and Advisory</h2>
+        <p>Opportunities and risk management delivered through SIPEG’s consulting practice and partner consortium.</p>
+      </div>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 class="card__title">Consultation &amp; Advisory</h3>
+          <p class="card__summary">Opportunity and risk scans, governance and regulatory assessments, scenario planning, and executive briefings tailored to Pakistan and the region.</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="{{ "/advisory-risk/" | relURL }}">Explore Consulting</a>
+            <a class="btn btn-outline" href="{{ "/contact/?topic=consulting" | relURL }}">Talk to Us</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Advisory, Training &amp; Collaboration</h3>
+          <p class="card__summary">Workshops, tabletop exercises, collaborative research, and expat engagement to build capacity and link insight to action.</p>
+          <div class="hero__actions">
+            <a class="btn btn-outline" href="{{ "/political-risk-consulting/#advisory-training" | relURL }}">See Formats</a>
+            <a class="btn btn-primary" href="{{ "/contact/?topic=advisory" | relURL }}">Partner with SIPEG</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--light" aria-labelledby="newsletter">
+    <div class="container">
+      <div class="section__intro">
+        <h2 id="newsletter">Stay Informed</h2>
+        <p>Subscribe for new research, event invitations, and editorial dispatches from SIPEG.</p>
+      </div>
+      <div class="newsletter-layout">
+        <div class="newsletter-layout__left">
+          {{ partial "substackFeed.html" . }}
+          <div class="newsletter-embed">
+            <iframe src="{{ .Site.Params.substack_url }}" title="Subscribe to SIPEG Substack" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div class="newsletter-layout__form">
+          {{ partial "newsletter-form.html" . }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <section class="section section--light" aria-labelledby="join-us">
+    <div class="container">
+      <div class="card">
+        <h2 id="join-us">Partner with SIPEG</h2>
+        <p class="card__summary">Collaborate with SIPEG to advance research, convene strategic dialogues, deepen understanding of Pakistan’s evolving role in global affairs — or volunteer your skills to support our projects and events.</p>
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="{{ "/contact/" | relURL }}">Contact Our Team</a>
+          <a class="btn btn-outline" href="{{ "/events/" | relURL }}">View Upcoming Events</a>
+          <a class="btn btn-navy" href="{{ "/contact/?topic=volunteer" | relURL }}">Volunteer with SIPEG</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

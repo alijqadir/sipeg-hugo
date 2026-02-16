@@ -1,0 +1,36 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    {{ partial "breadcrumbs.html" . }}
+    <article{{ if eq .Section "blog" }} class="post-article"{{ end }}>
+      <header class="section__intro">
+        <h1>{{ .Title }}</h1>
+        <div class="meta-block">
+          {{ with .Date }}<span><strong>Published:</strong> {{ .Format "02 January 2006" }}</span>{{ end }}
+          {{ with .Params.role }}<span><strong>Role:</strong> {{ . }}</span>{{ end }}
+          {{ with .Params.authors }}<span><strong>Author:</strong> {{ delimit . ", " }}</span>{{ end }}
+          {{ with .Params.topics }}<span><strong>Topics:</strong> {{ delimit . ", " }}</span>{{ end }}
+          {{ with .Params.categories }}<span><strong>Category:</strong> {{ delimit . ", " }}</span>{{ end }}
+        </div>
+        {{ with .Params.summary }}
+          <p class="lead">{{ . }}</p>
+        {{ end }}
+        {{ with .Params.tags }}
+          <ul class="tag-list">
+            {{ range . }}<li>{{ . }}</li>{{ end }}
+          </ul>
+        {{ end }}
+      </header>
+      {{ if and (eq .Section "blog") .Params.image }}
+        <figure class="article-hero">
+          <img src="{{ .Params.image }}" alt="{{ printf "%s featured image" .Title }}" loading="eager" decoding="async">
+        </figure>
+      {{ end }}
+      <div class="content{{ if eq .Section "blog" }} post-content{{ end }}">
+        {{ .Content }}
+      </div>
+      {{ partial "comments.html" . }}
+    </article>
+  </div>
+</section>
+{{ end }}

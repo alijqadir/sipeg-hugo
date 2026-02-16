@@ -1,0 +1,29 @@
+---
+title: TO KILL A MOCKINGBIRD BENTHAM AND LOCKE IN GAMBAT, PAKISTAN
+date: 2026-02-05T17:59:30.731Z
+abstract: >-
+  October 6, 1995: 'Are they going to kill me?' asked Rukhsana in a hushed tone
+  that Ahsan Rana could barely
+
+  hear, which sent chill waves down his spine. Ahsan did not have an answer, but he knew Rukhsana's future was uncertain. He himself was scared as he had no idea what was about to unfold for this young girl of 25 who, along with her husband, had voluntarily surrendered to his custody last night. As the Assistant Commissioner of Gambat sub-division of District Khairpur, Pakistan, he had lodged them in a government rest house under police protection. She was to stand before a grand jirga, i.e., a congregation of tribal chieftains, that he had arranged with great effort to settle the long-standing dispute between warring tribes in the Khairpur district. This tribal dispute had already claimed 174 human lives over the last five years, in addition to the retributive killing of countless animals and cutting fruit trees. Rukhsana had played no part in this carnage, yet fate had placed her in the eye of the storm. She lived and worked several hundred kilometres away in Karachi and recently contracted a love marriage without her parents' consent. However, unfortunately, she and her husband belonged to different tribes. She was a Korai, and her husband was an Ujjan, and the two tribes were daggers drawn. The Korai tribe wanted her back and threatened to walk away from the jirga otherwise... he knew returning Rukhsana to Korais entailed almost certain rape and/or honour killing. She was the sacrificial lamb whose blood gods wanted as a precondition to their mercy.
+year: 2022
+topics:
+  - Honor Killing
+  - Love Marriage
+  - Jirga
+  - Assistant Commissioner
+  - genderbased descrimination
+focus_areas:
+  - education-curriculum-capacity
+  - culture-identity-diplomacy
+pdf: /uploads/to-kill-a-mockingbird-ahsan-rana.pdf
+featured: false
+draft: false
+---
+**Gambot: Context and Background:**
+
+A unique geographical feature of Gambat was its long border with the River Indus. The mighty Indus swelled enormously during the flood season (July – August), and to save adjoining towns and villages from its wrath, an earthen embankment ran along its sides. Since the river carried an average annual flow of 146 million-acre feet, the embankment was constructed several miles afar from its winter-time bed. Thus, an approximately 10-12 km wide strip (called katcha) ran between the riverbed and the earthen embankment. This allowed water to spread and be tamed easily. During off-flood months, the katcha area was cultivated. It was very fertile since the river enriched its soils every year as its water swelled and spilt during flooding. Given the annual flooding, it was difficult for the government to maintain a permanent road network in the katcha area. Human settlements were also either temporary or were built on high-altitude enclaves. Naturally, the government's outreach in this area was limited, and the area provided an excellent escape to all kinds of criminals and fugitives. It was a microcosm of John Locke's 'state of nature.' Gambat's economy depended on agriculture and livestock. The total cultivable area in the sub-division was 67,554acres. The main crops were wheat, rice, cotton, fodder, vegetables, mustard and sunflower. The area was also famous for its date gardens. Groundwater was brackish, except for pockets of sweet water. Hence, farmers depended almost exclusively on canal water for irrigation. Most farming households kept cattle and goats to meet their dairy and meat requirements. Livestock products were also marketed in nearby cities.
+
+The gender ratio in Gambat was skewed in favour of men. For every 100 men, there were only 87.8 women, which was one of the lowest in Pakistan. (Pakistan's average was 94 women for every 100 men, which was  quite low compared to 102 for Sub-Saharan Africa and 106 for Western Europe.) Gambat's low gender ratio spoke volumes about women's inferior socio-economic status. This resulted from gender-based discrimination in access to food, healthcare, education and other primary goods.
+
+\*\* ***Why and how honor killings happen? Why women are the victims ? What role groups/castes and the powerful persons play in the ruural setting? What are the complexities of social, cultural and economic factors? What is the role of government officials? Can an adminstrator provide justice to the weak and vulnerable and up hold rule of law? How Jirga is constituted and who decides and why the victum is helpless? These are tough questions in the social setting of Sindh and Pakistan. It is equally challenging to conduct research and write on such issues but here is an excellent  Case Study and if it rouses your curiosity, download is available...***

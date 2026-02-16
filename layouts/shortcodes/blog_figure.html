@@ -1,0 +1,11 @@
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "Blog image" -}}
+{{- $caption := .Get "caption" -}}
+{{- if $src -}}
+<figure class="article-media">
+  <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
+  {{- with $caption }}
+  <figcaption class="article-caption">{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
+{{- end -}}

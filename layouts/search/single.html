@@ -1,0 +1,21 @@
+{{ define "head_extra" }}
+  <link rel="stylesheet" href="{{ "/pagefind/pagefind-ui.css" | relURL }}">
+{{ end }}
+
+{{ define "main" }}
+<section class="search-page">
+  <div class="container">
+    <div class="search-box">
+      <div id="pagefind-search"></div>
+    </div>
+  </div>
+</section>
+<script type="module">
+  import PagefindUI from "{{ "/pagefind/pagefind-ui.js" | relURL }}";
+  new PagefindUI({
+    element: "#pagefind-search",
+    showSubResults: false,
+    showImages: false,
+  });
+</script>
+{{ end }}

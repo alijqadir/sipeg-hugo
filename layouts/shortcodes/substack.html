@@ -1,0 +1,4 @@
+{{ $height := .Get "height" | default "220" }}
+<div class="substack-embed">
+  <iframe src="{{ or (.Get "src") (.Site.Params.substack_url) }}" height="{{ $height }}" width="100%" frameborder="0" scrolling="no" style="border: 1px solid var(--color-softgray); border-radius: 12px; background: #fff;" title="Substack subscription"></iframe>
+</div>

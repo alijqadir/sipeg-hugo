@@ -1,0 +1,23 @@
+{{/* Returns a dict with next event and upcoming future events */}}
+{{ $all := sort (where site.RegularPages "Section" "events") ".Params.event_start" "asc" }}
+{{ $future := slice }}
+{{ $now := now }}
+{{ range $all }}
+  {{ $page := . }}
+  {{ with $page.Params.event_start }}
+    {{ if gt (time .) $now }}
+      {{ $future = $future | append $page }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ if lt (len $future) 1 }}
+  {{ if gt (len $all) 0 }}
+    {{ $future = slice (index $all 0) }}
+  {{ end }}
+{{ end }}
+{{ $next := cond (gt (len $future) 0) (index $future 0) nil }}
+{{ $after := slice }}
+{{ if gt (len $future) 1 }}
+  {{ $after = after 1 $future }}
+{{ end }}
+{{ return dict "next" $next "future" $future "after" $after "all" $all }}
