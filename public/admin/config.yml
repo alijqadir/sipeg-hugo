@@ -1,0 +1,272 @@
+backend:
+  name: git-gateway
+  repo: alijqadir/sipeg-hugo
+  branch: master
+  auth_type: pkce
+  identity_url: https://auth.decapbridge.com/sites/3fcd9e96-833a-47ab-b2c1-428e648eb584
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/3fcd9e96-833a-47ab-b2c1-428e648eb584/pkce
+  auth_token_endpoint: /sites/3fcd9e96-833a-47ab-b2c1-428e648eb584/token
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    update: 'Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    delete: 'Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    uploadMedia: 'Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    deleteMedia: 'Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge'
+    openAuthoring: "Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge"
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://sipeg.org
+
+slug:
+  clean_accents: true
+  encoding: "unicode"
+  sanitize_replacement: "-"
+
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    format: "frontmatter"
+    extension: "md"
+    sortable_fields: ["title", "date"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Authors", name: "author", widget: "list", required: false }
+      - { label: "Topics", name: "topics", widget: "list", required: false }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          required: false,
+        }
+      - {
+          label: "Featured Image",
+          name: "image",
+          widget: "image",
+          required: false,
+        }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "research"
+    label: "Research"
+    folder: "content/research"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "date"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Abstract", name: "abstract", widget: "text", required: false }
+      - { label: "Authors", name: "authors", widget: "list", required: false }
+      - { label: "Year", name: "year", widget: "number", value_type: "int", required: true }
+      - {
+          label: "Topics/Tags",
+          name: "topics",
+          widget: "list",
+          required: false,
+        }
+      - {
+          label: "Focus Areas",
+          name: "focus_areas",
+          widget: "select",
+          options:
+            [
+              { label: "Geopolitics & Regional Security", value: "geopolitics-security" },
+              { label: "Trade, Investment & Economic Policy", value: "trade-investment-economic-policy" },
+              { label: "Education, Curriculum & National Capacity", value: "education-curriculum-capacity" },
+              { label: "Culture, Identity & Diplomacy", value: "culture-identity-diplomacy" },
+              { label: "Technology & Strategic Foresight", value: "technology-strategic-foresight" },
+              { label: "Advisory, Training & Collaboration", value: "advisory-training-collaboration" },
+              { label: "China Corner", value: "china-corner" },
+            ],
+          multiple: true,
+          required: true,
+          hint: "Select at least one focus area so the research appears on the relevant program page and filters.",
+        }
+      - {
+          label: "Cover Image",
+          name: "cover",
+          widget: "image",
+          required: false,
+          hint: "Drag & drop or click to upload a cover image.",
+        }
+      - {
+          label: "PDF",
+          name: "pdf",
+          widget: "file",
+          required: false,
+          hint: "Drag & drop or click to upload the research PDF.",
+        }
+      - {
+          label: "Featured",
+          name: "featured",
+          widget: "boolean",
+          default: false,
+          required: false,
+          hint: "Marks the publication for the homepage featured research area.",
+        }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "programs"
+    label: "Focus Areas"
+    folder: "content/programs"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "weight"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Icon", name: "icon", widget: "string", required: false, hint: "Phosphor icon name (regular set)." }
+      - { label: "Icon Text", name: "icon_text", widget: "string", required: false }
+      - { label: "Focus Key", name: "focus_key", widget: "string", required: true, hint: "Machine-friendly key used to link research (e.g., geopolitics-security)." }
+      - { label: "Categories", name: "categories", widget: "list", required: false }
+      - { label: "Topics", name: "topics", widget: "list", required: false }
+      - { label: "Weight", name: "weight", widget: "number", value_type: "int", required: false, hint: "Ordering in Focus Areas grid (lower is earlier)." }
+      - { label: "Body", name: "body", widget: "markdown", required: false }
+
+  - name: "events"
+    label: "Events"
+    folder: "content/events"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["event_start", "title", "date"]
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          required: false,
+        }
+      - { label: "Event Start", name: "event_start", widget: "datetime" }
+      - {
+          label: "Event End",
+          name: "event_end",
+          widget: "datetime",
+          required: false,
+        }
+      - {
+          label: "Location",
+          name: "location",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - {
+          label: "Registration URL",
+          name: "registration_url",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Registration Endpoint",
+          name: "registration_endpoint",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Google Calendar ID",
+          name: "gcal_calendar_id",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Google Event ID",
+          name: "gcal_event_id",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Zoom Meeting ID",
+          name: "zoom_meeting_id",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Hero Image", name: "image", widget: "image", required: false }
+      - {
+          label: "Draft",
+          name: "draft",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "people"
+    label: "People"
+    folder: "content/people"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    sortable_fields: ["title", "weight"]
+    fields:
+      - { label: "Name", name: "title", widget: "string" }
+      - { label: "Role", name: "role", widget: "string", required: false }
+      - {
+          label: "Affiliation",
+          name: "affiliation",
+          widget: "string",
+          required: false,
+        }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Summary", name: "summary", widget: "text", required: false }
+      - {
+          label: "Team",
+          name: "team",
+          widget: "select",
+          options:
+            [
+              { label: "Director", value: "director" },
+              { label: "Advisory Board", value: "advisory" },
+              { label: "Research & Outreach", value: "research" },
+            ],
+          required: true,
+          hint: "Used to place cards into Director, Advisory Board, or Research & Outreach sections.",
+        }
+      - { label: "Weight", name: "weight", widget: "number", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }

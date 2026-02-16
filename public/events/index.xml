@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Events on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</title>
+    <link>//localhost:1313/events/</link>
+    <description>Recent content in Events on SIPEG — Shafqat Institute for Pakistan &amp; Emerging Geopolitics</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Mar 2025 10:00:00 +0500</lastBuildDate>
+    <atom:link href="//localhost:1313/events/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Webinar: Pakistan’s Strategic Position in a Multipolar World</title>
+      <link>//localhost:1313/events/webinar-pakistans-strategic-position-in-a-multipolar-world/</link>
+      <pubDate>Sat, 01 Mar 2025 10:00:00 +0500</pubDate>
+      <guid>//localhost:1313/events/webinar-pakistans-strategic-position-in-a-multipolar-world/</guid>
+      <description>A focused webinar examining Pakistan’s role in the emerging multipolar order.</description>
+    </item>
+    <item>
+      <title>Briefing: Political Risk Outlook 2025</title>
+      <link>//localhost:1313/events/briefing-political-risk-outlook-2025/</link>
+      <pubDate>Tue, 10 Dec 2024 09:00:00 +0500</pubDate>
+      <guid>//localhost:1313/events/briefing-political-risk-outlook-2025/</guid>
+      <description>Scenario-based briefing on Pakistan’s political and regulatory risk landscape for 2025.</description>
+    </item>
+    <item>
+      <title>Workshop: Education, Curriculum &amp; National Capacity</title>
+      <link>//localhost:1313/events/workshop-education-curriculum-national-capacity/</link>
+      <pubDate>Wed, 20 Nov 2024 08:00:00 +0500</pubDate>
+      <guid>//localhost:1313/events/workshop-education-curriculum-national-capacity/</guid>
+      <description>Hands-on workshop aligning curriculum reform and leadership pipelines with national capacity goals.</description>
+    </item>
+    <item>
+      <title>PCEC: Risks and Opportunities in a Fragmenting Energy Market</title>
+      <link>//localhost:1313/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/events/pcec-risks-and-opportunities-in-a-fragmenting-energy-market/</guid>
+      <description>A SIPEG webinar unpacking the Pakistan-China Energy Corridor and its regional ramifications.</description>
+    </item>
+  </channel>
+</rss>
