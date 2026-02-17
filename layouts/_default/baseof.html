@@ -8,6 +8,9 @@
     {{ block "head_extra" . }}{{ end }}
   </head>
   <body>
+    {{ with .Site.Params.google.tag_manager_id }}
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . | urlquery }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    {{ end }}
     {{ partial "icons-sprite.html" . }}
     {{ partial "header.html" . }}
     <main id="main-content">

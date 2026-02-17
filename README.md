@@ -56,6 +56,37 @@ Use front matter fields (`summary`, `featured_image`, `tags`) to populate cards 
 - `npm run build` (or `./build.sh`) runs Hugo and then generates `public/pagefind/`.
 - The `/search` page loads the default Pagefind UI module and provides instant results across the site.
 
+## Google Tag Manager, Analytics, and Search Console
+
+1. Open `config.toml` and set the new block under `[params.google]`:
+   - `tag_manager_id = "GTM-XXXXXXX"`
+   - `analytics_id = "G-XXXXXXXXXX"`
+   - `search_console_verification = "your_meta_verification_token"`
+   - Keep `use_direct_analytics = false` when GA4 is configured inside GTM (recommended).
+2. If you are not sending GA4 from GTM and want direct GA on the site, set:
+   - `use_direct_analytics = true`
+3. Build/deploy as usual:
+   ```bash
+   npm run build
+   ```
+
+### Google-side setup checklist
+
+1. **Tag Manager**
+   - Create a GTM container for your SIPEG domain.
+   - Copy container ID (`GTM-...`) into `params.google.tag_manager_id`.
+   - In GTM, create a GA4 Configuration tag using your `G-...` ID and trigger it on All Pages.
+   - Publish the container.
+2. **Google Analytics 4**
+   - Create a GA4 property and web data stream for SIPEG.
+   - Copy Measurement ID (`G-...`) into `params.google.analytics_id`.
+   - If GA is handled in GTM, leave `use_direct_analytics = false`.
+3. **Search Console**
+   - Add your domain property in Google Search Console.
+   - Use the HTML meta tag verification method and copy the `content` value only.
+   - Paste it into `params.google.search_console_verification`, deploy, then click Verify in Search Console.
+   - Submit sitemap: `https://your-domain/sitemap.xml`
+
 ## Deployment to Hostinger
 
 1. Run `npm run build` (or `./build.sh`).

@@ -1,6 +1,17 @@
 {{- $site := .Site }}
 {{- $title := cond .IsHome $site.Title (printf "%s | %s" (.Title | default $site.Title) $site.Title) }}
 {{- $description := .Params.summary | default .Params.description | default $site.Params.mission }}
+{{- $google := $site.Params.google -}}
+{{- $gtmID := "" -}}
+{{- $gaID := "" -}}
+{{- $gscVerification := "" -}}
+{{- $directGA := false -}}
+{{- if $google -}}
+  {{- $gtmID = $google.tag_manager_id | default "" -}}
+  {{- $gaID = $google.analytics_id | default "" -}}
+  {{- $gscVerification = $google.search_console_verification | default "" -}}
+  {{- $directGA = $google.use_direct_analytics | default false -}}
+{{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ $title }}</title>
@@ -18,5 +29,26 @@
 <meta property="og:image" content="{{ "/images/hero.jpg" | absURL }}">
 {{- end }}
 <meta name="twitter:card" content="summary_large_image">
+{{ with $gscVerification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{ end }}
+{{ with $gtmID }}
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ . | js }}');
+</script>
+{{ end }}
+{{ if and $gaID (or (not $gtmID) $directGA) }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID | urlquery }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $gaID | js }}');
+</script>
+{{ end }}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

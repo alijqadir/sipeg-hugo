@@ -52,6 +52,16 @@ buildFuture = true
   mission = "Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices."
   tagline = "Pakistan-centered foresight for a multipolar world."
 
+  [params.google]
+    # Google Tag Manager container ID (example: GTM-ABC1234)
+    tag_manager_id = "GTM-554VNT6V"
+    # GA4 Measurement ID (example: G-XXXXXXXXXX)
+    analytics_id = ""
+    # Keep false if GA4 is configured inside GTM to avoid duplicate pageviews
+    use_direct_analytics = false
+    # Value from the Search Console HTML meta verification method
+    search_console_verification = ""
+
   [params.research]
     defaultSort = "year_desc"
 
