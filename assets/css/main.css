@@ -350,7 +350,7 @@ button,
 
 @media (max-width: 480px) {
   .hero h1 {
-    font-size: calc(clamp(2rem, 7vw, 2.35rem) - 2pt);
+    font-size: calc(clamp(2rem, 7vw, 2.35rem) - 4pt);
     line-height: 1.15;
   }
   .hero__tagline {
@@ -430,7 +430,7 @@ button,
 }
 
 .hero h1 {
-  font-size: calc(clamp(2.4rem, 3.4vw, 3.1rem) - 3pt);
+  font-size: calc(clamp(2.4rem, 3.4vw, 3.1rem) - 5pt);
   line-height: 1.1;
 }
 
