@@ -1,7 +1,7 @@
 ---
 title: "Huntington Revisited: Is U. S Grand Strategy Disrupting the
   Confucian–Islamic Nexus?"
-date: 2026-03-04T15:51:19.141Z
+date: 2026-03-05T00:13:32.238Z
 author:
   - Saeed Shafqat
 draft: false
