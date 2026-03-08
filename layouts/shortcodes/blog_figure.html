@@ -1,8 +1,15 @@
 {{- $src := .Get "src" -}}
 {{- $alt := .Get "alt" | default "Blog image" -}}
 {{- $caption := .Get "caption" -}}
+{{- $classes := slice "article-media" -}}
+{{- with .Get "variant" -}}
+  {{- $classes = $classes | append (printf "article-media--%s" .) -}}
+{{- end -}}
+{{- with .Get "class" -}}
+  {{- $classes = $classes | append . -}}
+{{- end -}}
 {{- if $src -}}
-<figure class="article-media">
+<figure class="{{ delimit $classes " " }}">
   <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async">
   {{- with $caption }}
   <figcaption class="article-caption">{{ . | markdownify }}</figcaption>
