@@ -4,6 +4,7 @@ title: "Huntington Revisited: Is U. S Grand Strategy Disrupting the
 date: 2026-03-04T14:52:26.247Z
 author:
   - Saeed Shafqat
+image: /uploads/8bbc98c6-8458-4b81-b88e-21514b215653.png
 draft: false
 ---
 ## Why Revisit Huntington?
