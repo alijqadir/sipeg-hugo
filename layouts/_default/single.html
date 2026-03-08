@@ -2,35 +2,96 @@
 <section class="section section--light">
   <div class="container">
     {{ partial "breadcrumbs.html" . }}
-    <article{{ if eq .Section "blog" }} class="post-article"{{ end }}>
-      <header class="section__intro">
-        <h1>{{ .Title }}</h1>
-        <div class="meta-block">
-          {{ with .Date }}<span><strong>Published:</strong> {{ .Format "02 January 2006" }}</span>{{ end }}
-          {{ with .Params.role }}<span><strong>Role:</strong> {{ . }}</span>{{ end }}
-          {{ with .Params.authors }}<span><strong>Author:</strong> {{ delimit . ", " }}</span>{{ end }}
-          {{ with .Params.topics }}<span><strong>Topics:</strong> {{ delimit . ", " }}</span>{{ end }}
-          {{ with .Params.categories }}<span><strong>Category:</strong> {{ delimit . ", " }}</span>{{ end }}
+    {{ $authors := .Params.author | default .Params.authors | default (slice) }}
+    {{ if and (ne $authors nil) (not (reflect.IsSlice $authors)) }}
+      {{ $authors = slice $authors }}
+    {{ end }}
+    {{ if eq .Section "blog" }}
+      {{ $shareUrl := .Permalink }}
+      {{ $shareText := .Title }}
+      <article class="post-article">
+        <header class="post-header">
+          <div class="post-header__eyebrow">
+            <span class="pill">Blog</span>
+            <span class="post-header__readtime"><i class="ph ph-timer" aria-hidden="true"></i>{{ .ReadingTime }} min read</span>
+          </div>
+          <h1>{{ .Title }}</h1>
+          <div class="meta-block post-meta">
+            {{ with .Date }}<span><strong>Published:</strong> {{ .Format "02 January 2006" }}</span>{{ end }}
+            {{ with .Params.role }}<span><strong>Role:</strong> {{ . }}</span>{{ end }}
+            {{ if gt (len $authors) 0 }}<span><strong>Author:</strong> {{ delimit $authors ", " }}</span>{{ end }}
+            {{ with .Params.topics }}<span><strong>Topics:</strong> {{ delimit . ", " }}</span>{{ end }}
+            {{ with .Params.categories }}<span><strong>Category:</strong> {{ delimit . ", " }}</span>{{ end }}
+          </div>
+          {{ with .Params.summary }}
+            <p class="lead">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.tags }}
+            <ul class="tag-list">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+        </header>
+
+        {{ with .Params.image }}
+          <figure class="article-hero">
+            <img src="{{ . }}" alt="{{ printf "%s featured image" $.Title }}" loading="eager" decoding="async">
+          </figure>
+        {{ end }}
+
+        <div class="post-layout">
+          <div class="post-body-surface">
+            <div class="content post-content">
+              {{ .Content }}
+            </div>
+          </div>
+          <aside class="post-sidebar" aria-label="Share this post">
+            <div class="post-share-card">
+              <h2>Share This Post</h2>
+              <p>If this analysis is useful, pass it on.</p>
+              <div class="post-share-actions">
+                <a class="btn btn-outline btn-share post-share-btn" href="https://www.linkedin.com/sharing/share-offsite/?url={{ $shareUrl | urlquery }}" target="_blank" rel="noopener">
+                  <i class="ph ph-linkedin-logo" aria-hidden="true"></i><span>LinkedIn</span>
+                </a>
+                <a class="btn btn-outline btn-share post-share-btn" href="https://twitter.com/intent/tweet?url={{ $shareUrl | urlquery }}&text={{ $shareText | urlquery }}" target="_blank" rel="noopener">
+                  <i class="ph ph-twitter-logo" aria-hidden="true"></i><span>X</span>
+                </a>
+                <button class="btn btn-outline btn-share post-share-btn js-copy-link" type="button" data-copy-url="{{ $shareUrl }}">
+                  <i class="ph ph-link" aria-hidden="true"></i><span>Copy link</span>
+                </button>
+              </div>
+            </div>
+          </aside>
         </div>
-        {{ with .Params.summary }}
-          <p class="lead">{{ . }}</p>
-        {{ end }}
-        {{ with .Params.tags }}
-          <ul class="tag-list">
-            {{ range . }}<li>{{ . }}</li>{{ end }}
-          </ul>
-        {{ end }}
-      </header>
-      {{ if and (eq .Section "blog") .Params.image }}
-        <figure class="article-hero">
-          <img src="{{ .Params.image }}" alt="{{ printf "%s featured image" .Title }}" loading="eager" decoding="async">
-        </figure>
-      {{ end }}
-      <div class="content{{ if eq .Section "blog" }} post-content{{ end }}">
-        {{ .Content }}
-      </div>
-      {{ partial "comments.html" . }}
-    </article>
+
+        {{ partial "comments.html" . }}
+      </article>
+    {{ else }}
+      <article>
+        <header class="section__intro">
+          <h1>{{ .Title }}</h1>
+          <div class="meta-block">
+            {{ with .Date }}<span><strong>Published:</strong> {{ .Format "02 January 2006" }}</span>{{ end }}
+            {{ with .Params.role }}<span><strong>Role:</strong> {{ . }}</span>{{ end }}
+            {{ if gt (len $authors) 0 }}<span><strong>Author:</strong> {{ delimit $authors ", " }}</span>{{ end }}
+            {{ with .Params.topics }}<span><strong>Topics:</strong> {{ delimit . ", " }}</span>{{ end }}
+            {{ with .Params.categories }}<span><strong>Category:</strong> {{ delimit . ", " }}</span>{{ end }}
+          </div>
+          {{ with .Params.summary }}
+            <p class="lead">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.tags }}
+            <ul class="tag-list">
+              {{ range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+          {{ end }}
+        </header>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{ partial "comments.html" . }}
+      </article>
+    {{ end }}
   </div>
 </section>
 {{ end }}

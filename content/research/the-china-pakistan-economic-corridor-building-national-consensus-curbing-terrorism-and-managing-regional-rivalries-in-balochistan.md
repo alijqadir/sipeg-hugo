@@ -40,7 +40,7 @@ pdf: /uploads/ch05_saeed-shafqat_compressed.pdf-1.pdf
 featured: false
 draft: false
 ---
-**Context & Way Forward2:**
+## Context and Way Forward
 
 The China-Pakistan  Economic Corridor (CPEC ) is one o f the pivotal com
 

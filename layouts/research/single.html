@@ -91,6 +91,13 @@
 
     <div class="research-single__body content">
       {{ .Content }}
+      {{ with .Params.pdf }}
+        <div class="research-single__body-actions">
+          <a class="btn btn-primary" href="{{ . }}" target="_blank" rel="noopener">
+            <i class="ph ph-file-pdf" aria-hidden="true"></i><span>Download PDF</span>
+          </a>
+        </div>
+      {{ end }}
     </div>
   </div>
 
@@ -140,27 +147,4 @@
 
   {{ partial "comments.html" . }}
 </article>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.js-copy-link').forEach((btn) => {
-      btn.addEventListener('click', async () => {
-        const url = btn.getAttribute('data-copy-url');
-        const label = btn.querySelector('span');
-        const original = label ? label.textContent : btn.textContent;
-        try {
-          await navigator.clipboard.writeText(url);
-          if (label) { label.textContent = 'Copied'; } else { btn.textContent = 'Copied'; }
-          setTimeout(() => {
-            if (label) { label.textContent = original; } else { btn.textContent = original; }
-          }, 2000);
-        } catch (e) {
-          if (label) { label.textContent = 'Failed'; } else { btn.textContent = 'Failed'; }
-          setTimeout(() => {
-            if (label) { label.textContent = original; } else { btn.textContent = original; }
-          }, 2000);
-        }
-      });
-    });
-  });
-</script>
 {{ end }}
