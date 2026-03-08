@@ -10,15 +10,15 @@ summary: "On February 19, 2026, Professor Amitav Acharya gave a wide-ranging
   economy, demography, and diaspora in the contemporary global order. Within
   this framework, he reflected on the evolving roles of the United States and
   China in relation to India. How and why India-Russia strategic partnership
-  continues to endure? Why China-Pakistan partnership is irksome for India?
-  Does U.S and the West, expect India to defend democracy and capitalist world
-  order that is why the Future is Indian? Let me focus on three broad themes:
-  the role of the Indian diaspora across the United States and Europe, U.S-China
+  continues to endure? Why China-Pakistan partnership is irksome for India? Does
+  U.S and the West, expect India to defend democracy and capitalist world order
+  that is why the Future is Indian? Let me focus on three broad themes: the role
+  of the Indian diaspora across the United States and Europe, U.S-China
   competition plus paralysis in Europe and India's prospects as a global power
   with reference to 1971 India-Pakistan war."
 author:
   - Saeed Shafqat
-image: /uploads/blog/is-the-future-indian-cover.jpg
+image: /uploads/9ece06d0-cf66-4e37-a7d1-97471419078d.png
 draft: false
 ---
 ## Context
