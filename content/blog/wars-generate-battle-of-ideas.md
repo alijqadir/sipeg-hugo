@@ -3,6 +3,7 @@ title: Wars Generate Battle of Ideas
 date: 2026-03-05T16:34:07.088Z
 author:
   - Saeed Shafqat
+image: /uploads/092c389c-c772-41d5-a39e-fdfbd18f3a63.png
 draft: false
 ---
 > ***"War made the state, and the state made war."***
