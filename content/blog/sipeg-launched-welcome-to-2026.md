@@ -10,7 +10,7 @@ summary: It gives me great pleasure to share that I am ready to launch the SIPEG
   understand, interpret, and explain these complexities, from the global to the
   regional and the local, and to untangle uncertainty from ambiguity.
 excerpt: Dear Colleagues, Friends, Students, and Well-Wishers,
-image: /uploads/blog/sipeg-launched-welcome-2026-cover.jpg
+image: /uploads/hero.jpg
 draft: false
 ---
 ## New Year Message
