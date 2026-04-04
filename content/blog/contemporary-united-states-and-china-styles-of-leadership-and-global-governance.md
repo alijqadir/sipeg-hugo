@@ -28,7 +28,7 @@ draft: false
 
 **Another dimension concerns the role of ideology. While Kissinger downplayed ideological considerations in favor of Realpolitik, contemporary U.S.–China rivalry increasingly exhibits (in the U.S case) ideological connotations, particularly around governance models, technology, and global norms. However, China’s approach remains prudent; a reluctant great power but pragmatic than doctrinaire, blending state control with economic globalization.**
 
-**In strategic terms, U.S. behavior has oscillated between engagement and containment, whereas China has pursued a strategy of crafefully crafted integration and strategic expansion (15th Five Year Plan). This asymmetry reflects deeper differences in political systems, historical experiences, and leadership worldviews.**
+**In strategic terms, U.S. behavior has oscillated between *engagement* and *containment,* whereas China has pursued a strategy of crafefully crafted integration and strategic expansion (15th Five Year Plan). This asymmetry reflects deeper differences in political systems, historical experiences, and leadership worldviews.**
 
 **Concluding Thought:** 
 
