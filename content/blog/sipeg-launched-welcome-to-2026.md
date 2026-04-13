@@ -19,7 +19,7 @@ Dear Colleagues, Friends, Students, and Well-Wishers,
 
 As we look ahead to **2026**, I wish you all a year of peace, prosperity, good health, and happiness across Pakistan and around the world.
 
-{{< blog_figure src="/uploads/blog/sipeg-launched-welcome-2026-cover.jpg" alt="SIPEG 2026 launch visual with global policy and digital connectivity motifs" caption="SIPEG launch editorial visual." >}}
+![](/uploads/hero.jpg)
 
 It gives me great pleasure to share that I am ready to launch the SIPEG website. This is a modest beginning, but one that I hope will grow into an intellectually engaging and rewarding platform.
 
