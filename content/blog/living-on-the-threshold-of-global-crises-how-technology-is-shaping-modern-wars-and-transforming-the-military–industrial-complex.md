@@ -11,7 +11,7 @@ summary: "Just returned after attending a stimulating and wide-ranging
   and engaging exchange of ideas. I was invited to chair a session on Military
   Industrial Complex and Shifting Power Dynamics, and thought of sharing some of
   my remarks:"
-image: /uploads/ff0b3924-cabf-4eda-b913-c86d0a2a64c0.png
+image: /uploads/519bb4e4-6af5-430e-b4a7-bfd848b1af3a-1-.png
 draft: false
 ---
 Let me start by thanking Dr. Masuma Hasan for not only inviting me but I admire and envy how she is able to pull together such diverse and distinguished group of experts/scholars from across the world! Applause
