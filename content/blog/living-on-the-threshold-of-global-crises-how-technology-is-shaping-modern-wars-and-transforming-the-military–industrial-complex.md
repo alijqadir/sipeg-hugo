@@ -11,82 +11,81 @@ summary: "Just returned after attending a stimulating and wide-ranging
   and engaging exchange of ideas. I was invited to chair a session on Military
   Industrial Complex and Shifting Power Dynamics, and thought of sharing some of
   my remarks:"
+image: /uploads/ff0b3924-cabf-4eda-b913-c86d0a2a64c0.png
 draft: false
 ---
+Let me start by thanking Dr. Masuma Hasan for not only inviting me but I admire and envy how she is able to pull together such diverse and distinguished group of experts/scholars from across the world! Applause
 
+Distinguished colleagues, ladies and gentlemen,
 
-**Let me start by thanking Dr. Masuma Hasan for not only inviting me but I admire and envy how she is able to pull together such diverse and distinguished group of experts/scholars from across the world! Applause**
+It is a privilege to share my thoughts on a theme as urgent as it is complex: living on the threshold of global crises. My central proposition is straightforward: global crises are not new. What distinguishes our time is that technology has made them immediate, continuous, and deeply embedded in everyday life. *We are no longer observers of crises; we are participants in them.*
 
-**Distinguished colleagues, ladies and gentlemen,**
+Let me make three propositions. First, technology—especially Artificial Intelligence—is reshaping societies and reconfiguring the world order. Second, the relationship between ideas, innovation, and war is mutually reinforcing: wars drive technological change, and technological change reshapes wars. Third, while technology deepens interdependence, it simultaneously intensifies inequality and exclusion.
 
-**It is a privilege to share my thoughts on a theme as urgent as it is complex: living on the threshold of global crises. My central proposition is straightforward: global crises are not new. What distinguishes our time is that technology has made them immediate, continuous, and deeply embedded in everyday life. *We are no longer observers of crises; we are participants in them.***
+*Yet technology alone is not the most consequential story. The deeper transformation lies in how it is reconstituting the Military–Industrial Complex (MIC).*
 
-**Let me make three propositions. First, technology—especially Artificial Intelligence—is reshaping societies and reconfiguring the world order. Second, the relationship between ideas, innovation, and war is mutually reinforcing: wars drive technological change, and technological change reshapes wars. Third, while technology deepens interdependence, it simultaneously intensifies inequality and exclusion.**
+The contemporary world is not merely interconnected; it is persistently turbulent. Crises are simultaneous, fast-moving, and globally diffused. Ukraine, Gaza, and the expanding U.S.–Israel–Iran–Lebanon conflict are not isolated wars; they are interconnected theatres of technological and strategic competition.
 
-***Yet technology alone is not the most consequential story. The deeper transformation lies in how it is reconstituting the Military–Industrial Complex (MIC).***
+The U.S.–China rivalry reinforces this pattern. It is no longer simply geopolitical, it is decisively technopolitical. *Power is increasingly defined by control over data, algorithms, and innovation ecosystems. In this rivalry, in my view China remains a prudent, cautious, pragmatic and reluctant great power.*
 
-**The contemporary world is not merely interconnected; it is persistently turbulent. Crises are simultaneous, fast-moving, and globally diffused. Ukraine, Gaza, and the expanding U.S.–Israel–Iran–Lebanon conflict are not isolated wars; they are interconnected theatres of technological and strategic competition.**
+At this point, recall Dwight D. Eisenhower’s 1961 warning about the Military–Industrial Complex (MIC)—a nexus of military institutions, defense industries, and political authority capable of normalizing a permanent war economy. While he spoke in the context of the Cold War, his warning is far more relevant today.
 
-**The U.S.–China rivalry reinforces this pattern. It is no longer simply geopolitical, it is decisively technopolitical. *Power is increasingly defined by control over data, algorithms, and innovation ecosystems. In this rivalry, in my view China remains a prudent, cautious, pragmatic and reluctant great power.***
+Why? Because the MIC has evolved from a national formation into a global, transnational, and technology-driven system.
 
-**At this point, recall Dwight D. Eisenhower’s 1961 warning about the Military–Industrial Complex (MIC)—a nexus of military institutions, defense industries, and political authority capable of normalizing a permanent war economy. While he spoke in the context of the Cold War, his warning is far more relevant today.**
+Historically, war and technological innovation have been intertwined. The World Wars were devastating but transformative. What is different today is the speed, scale, and continuity of this interaction. Modern wars are no longer episodic; they are prolonged, technologically sustained processes. Drones, cyberwarfare, surveillance systems, and advanced precision weapons have rendered warfare remote, data-driven, and continuous.
 
-**Why? Because the MIC has evolved from a national formation into a global, transnational, and technology-driven system.**
+This is where; the MIC becomes central.
 
-**Historically, war and technological innovation have been intertwined. The World Wars were devastating but transformative. What is different today is the speed, scale, and continuity of this interaction. Modern wars are no longer episodic; they are prolonged, technologically sustained processes. Drones, cyberwarfare, surveillance systems, and advanced precision weapons have rendered warfare remote, data-driven, and continuous.**
+Contemporary conflicts are not only geopolitical struggles; they are sites where the MIC reproduces itself. Technologies are not merely deployed—they are tested, refined, and commercialized in real time. War has, in effect, become a laboratory for continuous weapons development; from napalm and daisy cutters to advanced missile systems to drones, advanced precision weapons and to autonomous platforms.
 
-**This is where; the MIC becomes central.**
+This transformation has three defining features.
 
-**Contemporary conflicts are not only geopolitical struggles; they are sites where the MIC reproduces itself. Technologies are not merely deployed—they are tested, refined, and commercialized in real time. War has, in effect, become a laboratory for continuous weapons development; from napalm and daisy cutters to advanced missile systems to drones, advanced precision weapons and to autonomous platforms.**
+First, *the MIC is embedded in continuous conflict.* War is no longer an interruption of peace; it is a mechanism of industrial and technological reproduction. Persistent instability sustains demand for innovation, creating a self-reinforcing cycle between conflict and production.
 
-**This transformation has three defining features.**
+Second, *the MIC has expanded into the Global South.* States once dependent on imported defense equipment are now developing indigenous capabilities. They produce, adapt, and increasingly export military technologies, integrating themselves into global defense markets.
 
-**First, *the MIC is embedded in continuous conflict.* War is no longer an interruption of peace; it is a mechanism of industrial and technological reproduction. Persistent instability sustains demand for innovation, creating a self-reinforcing cycle between conflict and production.**
+Third, and this is the critical shift—this expansion is giving rise to an *informal constellation of middle powers.*
 
-**Second, *the MIC has expanded into the Global South.* States once dependent on imported defense equipment are now developing indigenous capabilities. They produce, adapt, and increasingly export military technologies, integrating themselves into global defense markets.**
+This is not a formal alliance like NATO, nor an ideological bloc like the Non-Aligned Movement, nor SCO or BRICS. It is a fluid, pragmatic, and interest-driven alignment shaped by participation in the evolving MIC.
 
-**Third, and this is the critical shift—this expansion is giving rise to an *informal constellation of middle powers.***
+Countries such as Pakistan, Egypt, Saudi Arabia, and Turkey exemplify this trend; 
 
-**This is not a formal alliance like NATO, nor an ideological bloc like the Non-Aligned Movement, nor SCO or BRICS. It is a fluid, pragmatic, and interest-driven alignment shaped by participation in the evolving MIC.**
+Pakistan leverages its experience in asymmetric warfare while expanding missile and drone capabilities alongside its nuclear deterrent. 
 
-**Countries such as Pakistan, Egypt, Saudi Arabia, and Turkey exemplify this trend;** 
+Egypt anchors Arab and North African security through sustained military modernization. 
 
-**Pakistan leverages its experience in asymmetric warfare while expanding missile and drone capabilities alongside its nuclear deterrent.** 
+Saudi Arabia is localizing defense production as part of broader economic transformation. 
 
-**Egypt anchors Arab and North African security through sustained military modernization.** 
+Turkey has emerged as a major exporter of drones and defense systems, converting battlefield experience into industrial capacity.
 
-**Saudi Arabia is localizing defense production as part of broader economic transformation.** 
+What connects these states is not ideology (UMAH), but shared strategic incentives: regime security, regional influence, and technological capability.
 
-**Turkey has emerged as a major exporter of drones and defense systems, converting battlefield experience into industrial capacity.**
+They are not external to the MIC; they are increasingly embedded within it—as participants, stakeholders, and beneficiaries.
 
-**What connects these states is not ideology (UMAH), but shared strategic incentives: regime security, regional influence, and technological capability.**
+What are the Implications? This evolution carries significant implications.
 
-**They are not external to the MIC; they are increasingly embedded within it—as participants, stakeholders, and beneficiaries.**
+On one hand, it signals a decentralization of military-industrial power. Dominance once concentrated in a few Western states is diffusing, enabling middle powers to exercise greater autonomy and agency.
 
-**What are the Implications? This evolution carries significant implications.**
+On the other hand, it raises a more troubling possibility: *the emergence of a system of permanent militarized interdependence*. As more states become invested in defense production and arms markets, the structural incentives for de-escalation weaken.
 
-**On one hand, it signals a decentralization of military-industrial power. Dominance once concentrated in a few Western states is diffusing, enabling middle powers to exercise greater autonomy and agency.**
+In such a system, conflict risks becoming normalized; not because states actively seek war, but because economic, technological, and strategic logics increasingly sustain it.
 
-**On the other hand, it raises a more troubling possibility: *the emergence of a system of permanent militarized interdependence*. As more states become invested in defense production and arms markets, the structural incentives for de-escalation weaken.**
+Technology, therefore, is neither neutral nor deterministic. It is embedded in political choices, institutional arrangements, and power structures, and nowhere is this clearer than in the evolution of the MIC.
 
-**In such a system, conflict risks becoming normalized; not because states actively seek war, but because economic, technological, and strategic logics increasingly sustain it.**
+This brings me to my concluding reflection.
 
-**Technology, therefore, is neither neutral nor deterministic. It is embedded in political choices, institutional arrangements, and power structures, and nowhere is this clearer than in the evolution of the MIC.**
+The crucial question is not simply how technology is shaping war, *but how the Military–Industrial Complex is shaping the future of global order.*
 
-**This brings me to my concluding reflection.**
+Ongoing conflicts, particularly the U.S.–Israel–Iran, Lebanon theatre, reveal both the power and the peril of this transformation. They demonstrate how technological superiority shapes outcomes, but also how deeply militarization is embedded in global politics.
 
-**The crucial question is not simply how technology is shaping war, *but how the Military–Industrial Complex is shaping the future of global order.***
+We are at a crossroads.
 
-**Ongoing conflicts, particularly the U.S.–Israel–Iran, Lebanon theatre, reveal both the power and the peril of this transformation. They demonstrate how technological superiority shapes outcomes, but also how deeply militarization is embedded in global politics.**
+One path leads toward a world where the MIC becomes structurally dominant; where continuous conflict, technological competition, and defense economies define stability.
 
-**We are at a crossroads.**
+The other path is more difficult but still possible; it requires states, including emerging middle powers, to act not only as security seekers but as stakeholders in restraint, regulation, and conflict resolution.
 
-**One path leads toward a world where the MIC becomes structurally dominant; where continuous conflict, technological competition, and defense economies define stability.**
+History reminds us that war acquires its own momentum once it becomes economically and technologically embedded. The challenge is to ensure that this momentum is governed and steered politically, institutionally, and ethically.
 
-**The other path is more difficult but still possible; it requires states, including emerging middle powers, to act not only as security seekers but as stakeholders in restraint, regulation, and conflict resolution.**
+*If we fail, we risk normalizing not just crises, but a world in which crisis itself becomes the condition of order.*
 
-**History reminds us that war acquires its own momentum once it becomes economically and technologically embedded. The challenge is to ensure that this momentum is governed and steered politically, institutionally, and ethically.**
-
-***If we fail, we risk normalizing not just crises, but a world in which crisis itself becomes the condition of order.***
-
-**Thank you.**
+Thank you.
