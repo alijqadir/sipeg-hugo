@@ -1,0 +1,40 @@
+---
+title: "Moloo Musalli: A Mirror Held To A Wounded Society"
+date: 2026-05-23T09:45:05.557Z
+abstract: |-
+  It is more than a lament, protest, and rebellion; it is a searing
+  indictment of Pakistani society, institutions, and the wider world,
+  and a moral appeal to restore lost humanity amid pervasive suffering,
+  powerlessness, and injustice
+year: 2026
+topics:
+  - ReviewArticle
+focus_areas:
+  - education-curriculum-capacity
+pdf: /uploads/moloo-musalli-a-mirror-held-to-a-wounded-society.pdf
+featured: false
+draft: false
+---
+**Amjad Saqib is widely recognized as a development practitioner, philanthropist, public intellectual, engaging speaker, and prolific writer. Once a promising civil servant, he has devoted his life to public service and social reform. His recent book, Moloo Musalli: In Search of Lost Humanity (Lahore: Ilqa Publications, 2026), defies easy classification. In my view it moves simultaneously through fiction, lived experience, reflection, observation, and spiritual-philosophical inquiry. Whether it belongs wholly to one genre or draws from all of them, I leave it to the reader’s imagination. As the author himself claims, Moloo Musalli’s story “is not confined to a few individuals—it is our collective story. It is the story of Pakistan and that of this world” (p.14).**
+
+**Spread over nearly 175 pages, Saqib combines experiential observations with deeply reflective insights, driven by an enduring passion to revive humaneness in society and, if possible, across the wider world through the metaphor of Moloo Musalli. Each story introduces a distinct and compelling character, yet all are connected by recurring themes of powerlessness, vulnerability, exploitation, and immeasurable suffering. What distinguishes the book is the manner in which Saqib portrays Moloo’s resilience; both painful and profoundly admirable. Stylistically, the writing is incisive, reader-friendly, hard-hitting, and purposeful.**
+
+**The book is divided into six sections: Misery, Resilience, Legacy, Questions, Hope, and Dawn is Not Near. Each section contains stories capable of unsettling the reader, quickening the heartbeat, or provoking deep introspection because every narrative carries a larger moral and social purpose. Reading through the preface and contents, I was reminded of Sigmund Freud’s Civilization and Its Discontents, where Freud attributes civilizational discontent to the tension between pain and pleasure. In a similar way, Saqib’s Moloo Musalli oscillates between anguish and hope. Depending on one’s mood, age, and social location, the book can be both a pleasurable and agonizing read.**
+
+**The section Misery, the longest in the book, contains sixteen concise yet powerful essays. It is heart-wrenching and explains with striking clarity why societies descend into misery. The section addresses major social issues with particular focus on vulnerable individuals and communities, gender-based violence, assaults on human dignity, and structural injustice. Among the most moving pieces is the two-and-a-half-page story, The Prostitute, which should ideally be read alongside Sexual Violence and A Transgender’s Tale (chapters 10 and 17). Earlier, Shorish Kashmiri’s classic Us Bazar Mein had drawn attention to the harsh realities of prostitutes’ lives, while Louise Brown’s The Dancing Girls of Lahore (2005) offered a deeply researched account of this community. Yet Saqib’s portrayal of a young girl whose dream of becoming a ‘bride’ is transformed into the tragedy of ‘prostitution’ evokes both moral reflection and a desire for corrective action.**
+
+**In the section Legacy, the discussion of Abdul Sattar Edhi (pp. 106–108) deserved greater elaboration than a brief rendering of his imagined dialogue with the Creator. Edhi remains perhaps Pakistan’s most compelling example of a visionary and selfless social reformer. One is left wondering why his model of social reform has remained exceptional rather than becoming a broader societal inspiration. The reader would have benefited from more sustained reflections by the author on Edhi’s enduring legacy. Equally heartening is the short but meaningful note on Bhagat Singh (pp. 97–99), the rebel and revolutionary whose recognition and legitimacy have grown considerably in contemporary Punjab-- in the Poonch House an excellent gallery has also been created. Saqib is correct in observing that Bhagat Singh’s “story of sacrifice is little known.” More importantly, he demonstrates courage of conviction when he writes: “We refuse to recognize people of other beliefs as equals. Racial, communal and sectarian divisions have relegated them, too, the status of ‘Moloo Musalli’” (p.99). In this sense, Moloo Musalli becomes more than a literary work; it is a humble invitation to Pakistani historians, social scientists, civil society activists, and power elites to reinterpret and reimagine Pakistan’s history by recognizing the contributions of vulnerable and minority communities in shaping the country’s past, present, and future. Incidentally, the fifteen plus endorsements appended to the book (pp. 174–195) themselves make compelling reading.**
+
+**In my assessment, the most provocative and insightful section is Questions. Here Saqib raises uncomfortable but necessary questions about attitudes, beliefs, institutional practices, and the functioning of governance in Pakistan. As a former bureaucrat and the driving force behind Akhuwat, he possesses intimate knowledge of bureaucratic culture and institutional behavior. The chapter A Bureaucratic Odyssey: The Tale of a Different Kind of “Moloo”, read together with A Tribal Chieftain of Orakzai, is both tantalizing and hilarious. The narrative reveals how an honest and competent officer, lacking powerful connections, loses an opportunity for overseas training as his file drifts endlessly through bureaucratic channels, while personal connections elsewhere effortlessly secure influence and access. In only five pages, Saqib captures the lived reality of bureaucracy with greater immediacy than Matthew Hull’s theoretically rigorous Government of Paper: The Materiality of Bureaucracy in Urban Pakistan (2013). Saqib’s summation is devastatingly precise: “The delay isn’t about bureaucracy; it is because Mohsin is ‘Moloo’. He has no powerful connections and hasn’t engaged in the back-scratching culture that explains one’s network.” He then broadens the critique with a piercing observation: “Every stratum of society has its own version of the Moloo Musalli—the powerless, the unconnected, those condemned to struggle endlessly within an indifferent system” (p.126).**
+
+**One expected that such penetrating critique might culminate in a clearer roadmap for dismantling these corrupt cultural practices. Instead, Saqib ultimately pleads for compassion, morality, ethics, justice, and equity, giving voice to the cries of the Moloos. Whether the powerful and wealthy are prepared to listen remains an open question.**
+
+**According to the author, the book is a “lament,” “protest,” and “rebellion.” In reality, it is more than all three. It is a searing indictment of the Pakistani state, society, institutions, and even the establishment itself. The larger question, however, is whether the book can ignite a transformative spark for a better, brighter, and more humane Pakistan. Saqib extends this moral appeal beyond Pakistan, seeking to prick the conscience of global society and revive the spirit of humaneness in an age where humanity, civic virtue, and moral responsibility appear to be eroding daily—as witnessed most tragically in Gaza.**
+
+**The concluding sections, Hope and Dawn is Not Far, once again reinforce resilience amidst suffering. Yet the tone remains deeply melancholic as Global Moloo recites the haunting couplet:**
+
+**“Life has been spent like a continuous compulsion;**
+
+**I don’t even remember what crime I was punished for” (p.173).**
+
+**It is a poignant ending; one that captures the despair of the marginalized with painful honesty, but leaves the reader uncertain whether a brighter and more humane future is truly within reach.**
