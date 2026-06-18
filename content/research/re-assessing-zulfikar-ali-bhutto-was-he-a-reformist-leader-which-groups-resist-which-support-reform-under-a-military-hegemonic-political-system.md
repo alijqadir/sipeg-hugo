@@ -10,11 +10,8 @@ abstract: >-
 authors:
   - Saeed Shafqat
 year: 1997
-topics:
-  - "Elite Strategic Culture and Discourse Analysis: significance & Relevance in
-    2026"
-focus_areas:
-  - trade-investment-economic-policy
+topics: ["Governance & State Capacity"]
+focus_areas: ["governance-state-capacity"]
 pdf: /uploads/civil-military-relations-in-pakistan-chapter-5.pdf
 featured: false
 draft: false

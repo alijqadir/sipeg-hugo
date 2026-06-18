@@ -7,15 +7,8 @@ abstract: >-
 
   hear, which sent chill waves down his spine. Ahsan did not have an answer, but he knew Rukhsana's future was uncertain. He himself was scared as he had no idea what was about to unfold for this young girl of 25 who, along with her husband, had voluntarily surrendered to his custody last night. As the Assistant Commissioner of Gambat sub-division of District Khairpur, Pakistan, he had lodged them in a government rest house under police protection. She was to stand before a grand jirga, i.e., a congregation of tribal chieftains, that he had arranged with great effort to settle the long-standing dispute between warring tribes in the Khairpur district. This tribal dispute had already claimed 174 human lives over the last five years, in addition to the retributive killing of countless animals and cutting fruit trees. Rukhsana had played no part in this carnage, yet fate had placed her in the eye of the storm. She lived and worked several hundred kilometres away in Karachi and recently contracted a love marriage without her parents' consent. However, unfortunately, she and her husband belonged to different tribes. She was a Korai, and her husband was an Ujjan, and the two tribes were daggers drawn. The Korai tribe wanted her back and threatened to walk away from the jirga otherwise... he knew returning Rukhsana to Korais entailed almost certain rape and/or honour killing. She was the sacrificial lamb whose blood gods wanted as a precondition to their mercy.
 year: 2022
-topics:
-  - Honor Killing
-  - Love Marriage
-  - Jirga
-  - Assistant Commissioner
-  - genderbased descrimination
-focus_areas:
-  - education-curriculum-capacity
-  - culture-identity-diplomacy
+topics: ["Governance & State Capacity"]
+focus_areas: ["governance-state-capacity"]
 pdf: /uploads/to-kill-a-mockingbird-ahsan-rana.pdf
 featured: false
 draft: false

@@ -11,11 +11,8 @@ abstract: >-
 authors:
   - Saeed Shafqat
 year: 2002
-topics:
-  - islam
-  - ""
-focus_areas:
-  - culture-identity-diplomacy
+topics: ["Governance & State Capacity"]
+focus_areas: ["governance-state-capacity"]
 cover: /uploads/1335ad38-96c9-43fc-9377-8ab8ac46c114.png
 pdf: /uploads/untitled-document-1-.pdf
 featured: true

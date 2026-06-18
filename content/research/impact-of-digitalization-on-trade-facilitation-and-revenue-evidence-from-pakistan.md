@@ -34,17 +34,8 @@ abstract: >-
 authors:
   - Jamil Nasir
 year: 2026
-topics:
-  - Trade Facilitation
-  - Digital Customs
-  - Digitalization
-  - Customs Clearance
-  - Goods Declaration
-  - Quality of Assessment
-  - Risk Management System
-focus_areas:
-  - trade-investment-economic-policy
-  - technology-strategic-foresight
+topics: ["China & Regional Connectivity", "Governance & State Capacity"]
+focus_areas: ["china-asia-connectivity", "emerging-geopolitics-foresight"]
 pdf: /uploads/jamil-nasir-on-customs-digitization.pdf
 featured: false
 draft: false

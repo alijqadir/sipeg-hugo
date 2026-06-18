@@ -24,8 +24,7 @@ abstract: Population growth in Pakistan is widely framed as a family planning
 authors:
   - Saeed Shafqat
 year: 2026
-focus_areas:
-  - culture-identity-diplomacy
+focus_areas: ["governance-state-capacity"]
 pdf: /uploads/discussion-paper-ii-1-.pdf
 featured: false
 draft: false

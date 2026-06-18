@@ -4,7 +4,7 @@ date: 2026-03-29T18:36:34.679Z
 image: /uploads/c19c9949-c543-4de9-8bb3-33bae0754ab6.png
 draft: false
 ---
-**We have been witnessing humanity die in front our eyes in Gaza and yet we also persist and survive with our analysis and here I am!!**
+## We have been witnessing humanity die in front our eyes in Gaza and yet we also persist and survive with our analysis and here I am!!
 
 The US–Israel–Iran war has now entered its second month, with mounting lethality, staggering human costs, and widening repercussions for the global economy. The international system increasingly resembles a self-help order: major powers such as China and Russia are treading cautiously, unwilling to directly confront US–Israeli military dominance. This restraint is not merely strategic but also economic—evident in China’s deepening ties with Israel, including bilateral trade exceeding $15 billion in 2023 and infrastructure investments surpassing $12 billion.
 

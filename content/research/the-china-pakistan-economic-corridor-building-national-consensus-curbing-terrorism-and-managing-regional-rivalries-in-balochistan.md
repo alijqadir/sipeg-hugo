@@ -26,16 +26,8 @@ abstract: >-
 authors:
   - Saeed  Shafqat
 year: 2022
-topics:
-  - BRI
-  - CPEC
-  - Baloochistan
-  - Gwadar
-  - Charbhar
-  - Economy
-  - Chambers of Commerce
-focus_areas:
-  - china-corner
+topics: ["China & Regional Connectivity", "Governance & State Capacity"]
+focus_areas: ["china-asia-connectivity"]
 pdf: /uploads/ch05_saeed-shafqat_compressed.pdf-1.pdf
 featured: false
 draft: false

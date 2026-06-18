@@ -42,14 +42,8 @@ abstract: >-
 authors:
   - Saeed. Shafqat
 year: 2017
-topics:
-  - KKH
-  - CPEC
-  - National Identity
-  - Regional Connectivity
-focus_areas:
-  - geopolitics-security
-  - culture-identity-diplomacy
+topics: ["China & Regional Connectivity", "Governance & State Capacity"]
+focus_areas: ["emerging-geopolitics-foresight", "governance-state-capacity"]
 pdf: /uploads/friday-timeswhat-cpec-can-learn-from-kkh.pdf
 featured: false
 draft: false

@@ -15,9 +15,7 @@ abstract: |-
 authors:
   - Saeed Shafqat
 year: 2023
-focus_areas:
-  - geopolitics-security
-  - culture-identity-diplomacy
+focus_areas: ["emerging-geopolitics-foresight", "governance-state-capacity"]
 pdf: /uploads/foreign_policy_o_f_pakistan.pdf
 featured: false
 draft: false

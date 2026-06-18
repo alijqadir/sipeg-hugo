@@ -7,17 +7,18 @@ summary: In South Asia, it is religion—more than nationalism—that has
   ideological frames. This fusion has eroded traditions of tolerance, created
   new boundaries of exclusion, and contributed to the marginalization of
   religious and ethnic minorities. Pakistan is no exception.
-excerpt: The persistent instrumentalization of religion by South Asian states
-  has produced paradoxical and often conflictual social forces. On one level,
+excerpt: >-
+  The persistent instrumentalization of religion by South Asian states has
+  produced paradoxical and often conflictual social forces. On one level,
   religious minorities (Ahmadis, Hindus, Christians in Pakistan; Muslims in
   India; Tamils in Sri Lanka) and ethnic communities (notably the Baloch in
-  Pakistan) increasingly feel excluded, marginalized, or securitized. On another
-  level, these same groups compete for citizenship rights and access to state
-  resources, producing discordant visions of the role of religion in politics
-  and society.
+  Pakistan) increasingly feel excluded, marginalized, or securitized. On
+  another level, these same groups compete for citizenship rights and access to
+  state resources, producing discordant visions of the role of religion in
+  politics and society.
 author:
   - Saeed Shafqat
-image: /uploads/1563ed46-b247-450d-8137-961cec8ffd5c_1024x1536.webp
+image: /uploads/blog/pivot-faisal-mosque.jpg
 draft: false
 ---
 ## Why It Matters

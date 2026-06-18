@@ -13,13 +13,9 @@ abstract: "On 11 February 2026, S. Paul Kapur, U.S. Assistant Secretary of State
 author:
   - Saeed Shafqat
 topics:
-  - US-India-Defense Framework
-  - China
-  - Maritime security
-  - Ports
-  - Infrastructure
-  - Energy
-  - Islamic militancy
+  - "China & Regional Connectivity"
+  - "Geopolitics & Strategic Foresight"
+  - "Governance & State Capacity"
 image: /uploads/blog/why-pakistan-important-partner-cover.jpg
 draft: false
 ---
@@ -43,12 +39,9 @@ In my view, this signals a **dual-track U.S. approach**: deepening strategic ali
 
 ## Strategic Direction and Its Implications
 
-1. **U.S.-India Defense and Trade Alignment:** Tariff reductions (reportedly from 50% to 15%) and the 2025-2035 U.S.-India Defense Framework Agreement point to an expanding ten-year strategic partnership across trade, energy, technology, and defense co-production.
-2. **India as Regional Anchor:** The U.S. view positions India as an "anchor" in South Asia (though not necessarily a hegemon). China is not expected to disappear from the region, but its diplomatic and economic footprint is to be constrained.
-3. **Countering China's Economic Outreach:** Chinese infrastructure financing in places such as Sri Lanka (Hambantota Port) and the Maldives is often framed in Washington as debt-trap diplomacy, reinforcing the counter-narrative to BRI.
-4. **Indo-Pacific and the Quad:** Citing the 2025 U.S. National Security Strategy, testimony emphasized stronger quadrilateral coordination with Australia and Japan and alignment to prevent domination by any single power.
-5. **Selective Silences:** Notably absent were references to India-Pakistan normalization, resolution of South Asian disputes, Kashmir, or minority concerns inside India.
-6. **Afghanistan Lens:** Afghanistan was discussed primarily through unresolved resettlement challenges for Afghans who had supported NATO forces.
+1. **U.S.-India Defense and Trade Alignment:** Tariff reductions (reportedly from 50% to 15%) and the 2025-2035 U.S.-India Defense Framework Agreement point to an expanding ten-year strategic partnership across trade, energy, technology, and defense co-production. 2. **India as Regional Anchor:** The U.S. view positions India as an "anchor" in South Asia (though not necessarily a hegemon). Chin
+
+a is not expected to disappear from the region, but its diplomatic and economic footprint is to be constrained. 3. **Countering China's Economic Outreach:** Chinese infrastructure financing in places such as Sri Lanka (Hambantota Port) and the Maldives is often framed in Washington as debt-trap diplomacy, reinforcing the counter-narrative to BRI. 4. **Indo-Pacific and the Quad:** Citing the 2025 U.S. National Security Strategy, testimony emphasized stronger quadrilateral coordination with Australia and Japan and alignment to prevent domination by any single power. 5. **Selective Silences:** Notably absent were references to India-Pakistan normalization, resolution of South Asian disputes, Kashmir, or minority concerns inside India. 6. **Afghanistan Lens:** Afghanistan was discussed primarily through unresolved resettlement challenges for Afghans who had supported NATO forces.
 
 ## Policy Gaps and Regional Concerns
 

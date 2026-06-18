@@ -17,12 +17,8 @@ abstract: Pakistan’s geostrategic location has made it a country of pivotal
 authors:
   - Saeed Shafqat
 year: 2009
-topics:
-  - society
-  - democracy
-focus_areas:
-  - culture-identity-diplomacy
-  - geopolitics-security
+topics: ["Governance & State Capacity"]
+focus_areas: ["emerging-geopolitics-foresight", "governance-state-capacity"]
 cover: /uploads/d4712a2c-4858-4cb0-b7be-ed8ea7a92400.png
 pdf: /uploads/pakistan-militancy-the-transition-to-democracy-and-future-relations-with-the-united-states-saeed-shafqat-1-.pdf
 featured: true

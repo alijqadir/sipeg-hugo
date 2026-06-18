@@ -4,8 +4,7 @@ date: 2025-12-06T07:11:50.610Z
 abstract: >-
   In the past three decades, China’s rise has evoked diverging interpretations of how its ascent as a global superpower is impacting the Gulf and Middle East. Issues of security and energy are pivotal as China embarks on Belt and Road (OBOR), pursuing a proactive cultural, economic, and military policy within a reshaped neoliberal framework. This article examines how Gulf States, Pakistan, and Iran are adapting: do they see hegemonic designs or new opportunities for peace, cooperation, and development? It explores these questions through the lens of regional geopolitics and interdependence.
 year: 2017
-focus_areas:
-  - china-corner
+focus_areas: ["china-asia-connectivity"]
 pdf: /uploads/chinas_rise_how_is_it_impacting_the_gulf.pdf
 featured: false
 draft: false

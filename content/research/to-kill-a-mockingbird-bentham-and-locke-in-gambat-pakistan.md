@@ -9,9 +9,7 @@ abstract: >-
 authors:
   - Ahsan Rana
 year: 2022
-focus_areas:
-  - education-curriculum-capacity
-  - culture-identity-diplomacy
+focus_areas: ["governance-state-capacity"]
 pdf: /uploads/to-kill-a-mockingbird-ahsan-rana.pdf
 featured: false
 draft: false

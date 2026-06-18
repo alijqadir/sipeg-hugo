@@ -48,9 +48,9 @@ buildFuture = true
   contact_endpoint = "/forms/contact-handler.php"
   newsletter_endpoint = "/forms/newsletter-handler.php"
   event_registration_endpoint = "/forms/event-handler.php"
-  vision = "Positioning Pakistan through Knowledge, People Centric Policies and Global Insight."
-  mission = "Empowering individuals, communities and institutions to make informed, evidence driven and future-focused decisions and policy choices."
-  tagline = "Pakistan-centered foresight for a multipolar world."
+  vision = "To become a leading center of excellence on governance, geopolitics, and strategic foresight, contributing to informed policymaking and public understanding of Pakistan's future in a changing world."
+  mission = "To advance rigorous research, strategic dialogue, and policy foresight on Pakistan's evolving role in a changing regional and global order."
+  tagline = "Understanding Pakistan in an Age of Geopolitical Transformation"
 
   [params.google]
     # Google Tag Manager container ID (example: GTM-ABC1234)

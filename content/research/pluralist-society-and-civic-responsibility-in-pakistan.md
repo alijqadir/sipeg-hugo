@@ -23,11 +23,8 @@ abstract: >-
 authors:
   - Saeed Shafqat
 year: 2014
-topics:
-  - civic responsability
-  - Society
-focus_areas:
-  - culture-identity-diplomacy
+topics: ["Governance & State Capacity"]
+focus_areas: ["governance-state-capacity"]
 cover: /uploads/b44cd40c-8b44-4dc4-aca4-0b1a437d5698.png
 pdf: /uploads/pluralist_society_and_civic_responsibili.pdf
 featured: true

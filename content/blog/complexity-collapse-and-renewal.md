@@ -6,7 +6,7 @@ author:
 image: /uploads/e57e0b75-d0f9-4142-9b83-f726903c08c0.png
 draft: false
 ---
-**Complexity, Collapse and Renewal:**
+## Complexity, Collapse and Renewal
 
 Sometimes we seek solace in paintings and arts to figure out why some states can be so ferocious in causing chaos, I have found this depiction by British/American historian Niall Ferguson, worth pondering to comprehend the ongoing war in the Middle East. Here is my summation of his article:
 

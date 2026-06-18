@@ -16,14 +16,12 @@ authors:
   - Saeed
   - Shafqat
 year: 2020
-topics:
-  - governance
+topics: ["Governance & State Capacity"]
 cover: /uploads/hero.webp
 draft: false
 author:
   - Saeed Shafqat
-focus_areas:
-  - education-curriculum-capacity
+focus_areas: ["governance-state-capacity"]
 pdf: /uploads/pathways-to-civil-service-reform2020.pdf
 ---
 The purpose of this research is to provide a framework for dialogue on the concept of governance and issues of civil service reform in Pakistan in general, and the Provinces in particular. Governance and reform issues still remain peripheral and call for urgent attention. The remedy lies in a synergized top down and bottom up approach that may be pursued to induce behavioral and structural change. So the paper, therefore argues that, following the implementation of the 18th Amendment, provincial and local governments should be the pivot for improving governance and pushing the long overdue civil service reform.

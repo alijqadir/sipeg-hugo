@@ -15,8 +15,7 @@ abstract: >-
   that China's 15th Five-Year Plan (2026–2030) and the 20th Congress of the
   Communist Party of China (CPC) assume particular significance.
 year: 2025
-focus_areas:
-  - china-corner
+focus_areas: ["china-asia-connectivity"]
 pdf: /uploads/interpreting-china-15th-five-year-plan-rcsa.pdf
 featured: false
 draft: true

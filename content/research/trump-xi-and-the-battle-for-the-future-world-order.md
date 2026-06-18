@@ -1,16 +1,15 @@
 ---
 title: Trump, Xi, And The Battle For The Future World Order
 date: 2026-05-13T15:32:46.615Z
-abstract: The Trump–Xi summit may ultimately determine whether the emerging
-  global order is shaped by confrontation and technological decoupling, or by
-  strategic cooperation, regulated AI governance, and a renewed rules-based
-  international framework
+abstract: >-
+  The Trump–Xi summit may ultimately determine whether the emerging global order
+  is shaped by confrontation and technological decoupling, or by strategic
+  cooperation, regulated AI governance,
+  and a renewed rules-based international framework
 authors:
   - Saeed Shafqat
 year: 2026
-focus_areas:
-  - geopolitics-security
-  - china-corner
+focus_areas: ["china-asia-connectivity", "emerging-geopolitics-foresight"]
 pdf: /uploads/trump-xi-and-the-battle-for-the-future-world-order.pdf
 featured: false
 draft: false

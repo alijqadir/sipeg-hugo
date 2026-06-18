@@ -1,0 +1,241 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <div class="form-page">
+      <header class="form-page__header">
+        {{ if .Params.icon }}
+        <span class="form-page__icon" aria-hidden="true">
+          <i class="ph ph-{{ .Params.icon }}"></i>
+        </span>
+        {{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ end }}
+      </header>
+
+      {{ with .Content }}
+      <div class="content form-page__intro">
+        {{ . }}
+      </div>
+      {{ end }}
+
+      <form class="contact-form" method="post" action="{{ .Site.Params.contact_endpoint }}" data-contact-form data-endpoint="{{ .Site.Params.contact_endpoint }}">
+        <input type="hidden" name="topic" value="{{ .Params.form_topic | default "general" }}">
+
+        {{ if eq .Params.form_type "fellow" }}
+          <div class="form-page__note">
+            <p><strong>Interested in joining the SIPEG Fellows Network?</strong> Tell us about yourself and your research interests. We'll review your application and be in touch within two weeks.</p>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Institution / Affiliation
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+            <label>
+              Career Stage
+              <select name="career_stage">
+                <option value="">Select your stage</option>
+                <option value="young-scholar">Young Scholar</option>
+                <option value="doctoral-student">Doctoral Student</option>
+                <option value="practitioner">Practitioner</option>
+                <option value="diaspora-researcher">Diaspora Researcher</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Research Interests (aligned with SIPEG's three themes)
+            <textarea name="message" rows="4" placeholder="Governance, China/Asia connectivity, or geopolitics and foresight?"></textarea>
+          </label>
+          <label>
+            Link to your profile / CV (optional)
+            <input type="url" name="profile_url" placeholder="https://">
+          </label>
+
+        {{ else if eq .Params.form_type "consulting" }}
+          <div class="form-page__note">
+            <p><strong>Tell us about your advisory needs.</strong> We'll propose a tailored engagement within five working days.</p>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Organization
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+          </div>
+          <label>
+            Service Interest
+            <select name="service_type">
+              <option value="">Select a service</option>
+              <option value="risk-assessment">Political Risk Assessment</option>
+              <option value="country-outlook">Country Outlook Report</option>
+              <option value="stakeholder-analysis">Stakeholder Analysis</option>
+              <option value="strategic-briefing">Strategic Briefing</option>
+              <option value="training">Training / Workshop</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+          <label>
+            Describe your needs
+            <textarea name="message" rows="5" placeholder="What questions do you need answered? What decisions are you preparing for?"></textarea>
+          </label>
+
+        {{ else if eq .Params.form_type "dialogue" }}
+          <div class="form-page__note">
+            <p><strong>Propose a roundtable, webinar, or workshop.</strong> Tell us about your idea and we'll follow up to explore a partnership.</p>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Organization
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+            <label>
+              Proposed Format
+              <select name="event_format">
+                <option value="">Select format</option>
+                <option value="roundtable">Roundtable</option>
+                <option value="webinar">Webinar</option>
+                <option value="workshop">Workshop</option>
+                <option value="conference">Conference Panel</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Describe your proposed dialogue
+            <textarea name="message" rows="5" placeholder="Theme, participants, preferred timeline, and what you hope to achieve."></textarea>
+          </label>
+
+        {{ else if eq .Params.form_type "publications" }}
+          <div class="form-page__note">
+            <p><strong>Get SIPEG's analysis delivered to your inbox.</strong> Select which publications you'd like to receive.</p>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Organization
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+            <label>
+              Publications
+              <select name="publication_prefs">
+                <option value="all">All publications</option>
+                <option value="weekly">Weekly Commentary only</option>
+                <option value="monthly">Monthly Policy Brief only</option>
+                <option value="quarterly">Quarterly Strategic Review only</option>
+                <option value="report">Pakistan Futures Report only</option>
+              </select>
+            </label>
+          </div>
+
+        {{ else if eq .Params.form_type "training" }}
+          <div class="form-page__note">
+            <p><strong>Interested in a training or workshop?</strong> Tell us about your team and what you need.</p>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Full Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Organization
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+            <label>
+              Team size
+              <input type="number" name="team_size" min="1" placeholder="Number of participants">
+            </label>
+          </div>
+          <label>
+            Training topic and goals
+            <textarea name="message" rows="5" placeholder="What skills or knowledge does your team need? Governance, geopolitical risk, China studies, scenario planning?"></textarea>
+          </label>
+
+        {{ else }}
+          <div class="contact-form__row">
+            <label>
+              Name
+              <input type="text" name="name" required autocomplete="name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required autocomplete="email">
+            </label>
+          </div>
+          <div class="contact-form__row">
+            <label>
+              Phone
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>
+              Organization
+              <input type="text" name="organization" autocomplete="organization">
+            </label>
+          </div>
+          <label>
+            Message
+            <textarea name="message" required></textarea>
+          </label>
+        {{ end }}
+
+        <input type="text" name="hp_field" class="honeypot" tabindex="-1" autocomplete="off">
+        <button type="submit" class="btn btn-primary">{{ .Params.submit_text | default "Submit" }}</button>
+        <p class="contact-form__status" data-contact-status aria-live="polite"></p>
+      </form>
+
+      <div class="contact-form__success" data-contact-success hidden tabindex="-1">
+        <h3>{{ .Params.success_title | default "Thanks for reaching out" }}</h3>
+        <p>{{ .Params.success_text | default "We received your message. Expect a response from SIPEG within two business days." }}</p>
+        <a class="btn btn-outline" href="{{ "/" | relURL }}">Back to homepage</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

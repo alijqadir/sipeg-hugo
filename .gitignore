@@ -9,6 +9,10 @@ node_modules/
 public/
 resources/_gen/
 
+# Runtime form submissions (live server is source of truth)
+static/forms/data/
+public/forms/data/
+
 # OS
 .DS_Store
 Thumbs.db

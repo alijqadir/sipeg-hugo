@@ -28,9 +28,7 @@ authors:
   - Saeed Shafqat Saba Shahid
 year: 2020
 topics: []
-focus_areas:
-  - geopolitics-security
-  - china-corner
+focus_areas: ["china-asia-connectivity", "emerging-geopolitics-foresight"]
 pdf: /uploads/changing-dynamics-of-china-india-relations.pdf
 featured: false
 draft: false

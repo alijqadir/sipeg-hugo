@@ -22,7 +22,7 @@ I will frame the threats and invite you to reflect on how modern wars and techno
 
 When I say modern, I mark 9/11 (2001) as a catalytic moment and, to understand its roots, we must look back to the roaring 1970s and 1980s: the Soviet intervention in Afghanistan (1979) and the Iranian Revolution (1979). These were decades of ideological turbulence, technological acceleration, and societal transformation, and in my view these developments profoundly altered the nature of the State.
 
-{{< blog_figure src="/uploads/blog/rethinking-security-cyber.jpg" alt="Cybersecurity operations interface on multiple screens" caption="Source: [Pexels photo 5380594](https://www.pexels.com/photo/a-person-using-computer-in-dark-room-5380594/) (Pexels License)." >}}
+{{< blog_figure src="/uploads/blog/rethinking-security-cyber.jpg" alt="Cybersecurity operations interface on multiple screens" caption=" Source: [Pexels photo 5380594](https://www.pexels.com/photo/a-person-using-computer-in-dark-room-5380594/) (Pexels License)." >}}
 
 ## I. The State under Stress: From the Cold War to Globalization
 

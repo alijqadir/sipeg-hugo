@@ -11,8 +11,7 @@ authors:
   - Dr. Saeed Shafqat & Ayesha Siddique
 year: 2026
 topics: []
-focus_areas:
-  - china-corner
+focus_areas: ["china-asia-connectivity"]
 pdf: /uploads/sipeg-discussion-paper-january-2026.pdf
 featured: false
 draft: false

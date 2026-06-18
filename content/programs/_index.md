@@ -3,4 +3,4 @@ title: "Programs"
 description: "Programmatic platforms delivering sustained analysis." 
 ---
 
-Each SIPEG program convenes interdisciplinary expertise to translate research into actionable pathways for decision-makers across the public, private, and civic sectors.
+SIPEG's research is organized around three integrating themes that connect governance, geopolitics, technology, and society—explaining how global transformations shape Pakistan and how Pakistan can shape its future.

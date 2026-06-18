@@ -10,16 +10,17 @@ summary: It gives me great pleasure to share that I am ready to launch the SIPEG
   understand, interpret, and explain these complexities, from the global to the
   regional and the local, and to untangle uncertainty from ambiguity.
 excerpt: Dear Colleagues, Friends, Students, and Well-Wishers,
-image: ""
+image: /uploads/blog/sipeg-launched-welcome-2026-cover.jpg
 draft: false
 ---
+
 ## New Year Message
 
 Dear Colleagues, Friends, Students, and Well-Wishers,
 
 As we look ahead to **2026**, I wish you all a year of peace, prosperity, good health, and happiness across Pakistan and around the world.
 
-![](/uploads/hero.jpg)
+{{< blog_figure src="/uploads/blog/sipeg-launched-welcome-2026-cover.jpg" alt="SIPEG 2026 launch visual with global policy and digital connectivity motifs" caption="SIPEG launch editorial visual." >}}
 
 It gives me great pleasure to share that I am ready to launch the SIPEG website. This is a modest beginning, but one that I hope will grow into an intellectually engaging and rewarding platform.
 

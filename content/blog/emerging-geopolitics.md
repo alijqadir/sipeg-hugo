@@ -27,11 +27,7 @@ description: How emerging geopolitics blends power, technology, demography, and
   ecology into a dynamic framework for strategy and policy.
 author:
   - SIPEG Research
-topics:
-  - Geopolitics
-  - Technology
-  - Climate
-  - Demography
+topics: ["Geopolitics & Strategic Foresight"]
 categories:
   - Insights
 image: /uploads/cb672c1a-2dd7-4bbb-8738-7c2e51ed66bb.png
@@ -42,7 +38,9 @@ year: 2024
 
 The origins of contemporary geopolitics can be traced to German geographers Carl Ritter (1779–1859) and Friedrich Ratzel (1844–1904), the latter introducing the concept of Lebensraum (living space), and to Karl Haushofer (1869–1946), who emphasized the role of geography in shaping hard power. However, Haushofer’s association with Nazi ideology during the interwar period (1914–1945) discredited geopolitics as an imperialist and “tainted” concept. 
 
-In contrast, Paul Vidal de la Blache (1845–1918), founder of the French school of geopolitics, Sir Halford Mackinder (1861–1947) with his Heartland Theory, Alfred Thayer Mahan (1840–1914) with his Sea Power Theory, and Nicholas J. Spykman (1893–1943) with his Rimland Theory, provided alternative frameworks that counterbalanced the German school. Despite these contributions, geopolitics struggled for academic legitimacy after the Second World War. Richard Hartshorne (1899–1992) sought to replace it with a systematic study of Political Geography. During the early Cold War, political geography gained traction, but from the 1960s onwards, scholars and strategic thinkers like Henry Kissinger (1923–2023) and Zbigniew Brzezinski (1928–2017) revived geopolitics, restoring its intellectual respectability. In the 21st century, under President Xi Jinping, China’s Belt and Road Initiative (2013) has redefined geopolitics—integrating economic development, regional connectivity, and security into its conceptual and strategic framework.
+In contrast, Paul Vidal de la Blache (1845–1918), founder of the French school of geopolitics, Sir Halford Mackinder (1861–1947) with his Heartland Theory, Alfred Thayer Mahan (1840–1914) with his Sea Power Theory, and Nicholas J. Spykman (1893–1943) with his Rimland Theory, provided alternative frameworks that counterbalanced the German school. Despite
+
+these contributions, geopolitics struggled for academic legitimacy after the Second World War. Richard Hartshorne (1899–1992) sought to replace it with a systematic study of Political Geography. During the early Cold War, political geography gained traction, but from the 1960s onwards, scholars and strategic thinkers like Henry Kissinger (1923–2023) and Zbigniew Brzezinski (1928–2017) revived geopolitics, restoring its intellectual respectability. In the 21st century, under President Xi Jinping, China’s Belt and Road Initiative (2013) has redefined geopolitics—integrating economic development, regional connectivity, and security into its conceptual and strategic framework.
 
 Emerging geopolitics is a multidimensional framework for understanding how power, technology, demography, and ecology interact to shape state behavior, societal responses, governance, and the global order. It operates simultaneously at local, regional, and global levels, recognizing the primacy of the state while acknowledging the growing influence of markets, technology, and transnational networks, including non-state actors. At its core, emerging geopolitics entails a complex interplay of conflict, competition, and cooperation as states pursue security, influence, and prosperity in an intricately interdependent world.
 

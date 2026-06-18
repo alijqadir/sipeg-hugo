@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="section section--light">
+  <div class="container">
+    <header class="section__intro">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}<p class="lead">{{ . }}</p>{{ end }}
+    </header>
+    <div class="content service-body">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}

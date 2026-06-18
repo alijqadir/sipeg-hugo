@@ -7,8 +7,7 @@ abstract: >-
 
   centred governance to harness technology’s transformative potential.S
 year: 2025
-focus_areas:
-  - technology-strategic-foresight
+focus_areas: ["emerging-geopolitics-foresight"]
 pdf: /uploads/technology_-causing-chaos-or-transforming-the-world-order_-1.pdf
 featured: false
 draft: false

@@ -25,15 +25,8 @@ abstract: >
 authors:
   - Ayesha Siddique  Saeed Shafqat
 year: 2021
-topics:
-  - BRI
-  - CPEC
-  - AIIB
-  - Soft Power Confucius Institutes
-  - Multilateralism
-focus_areas:
-  - geopolitics-security
-  - china-corner
+topics: ["China & Regional Connectivity", "Geopolitics & Strategic Foresight"]
+focus_areas: ["china-asia-connectivity", "emerging-geopolitics-foresight"]
 pdf: /uploads/how-belt-and-road-initiative-pdf.pdf
 featured: false
 draft: false
