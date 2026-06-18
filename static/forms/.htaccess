@@ -1,0 +1,7 @@
+# Keep runtime form submissions private. PHP handlers can still write to data/.
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteRule ^data(/|$) - [F,L]
+</IfModule>
