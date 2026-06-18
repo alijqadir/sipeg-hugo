@@ -79,6 +79,16 @@
     const wrapper = form.closest('.event-register') || document;
     const success = wrapper.querySelector('[data-event-success]');
     const note = wrapper.querySelector('[data-event-note]');
+    const resolveEndpoint = function() {
+      const endpoint = form.getAttribute('action') || '';
+      if (
+        ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname) &&
+        endpoint.indexOf('/forms/') === 0
+      ) {
+        return 'https://sipeg.org' + endpoint;
+      }
+      return endpoint;
+    };
 
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
@@ -87,12 +97,12 @@
       status.textContent = 'Sending...';
       const data = new FormData(form);
       try {
-        const res = await fetch(form.action, {
+        const res = await fetch(resolveEndpoint(), {
           method: 'POST',
           body: data,
         });
         const text = await res.text();
-        if (!res.ok || text.toLowerCase().includes('error')) {
+        if (!res.ok || (text || '').trim().toLowerCase() !== 'ok') {
           throw new Error(text || 'Failed to send');
         }
         form.reset();

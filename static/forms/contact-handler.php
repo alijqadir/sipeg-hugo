@@ -7,7 +7,11 @@
 const CSV_PATH = __DIR__ . '/data/contact-submissions.csv';
 const GOOGLE_WEBHOOK = 'https://script.google.com/macros/s/AKfycbwBNarGaItGWiJr9X18ppSfqZJYudsEVGFJU2PypmQ7Slfz63ms2HbkdND1Gtf6cjUNHw/exec';
 
+sendCorsHeaders();
 header('Content-Type: text/plain; charset=utf-8');
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit('OK');
+}
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     exit('Method Not Allowed');
@@ -18,14 +22,23 @@ if ($honeypot !== '') {
     exit('OK');
 }
 
+$topic = clean($_POST['topic'] ?? 'general');
+
 $data = [
-    'timestamp'    => gmdate('c'),
-    'name'         => clean($_POST['name'] ?? ''),
-    'email'        => clean($_POST['email'] ?? ''),
-    'phone'        => clean($_POST['phone'] ?? ''),
-    'organization' => clean($_POST['organization'] ?? ''),
-    'message'      => normalizeMessage($_POST['message'] ?? ''),
-    'ip'           => $_SERVER['REMOTE_ADDR'] ?? '',
+    'timestamp'       => gmdate('c'),
+    'topic'           => $topic,
+    'name'            => clean($_POST['name'] ?? ''),
+    'email'           => clean($_POST['email'] ?? ''),
+    'phone'           => clean($_POST['phone'] ?? ''),
+    'organization'    => clean($_POST['organization'] ?? ''),
+    'message'         => normalizeMessage($_POST['message'] ?? ''),
+    'career_stage'    => clean($_POST['career_stage'] ?? ''),
+    'profile_url'     => clean($_POST['profile_url'] ?? ''),
+    'service_type'    => clean($_POST['service_type'] ?? ''),
+    'event_format'    => clean($_POST['event_format'] ?? ''),
+    'publication_prefs' => clean($_POST['publication_prefs'] ?? ''),
+    'team_size'       => clean($_POST['team_size'] ?? ''),
+    'ip'              => $_SERVER['REMOTE_ADDR'] ?? '',
 ];
 
 $GLOBALS['sipeg_response_sent'] = false;
@@ -69,11 +82,18 @@ function forwardToGoogle(array $row): void
         return;
     }
     $payload = http_build_query([
-        'name'         => $row['name'],
-        'email'        => $row['email'],
-        'phone'        => $row['phone'],
-        'organization' => $row['organization'],
-        'message'      => $row['message'],
+        'topic'            => $row['topic'],
+        'name'             => $row['name'],
+        'email'            => $row['email'],
+        'phone'            => $row['phone'],
+        'organization'     => $row['organization'],
+        'message'          => $row['message'],
+        'career_stage'     => $row['career_stage'],
+        'profile_url'      => $row['profile_url'],
+        'service_type'     => $row['service_type'],
+        'event_format'     => $row['event_format'],
+        'publication_prefs' => $row['publication_prefs'],
+        'team_size'        => $row['team_size'],
     ]);
 
     $ch = curl_init(GOOGLE_WEBHOOK);
@@ -116,6 +136,26 @@ function sendImmediateSuccess(): void
 function responseAlreadySent(): bool
 {
     return !empty($GLOBALS['sipeg_response_sent']);
+}
+
+function sendCorsHeaders(): void
+{
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+    $allowedOrigins = [
+        'https://sipeg.org',
+        'https://www.sipeg.org',
+    ];
+
+    if (
+        in_array($origin, $allowedOrigins, true) ||
+        preg_match('/^http:\/\/(localhost|127\.0\.0\.1):\d+$/', $origin)
+    ) {
+        header('Access-Control-Allow-Origin: ' . $origin);
+        header('Vary: Origin');
+    }
+
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type');
 }
 
 function clean(string $value): string

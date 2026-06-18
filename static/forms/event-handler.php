@@ -7,7 +7,11 @@
 const CSV_PATH = __DIR__ . '/data/event-rsvps.csv';
 const GOOGLE_WEBHOOK = 'https://script.google.com/macros/s/AKfycbyu1pg3ccoJVlglejshecCOFx-tsR3AAHSPzc8yySqR_2BmEueZwgSTvUrDrL_vQ-Kb/exec';
 
+sendCorsHeaders();
 header('Content-Type: text/plain; charset=utf-8');
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit('OK');
+}
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     exit('Method Not Allowed');
@@ -43,8 +47,8 @@ $GLOBALS['event_response_sent'] = false;
 
 try {
     appendToCsv($data);
-    sendImmediateSuccess();
     forwardToGoogle($data);
+    sendImmediateSuccess();
 } catch (Throwable $e) {
     error_log('[SIPEG event RSVP] ' . $e->getMessage());
     if (!responseAlreadySent()) {
@@ -134,6 +138,26 @@ function sendImmediateSuccess(): void
 function responseAlreadySent(): bool
 {
     return !empty($GLOBALS['event_response_sent']);
+}
+
+function sendCorsHeaders(): void
+{
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+    $allowedOrigins = [
+        'https://sipeg.org',
+        'https://www.sipeg.org',
+    ];
+
+    if (
+        in_array($origin, $allowedOrigins, true) ||
+        preg_match('/^http:\/\/(localhost|127\.0\.0\.1):\d+$/', $origin)
+    ) {
+        header('Access-Control-Allow-Origin: ' . $origin);
+        header('Vary: Origin');
+    }
+
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type');
 }
 
 function clean(string $value): string

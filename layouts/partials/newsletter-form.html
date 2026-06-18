@@ -1,7 +1,7 @@
 <section class="newsletter-card">
   <h3>Subscribe to SIPEG Dispatch</h3>
   <p>Monthly insights on Pakistan’s strategic trajectory, upcoming events, and new research—straight to your inbox.</p>
-  <form class="newsletter-form" method="post" data-newsletter-form data-endpoint="{{ .Site.Params.newsletter_endpoint }}">
+  <form class="newsletter-form" method="post" action="{{ .Site.Params.newsletter_endpoint }}" data-newsletter-form data-endpoint="{{ .Site.Params.newsletter_endpoint }}">
     <label>
       Name
       <input type="text" name="name" autocomplete="name" placeholder="Your name">

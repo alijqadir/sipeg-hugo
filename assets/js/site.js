@@ -1,4 +1,15 @@
 (function () {
+  const isOkResponse = (text) => (text || '').trim().toLowerCase() === 'ok';
+  const isLocalPreview = () =>
+    ['localhost', '127.0.0.1', '::1'].includes(window.location.hostname);
+  const resolveFormEndpoint = (form) => {
+    const endpoint = form.dataset.endpoint || form.getAttribute('action') || '';
+    if (isLocalPreview() && endpoint.startsWith('/forms/')) {
+      return `https://sipeg.org${endpoint}`;
+    }
+    return endpoint;
+  };
+
   const navToggle = document.querySelector('[data-nav-toggle]');
   const navMenu = document.querySelector('[data-nav-menu]');
   const focusableSelectors = 'a[href], button:not([disabled]), textarea, input, select';
@@ -81,7 +92,7 @@
         statusEl.setAttribute('aria-live', 'polite');
       }
 
-      const endpoint = contactForm.dataset.endpoint;
+      const endpoint = resolveFormEndpoint(contactForm);
       const formData = new FormData(contactForm);
 
       try {
@@ -91,7 +102,7 @@
           body: formData,
         });
         const text = await response.text();
-        if (!response.ok || !text.toLowerCase().includes('ok')) {
+        if (!response.ok || !isOkResponse(text)) {
           throw new Error(text || 'Network response was not ok');
         }
 
@@ -130,7 +141,7 @@
         statusEl.textContent = 'Subscribing…';
       }
 
-      const endpoint = newsletterForm.dataset.endpoint;
+      const endpoint = resolveFormEndpoint(newsletterForm);
       const formData = new FormData(newsletterForm);
 
       try {
@@ -140,7 +151,7 @@
           body: formData,
         });
         const text = await response.text();
-        if (!response.ok || !text.toLowerCase().includes('ok')) {
+        if (!response.ok || !isOkResponse(text)) {
           throw new Error(text || 'Network response was not ok');
         }
         newsletterForm.reset();

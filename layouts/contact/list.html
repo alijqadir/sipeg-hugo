@@ -5,7 +5,8 @@
       <h1>{{ .Title }}</h1>
       {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ else }}<p class="lead">We welcome collaboration inquiries, media requests, and research partnerships.</p>{{ end }}
     </header>
-    <form class="contact-form" method="post" data-contact-form data-endpoint="{{ .Site.Params.contact_endpoint }}">
+    <form class="contact-form" method="post" action="{{ .Site.Params.contact_endpoint }}" data-contact-form data-endpoint="{{ .Site.Params.contact_endpoint }}">
+      <input type="hidden" name="topic" value="general">
       <div class="contact-form__row">
         <label>
           Name
@@ -26,6 +27,17 @@
           <input type="text" name="organization" autocomplete="organization">
         </label>
       </div>
+      <label>
+        Topic
+        <select name="topic_selector" data-contact-topic>
+          <option value="general" selected>General inquiry</option>
+          <option value="fellow">Fellows Network application</option>
+          <option value="consulting">Consulting / advisory</option>
+          <option value="dialogue">Dialogue / event proposal</option>
+          <option value="publications">Publication subscription</option>
+          <option value="training">Training / workshop request</option>
+        </select>
+      </label>
       <input type="text" name="hp_field" class="honeypot" tabindex="-1" autocomplete="off">
       <label>
         Message
@@ -34,6 +46,22 @@
       <button type="submit" class="btn btn-primary">Submit message</button>
       <p class="contact-form__status" data-contact-status aria-live="polite"></p>
     </form>
+    <script>
+      (() => {
+        const sel = document.querySelector('[data-contact-topic]');
+        const hidden = document.querySelector('input[name="topic"]');
+        if (sel && hidden) {
+          sel.addEventListener('change', () => { hidden.value = sel.value; });
+          // Preselect from URL param ?topic=xxx
+          const params = new URLSearchParams(window.location.search);
+          const t = params.get('topic');
+          if (t && Array.from(sel.options).some(o => o.value === t)) {
+            sel.value = t;
+            hidden.value = t;
+          }
+        }
+      })();
+    </script>
     <div class="contact-form__success" data-contact-success hidden tabindex="-1">
       <h3>Thanks for reaching out</h3>
       <p>We received your message and logged it to our secure queue. Expect a response from SIPEG within two business days.</p>

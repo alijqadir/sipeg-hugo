@@ -5,7 +5,7 @@
       <h1>{{ .Title }}</h1>
       {{ with .Params.summary }}<p class="lead">{{ . }}</p>{{ else }}<p class="lead">We welcome collaboration inquiries, media requests, and research partnerships.</p>{{ end }}
     </header>
-    <form class="contact-form" method="post" data-contact-form data-endpoint="{{ .Site.Params.contact_endpoint }}">
+    <form class="contact-form" method="post" action="{{ .Site.Params.contact_endpoint }}" data-contact-form data-endpoint="{{ .Site.Params.contact_endpoint }}">
       <div class="contact-form__row">
         <label>
           Name

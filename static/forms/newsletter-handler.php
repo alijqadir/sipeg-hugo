@@ -10,7 +10,11 @@ const MAILCHIMP_API_URL = ''; // e.g. https://usX.api.mailchimp.com/3.0/lists/{l
 const MAILCHIMP_API_KEY = ''; // e.g. apikey-usX
 const SUBSTACK_WEBHOOK = ''; // e.g. https://yourpublication.substack.com/api/reader/subscriptions
 
+sendCorsHeaders();
 header('Content-Type: text/plain; charset=utf-8');
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    exit('OK');
+}
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
     exit('Method Not Allowed');
@@ -185,6 +189,26 @@ function sendImmediateSuccess(): void
 function responseAlreadySent(): bool
 {
     return !empty($GLOBALS['newsletter_response_sent']);
+}
+
+function sendCorsHeaders(): void
+{
+    $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
+    $allowedOrigins = [
+        'https://sipeg.org',
+        'https://www.sipeg.org',
+    ];
+
+    if (
+        in_array($origin, $allowedOrigins, true) ||
+        preg_match('/^http:\/\/(localhost|127\.0\.0\.1):\d+$/', $origin)
+    ) {
+        header('Access-Control-Allow-Origin: ' . $origin);
+        header('Vary: Origin');
+    }
+
+    header('Access-Control-Allow-Methods: POST, OPTIONS');
+    header('Access-Control-Allow-Headers: Content-Type');
 }
 
 function clean(string $value): string
