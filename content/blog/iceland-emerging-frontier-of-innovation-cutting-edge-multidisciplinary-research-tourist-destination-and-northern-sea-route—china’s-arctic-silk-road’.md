@@ -2,7 +2,7 @@
 title: "Iceland, Emerging Frontier of Innovation:  Cutting edge
   Multidisciplinary Research, Tourist Destination and Northern Sea
   Route—'China’s Arctic Silk Road’"
-date: 2026-10-16T06:23:44.276Z
+date: 2026-10-21T06:23:44.276Z
 description: "Arctic Circle Assembly, October 7-10, 2026 & the University of
   Iceland, Reykjavik "
 draft: false
@@ -37,24 +37,24 @@ draft: false
 
  **\    During the Arctic Circle Assembly, we had another significant Pakistan-related session, it was held on Friday, 9 October, titled The Arctic and Hindu Kush Karakoram Himalaya: Glacier Landscape Governance, jointly organized by SIPEG, the University of Iceland, and the University of Akureyri. The session explored the shared challenges of glacier landscape governance in the Arctic and HKH regions, with discussions focusing on climate change, natural hazards, biodiversity conservation, and sustainable livelihoods in northern Pakistan. Discussed the prospects of building a Third Pole-Arctic Circle Knowledge platform. It  highlighted the importance of Iceland–Pakistan research cooperation, knowledge exchange, effective resource governance, community resilience, and sustainable mountain tourism as pathways towards climate adaptation and regional development. The session was moderated by Professor Jón Geir Pétursson and featured a distinguished panel comprising Mr. Hamza Farrukh, Chairperson, PCCA, Professor Shafqat, Professor Tom Barry, Mr. Ahmed Nawaz, and Mr. Leifur Örn Svavarsson, owner and mountain guide at Slóðir Ferðaskrifstofa, Iceland.** 
 
-
-
 **Meetings with Pakistan's Minister of Climate Change and Environment Coordination & Chairperson PCCA:**
 
 **Meeting Pakistan's political leaders, ministers abroad in an international setting, I have always found heartwarming, entertaining and illuminating! It did come my way as Professor Jón Geir Pétursson on Wednesday, 7 October, hosted a six course dinner, at an upscale Reykjavik, Resturant FishMart, in honour of Dr. Musadik Malik, Minister for Climate Change and Environment Coordination and Mr. Hamza Farrukh, Chairperson, Pakistan Climate Change Authority (PCCA). This provided an opportunity for a frank, candid, and constructive discussions on strengthening international research collaboration across the world’s cryospheric regions. Professor Tom Barry, Dean of the School of Humanities and Social Sciences at the University of Akureyri; Me, and Mr. Ahmed Nawaz, Doctoral Fellow at the University of Iceland, participated in the discussions. Both the Minister and the Chairperson reiterated their strong interest in developing meaningful research partnerships and establishing interdisciplinary research clusters to address shared climate and environmental challenges. Mr. Malik was articulate, upfront, knowledgeable on environmental issues & showed vigor & commitment of purpose. Professor Barry suggested exploring existing collaborative frameworks, particularly those of UArctic and Nordic research cooperation, as potential avenues for building such partnerships. The exchange was professionally rewarding and highlighted opportunities for future academic and scientific cooperation between Pakistan, Iceland, and the wider Arctic research community. On 10th October at the Plenary Session, the Minister made a passionate, persuasive and effective speech on climatic vulnerabilities of Pakistan, both in the context of financial & human loss. He outlined his vision of Pakistan's climate policy. For a virtual Green University, supported by the concepts of a Green Cloud and Green Fields, to encourage scientific collaboration, knowledge-sharing, and innovative climate solutions. On scientific data accessibility, he expressed his commitment to facilitating greater data-sharing and creating spaces for open dialogue and what he described as an "ecology of innovation".** 
 
 **Let us all work together to ensure implementation of this vision.**
 
+ **Arctic Circle, Plenary Sessions:** 
+
+**H. E. Olafur Ragnar Grimsson, Chairman, Arctic Circle and President of Iceland (1996-2016), opened the Plenary Sessions by enthusiastically welcoming the guests and participants; he gave a brief overview of its history. The Arctic Circle was founded under his presidency in 2013 and is headquartered at Reykjavik, Iceland. The Arctic Circle ‘s website declares it a ‘non- profit and non-partisan’, whose mission is to ‘facilitate dialogue and build partnerships’ with the aim, “to strengthen the decision-making process by bringing together as many Arctic and international partners as possible under one “large open tent”. This was truly reflected and amply demonstrated in the plenary and other diverse, wide ranging, multidisciplinary panels and representatives/participants from across the world. Besides the emerging geo-political significance of the Arctic region; issues pertaining to climate change,  Arctic ice and glaciers melt in the Hindu Kush, Himalaya, Karakoram  region, sustaining ecology, bio-diversity, youth empowerment, preserving the rights and cultural heritage of indigenous people, enhancing the usage of technology and taking advantage of AI for safe-guarding all forms of life and promoting research and strengthening international partnerships were the focus of  discussion and  possible solutions and way forward.**
+
+**Mr. Grimsson also acted as moderator for some of the key plenary sessions. He was a towering figure, and conducted plenary sessions with diplomatic finesse and prudence.  There were a total of ten keynote speakers/dignitaries for the plenary session. I am reporting on a few, which I thought made some interesting remarks.  The opening speech of the plenary session was given by the Honorable, Anita Anand, Foreign Minister of Canada. Her remarks were insightful and incisive.  Recognizing the role and responsibilities of the great powers, she steered away from passing any critical remarks on the Trump administration. She articulated and advocated Canadian Prime Minister, Mark Carney’s formulation of ‘rupture’   in the world order and projected Canada as a Middle Power, although the title of her talk was, Canada and the Future of the Arctic; she was emphatic in calling for upholding international law, sovereignty, territorial integrity of states, and working for peaceful co-existence.  She proposed developing new multilateral alliances, strengthening Nordic 5 and Baltic 3 as part of Canada’s strategy as Arctic middle power. To convey Canadian tolerance for diversity, she spoke about her Indian ancestry and early childhood in Canada. In that spirit making the world a better place for the younger generations, thus, calling for investing in the knowledge and skills development of the youth and protecting the rights and culture of indigenous people.  The other interesting speech was delivered by H.E. Mute H. Egede, Minister for Foreign Affairs, Business and Raw Materials, Greenland, the broad theme was ‘Nothing about Greenland Without Greenland’. He was young, showed exuberance and confidence in conveying that Greenland, which has population of only 56,000, would not be ‘spectator about its future’. The indigenous people of Greenland will preserve its cultural heritage and social life and shape its future.  He viewed U.S, Denmark and Greenland Agreement as a positive development. An equally interesting speaker was, H.E, Beinir Johannesen, the prime minister, Faroe Islands,( I searched on the google map to figure out where this island was and found it between Denmark and Iceland , both Greenland and the Faroe Islands are under the Kingdom of Denmark), has population of 55,000 and first time PM, relatively young and inexperienced but showed cognizance about  its new found identity and potential role in the changing geo-political order of the Arctic region. He also emphasized protecting the indigenous people and their culture.** 
+
+**I was intrigued and remain curious as I saw, Muhammet Kasim Gonullu, Deputy Minister of Industry Technology, Türkiye, as plenary session speaker   Türkiye: A New Arctic Player?  A member of the NATO, old RCD partner of Pakistan and new partner through recent Mecca Agreement; it reflects Türkiye’s geo-political dynamism, vision or reach!**
+
+
+
+
+
 **To be Continued…**
-
-
-
-
-
-
-
-
-
- 
 
 ***To be Continued…***
