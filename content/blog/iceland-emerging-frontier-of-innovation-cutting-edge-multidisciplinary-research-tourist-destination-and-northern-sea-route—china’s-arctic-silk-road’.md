@@ -2,9 +2,11 @@
 title: "Iceland, Emerging Frontier of Innovation:  Cutting edge
   Multidisciplinary Research, Tourist Destination and Northern Sea
   Route—'China’s Arctic Silk Road’"
-date: 2026-10-21T06:23:44.276Z
+date: 2026-10-24T06:23:44.276Z
+abstract: "Iceland, Final Day & Conluding Thought:"
 description: "Arctic Circle Assembly, October 7-10, 2026 & the University of
   Iceland, Reykjavik "
+topics: []
 draft: false
 ---
 ***Iceland, Emerging Frontier of Innovation:  Cutting edge Multidisciplinary Research, Tourist Destination and Northern Sea Route—'China’s Arctic Silk Road’***
@@ -51,6 +53,22 @@ draft: false
 
 **I was intrigued and remain curious as I saw, Muhammet Kasim Gonullu, Deputy Minister of Industry Technology, Türkiye, as plenary session speaker   Türkiye: A New Arctic Player?  A member of the NATO, old RCD partner of Pakistan and new partner through recent Mecca Agreement; it reflects Türkiye’s geo-political dynamism, vision or reach!**
 
+**Final Day, Summing up and Concluding Thought:**
 
+**The Arctic Circle Assembly sessions were academically rich and engaging. In addition to showcasing state-of-the-art techniques in data collection and research, they were sharply focused on policy prescriptions.**
 
-**To be Continued…**
+**The Assembly was held at Harpa—a name that, perhaps unconsciously, evoked in my mind Harappa, one of Pakistan’s important civilizational heritage sites. Harpa, however, turned out to be an architecturally unique and iconic building in Reykjavik: a Concert Hall and Conference Centre distinguished by its artistically designed, expansive glass windows. From inside, one could enjoy spectacular views of Reykjavik’s old harbor, Faxaflói Bay, and the North Atlantic Ocean. The building featured spacious conference rooms, dance floors, and halls for musical performances. Close by, one could also see or take ferries and cruise tours.**
+
+**I was able to visit only a few places in the city. My hotel was in the heart of downtown Reykjavik, within walking distance of another landmark, Hallgrímskirkja, a Lutheran church named after a seventeenth-century Icelandic poet and clergyman. The walkways along the bay were also close by.**
+
+**The spectacular beauty of Iceland lies in its natural environment, which the Icelandic people and state have preserved with remarkable care. The lagoons, hot-water geysers, and volcanoes are among its most attractive tourist destinations. Indeed, the organizers had arranged two excursions for Sunday: one to Hvammsvík Hot Springs and another for a glacier hike at Sólheimajökull. Unfortunately, I was travelling back and missed the opportunity to join them. Public transport is readily available for travelling outside the city, but most of my time was spent at Harpa, immersed in the Assembly’s proceedings.**
+
+**The final day, October 10, was rainy and gloomy—not particularly conducive to outdoor activities. Fortunately, two of Ahmed’s colleagues, Asif, who hails from Gilgit-Baltistan (GB), and Munib, took me to the Perlan Interactive 4D Museum. It was a fascinating experience, with an approximately two-hour immersive presentation that transported visitors beneath volcanic eruptions, across glacial landscapes and snowy mountains, and into the Arctic Ocean. Although I had been unable to explore Iceland’s natural wonders outdoors, this interactive museum offered both an intellectually stimulating experience and a remarkable sense of being in touch with the realities of these extraordinary environments. It was, in many ways, a mind-boggling experience and a source of consolation for having missed the outdoor excursions.**
+
+**Asif and Munib not only took time out of their schedules to accompany me to Perlan but also enthusiastically explained how its exhibits and interactive features worked. The revolving restaurant at the top of Perlan, enclosed beneath a glass dome and fully air-conditioned, was equally tantalizing. It offered panoramic, almost bird’s-eye views of Reykjavik and the North Atlantic Ocean. I remain deeply indebted to Asif for arranging this memorable experience.**
+
+**I returned back to Lahore, with a paradoxical feeling and a compelling reflection: looking towards the coming decade: think 2035! designing governance frameworks capable of managing the risks arising from two concurrent disruptions, environmental disruption and geopolitical disruption, will be a defining challenge for Arctic decision-makers, particularly the Nordic Five and the Baltic Three, as well as global policymakers in the United States, China, and Russia.**
+
+**At the same time, Reykjavik, an emerging “Arctic Singapore” in my imagination, could become a future hub of innovation, cutting-edge research, energy and resource exploration, and the evolving “Arctic Silk Road,” while continuing to flourish as an attractive international tourist destination.**
+
+**My heartfelt thanks to the Arctic Circle Assembly, the University of Iceland, and Professors Jon Geir Petursson and Tom Barry, as well as Ahmed Nawaz, Doctoral Fellow, for their invaluable facilitation, generous hospitality, and warm collegiality. Their efforts made this visit intellectually rewarding and personally memorable.**
