@@ -4,6 +4,8 @@
 {{ $text := .Title | urlquery }}
 {{ $details := (.Params.summary | default .Summary) | urlquery }}
 {{ $location := .Params.location | urlquery }}
+{{ $isPast := false }}
+{{ if .Params.event_start }}{{ $isPast = lt (time .Params.event_start) now }}{{ end }}
 {{ $gcal := printf "https://www.google.com/calendar/render?action=TEMPLATE&text=%s&dates=%s/%s&details=%s&location=%s&sf=true&output=xml" $text $start $end $details $location }}
 <main class="event-single">
   {{ $endpoint := or .Params.registration_endpoint .Site.Params.event_registration_endpoint }}
@@ -29,14 +31,16 @@
     <section class="event-actions">
       <a class="btn btn-primary" href="{{ $gcal }}" target="_blank" rel="noopener">Add to Google Calendar</a>
       <a class="btn btn-outline" href="{{ .RelPermalink }}event.ics">Download .ics</a>
-      {{ if $endpoint }}
+      {{ if $isPast }}
+        <span class="event-past-note">This event has passed.</span>
+      {{ else if $endpoint }}
         <a class="btn btn-navy" href="#event-register">Request Invite</a>
       {{ else if .Params.registration_url }}
         <a class="btn btn-navy" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
       {{ end }}
     </section>
 
-    {{ if $endpoint }}
+    {{ if and $endpoint (not $isPast) }}
     <section class="event-register" id="event-register" data-register-section tabindex="-1">
       <h3>Request an invite</h3>
       <p class="event-register__note" data-event-note>Enter your details to get the official Google Calendar invite and conferencing link. We first archive your RSVP on our server, then sync it to Google/Zoom.</p>

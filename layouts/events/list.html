@@ -12,10 +12,12 @@
   {{ with $eventsData.next }}
     {{ $hasForm := or .Params.registration_endpoint site.Params.event_registration_endpoint }}
     {{ $image := .Params.image | default "/images/r-placeholder.webp" }}
+    {{ $nextIsPast := false }}
+    {{ with .Params.event_start }}{{ $nextIsPast = lt (time .) now }}{{ end }}
     <section class="events-highlight">
       <div class="container events-highlight__card">
         <div class="events-highlight__body">
-          <p class="eyebrow">Next Up</p>
+          <p class="eyebrow">{{ if $nextIsPast }}Latest Session{{ else }}Next Up{{ end }}</p>
           <h2>{{ .Title }}</h2>
           <p>{{ .Params.summary }}</p>
           <p class="event-card-meta">
@@ -23,10 +25,12 @@
             {{ with .Params.location }}<span> • {{ . }}</span>{{ end }}
           </p>
           <div class="event-card-actions">
-            {{ if $hasForm }}
-              <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Join / Register</a>
-            {{ else if .Params.registration_url }}
-              <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
+            {{ if not $nextIsPast }}
+              {{ if $hasForm }}
+                <a class="btn btn-primary" href="{{ .RelPermalink }}#event-register">Join / Register</a>
+              {{ else if .Params.registration_url }}
+                <a class="btn btn-primary" href="{{ .Params.registration_url }}" target="_blank" rel="noopener">Join / Register</a>
+              {{ end }}
             {{ end }}
             <a class="btn btn-outline" href="{{ .RelPermalink }}">Details</a>
           </div>
