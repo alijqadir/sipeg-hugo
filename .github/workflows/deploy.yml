@@ -4,7 +4,14 @@ on:
   push:
     branches:
       - master
-      - main
+
+# Only one deploy at a time; a queued push should not interleave FTP syncs.
+concurrency:
+  group: sipeg-deploy
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   build-and-deploy:
@@ -17,7 +24,7 @@ jobs:
       - name: Set up Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "0.133.0"
+          hugo-version: "0.150.0"
           extended: true
 
       - name: Set up Node.js
@@ -32,6 +39,17 @@ jobs:
       - name: Build site
         run: npm run build
 
+      # Guard: a missing section index silently produces Hostinger 403s.
+      - name: Verify critical pages exist
+        run: |
+          set -e
+          for f in index.html events/index.html blog/index.html research/index.html search/index.html; do
+            if [ ! -f "public/$f" ]; then
+              echo "::error::Missing build output: public/$f"
+              exit 1
+            fi
+          done
+          echo "Critical pages present."
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
@@ -52,5 +70,4 @@ jobs:
             **/.git*/**
             forms/data/**
             forms/data/**/*
-            pagefind/**
             research/identity-culture-governance-societal-cleavages-national-harmony/**
