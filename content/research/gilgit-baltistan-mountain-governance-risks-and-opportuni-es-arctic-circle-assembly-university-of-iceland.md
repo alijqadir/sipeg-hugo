@@ -1,6 +1,5 @@
 ---
-title: "GILGIT-BALTISTAN: Mountain Governance: Risks and Opportuni=es, Arctic
-  Circle Assembly, University of Iceland"
+title: "GILGIT-BALTISTAN: Mountain Governance: Risks and Opportuni=es"
 date: 2026-11-13T09:44:36.962Z
 abstract: >-
   Northern areas of Pakistan, at the confluence of the Hindu Kush Himalaya
@@ -47,7 +46,7 @@ focus_areas:
   - geopolitics-security
   - education-curriculum-capacity
 cover: /uploads/img_20261007_152730.jpg
-pdf: /uploads/1563ed46-b247-450d-8137-961cec8ffd5c_1024x1536.webp
+pdf: /uploads/sipeg-policy-brief-3-gb-.pdf
 featured: false
 draft: false
 ---
